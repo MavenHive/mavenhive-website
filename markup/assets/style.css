@@ -1,0 +1,53 @@
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  font-weight: 400;
+}
+.btn {
+  padding: .5rem 2rem;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  border-radius: .25rem;
+  background-color: #EE5061;
+}
+.btn-outline {
+  border: 1px solid #fff;
+}
+.f-1 {
+  font-size: 1.125rem;
+  line-height: 1.67;
+}
+.content-box {
+  box-sizing: content-box;
+}
+.brand,
+.hover-brand:hover {
+  color: #EE5061;
+}
+.bg-brand {
+  background-color: #EE5061;
+}
+.bg-purple {
+  background-color: #3C2763;
+}
+.silver {
+  color: #747C83;
+}
+.bg-navy {
+  background-color: #1B2A45;
+}
+.bg-gray {
+  background-color: #F8F8F8;
+}
+
+@media screen and (min-width: 64rem) {
+  .w-feature-l {
+    width: 22rem;
+  } 
+}
