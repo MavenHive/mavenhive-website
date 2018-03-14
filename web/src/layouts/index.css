@@ -23,12 +23,18 @@ h1 {
   font-size: 1.125rem;
   line-height: 1.67;
 }
+.lh-mh {
+  line-height: 2.5;
+}
+.measure-mh {
+  max-width: 40em;
+}
 .content-box {
   box-sizing: content-box;
 }
 .brand,
 .hover-brand:hover {
-  color: #EE5061;
+  color: #EE5061 !important;
 }
 .bg-brand {
   background-color: #EE5061;
@@ -39,11 +45,17 @@ h1 {
 .silver {
   color: #747C83;
 }
+.mh-gray {
+  color: #4A4A4A;
+}
 .bg-navy {
   background-color: #1B2A45;
 }
 .bg-mh-gray {
   background-color: #F8F8F8;
+}
+.mw-mavenhive {
+  max-width: 1280px;
 }
 
 @media screen and (min-width: 64rem) {
