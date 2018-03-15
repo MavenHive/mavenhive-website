@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import Logo from '../../images/MavenHive-logo_black.svg'
 import FacebookIcon from '../../icons/facebook.svg'
 import TwitterIcon from '../../icons/twitter.svg'
-import LinkedinIcon from '../../icons/Linkedin.svg'
+import LinkedinIcon from '../../icons/linkedin.svg'
 import GithubIcon from '../../icons/Github.svg'
 import YoutubeIcon from '../../icons/Youtube.svg'
 
