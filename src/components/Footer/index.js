@@ -5,8 +5,8 @@ import Logo from '../../images/MavenHive-logo_black.svg'
 import FacebookIcon from '../../icons/facebook.svg'
 import TwitterIcon from '../../icons/twitter.svg'
 import LinkedinIcon from '../../icons/linkedin.svg'
-import GithubIcon from '../../icons/Github.svg'
-import YoutubeIcon from '../../icons/Youtube.svg'
+import GithubIcon from '../../icons/github.svg'
+import YoutubeIcon from '../../icons/youtube.svg'
 
 const Footer = () => {
   // Can manage footer links here
