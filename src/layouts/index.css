@@ -1,37 +1,43 @@
+/* MavenHive specific styles & overrides */
+
 html {
   font-family: 'Roboto', sans-serif;
 }
 
+.content-box {
+  box-sizing: content-box;
+}
+
+/* fonts */
 h1 {
   font-size: 2.25rem;
   line-height: 1.25;
   font-weight: 400;
 }
-.btn {
-  padding: .5rem 2rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-  border-radius: .25rem;
-  background-color: #EE5061;
-}
-.btn-outline {
-  border: 1px solid #fff;
-}
+
 .f-1 {
   font-size: 1.125rem;
   line-height: 1.67;
 }
+
+/* spacing */
 .lh-mh {
   line-height: 2.5;
 }
 .measure-mh {
   max-width: 40em;
 }
-.content-box {
-  box-sizing: content-box;
+.measure-mh-narrow {
+  max-width: 16em;
 }
+.mw-mavenhive {
+  max-width: 1280px;
+}
+.tracked-mh {
+  letter-spacing: 1px;
+}
+
+/* colors */
 .brand,
 .hover-brand:hover {
   color: #EE5061 !important;
@@ -48,14 +54,22 @@ h1 {
 .mh-gray {
   color: #4A4A4A;
 }
+.mh-light-gray {
+  color: #9B9B9B;
+}
 .bg-navy {
   background-color: #1B2A45;
 }
 .bg-mh-gray {
   background-color: #F8F8F8;
 }
-.mw-mavenhive {
-  max-width: 1280px;
+
+.img-member {
+  flex: 0 0 8rem;
+}
+
+.link:focus {
+  outline: none !important;
 }
 
 @media screen and (min-width: 64rem) {
