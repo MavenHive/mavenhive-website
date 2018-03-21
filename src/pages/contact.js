@@ -11,7 +11,7 @@ export default () => (
     </div>
     <div className='mw-mavenhive center ph4 mt6 mb5'>
       <h2 className='f3 normal mt0 mb4 pb3'>Please add your project details, we will get back to you</h2>
-      <form className='mw6 tracked-mh'>
+      <form className='mw6 tracked-mh' method='POST' netlify>
         <div className='h3 mv4'>
           <label className='db f5 mb1'>Company/Project Name</label>
           <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' />
