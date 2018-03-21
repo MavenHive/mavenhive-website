@@ -11,26 +11,26 @@ export default () => (
     </div>
     <div className='mw-mavenhive center ph4 mt6 mb5'>
       <h2 className='f3 normal mt0 mb4 pb3'>Please add your project details, we will get back to you</h2>
-      <form className='mw6 tracked-mh' method='POST'data-netlify="true" data-netlify-honeypot="bot-field">
+      <form className='mw6 tracked-mh' method='POST'data-netlify="true" data-netlify-honeypot="bot-field" name='contact'>
         <div className='h3 mv4'>
           <label className='db f5 mb1'>Company/Project Name</label>
-          <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' />
+          <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' nmae='company-name' />
         </div>
         <div className='h3 mv4'>
           <label className='db f5 mb1'>Contact Name</label>
-          <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' />
+          <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' name='contact-name' />
         </div>
         <div className='h3 mv4'>
           <label className='db f5 mb1'>Email Address *</label>
-          <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' />
+          <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' name='email' />
         </div>
         <div className='h3 mv4'>
           <label className='db f5 mb1'>Phone Number</label>
-          <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' />
+          <input className='h-75 w-100 pa3 ba br2 b--moon-gray' type='text' name='phone' />
         </div>
         <div className='h3 mv4'>
           <label className='db f5 mb1'>Approx Budget *</label>
-          <select className='h-75 w-100 pa3 ba br2 b--moon-gray bg-white'>
+          <select className='h-75 w-100 pa3 ba br2 b--moon-gray bg-white' name='budget'>
             <option disabled>Select Budget</option>
             <option>&lt; $5000</option>
             <option>&gt; $5000</option>
@@ -39,7 +39,7 @@ export default () => (
         </div>
         <div className='mv4'>
           <label className='db f5 mb1'>What do you need help with? *</label>
-          <textarea className='h2 w-100 mw-100 pa3 h4 ba br2 b--moon-gray' />
+          <textarea className='h2 w-100 mw-100 pa3 h4 ba br2 b--moon-gray' name='brief' />
         </div>
         <p hidden>
           <label>
