@@ -1,14 +1,13 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "mavenhive-website",
+  "description": "MavenHive website built using gatsbyJS utilizing the Netlify/NetlifyCMS platform",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Praveen <apnerve@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.223",
     "gatsby-link": "^1.6.38",
     "gatsby-plugin-react-helmet": "^2.0.6",
     "gatsby-source-filesystem": "^1.5.27",
-    "gatsby-transformer-remark": "^1.7.36",
     "react-helmet": "^5.2.0"
   },
   "keywords": [

@@ -14,7 +14,7 @@ import client_synup from '../../images/client_synup.png'
 import client_pg from '../../images/client_PG.png'
 
 const Clients = () => (
-  <div className='mw-mavenhive center'>
+  <div className="mw-mavenhive center">
     <p className="f3">… and worked with over 20 clients globally…</p>
     <div className="flex items-center justify-center flex-wrap">
       <img className="mh3 mv2" src={client_gojek} alt="Gojek" />
@@ -25,7 +25,7 @@ const Clients = () => (
       <img className="mh3 mv2" src={client_flipkart} alt="flipkart" />
       <img className="mh3 mv2" src={client_zinc} alt="zinc" />
       <img className="mh3 mv2" src={client_barkloudly} alt="barklougly" />
-      <img className='mh3 mv2' src={client_pg} alt='PropertyGuru' />
+      <img className="mh3 mv2" src={client_pg} alt="PropertyGuru" />
       <img className="mh3 mv2" src={client_thearc} alt="the arc" />
       <img className="mh3 mv2" src={client_synup} alt="synup" />
       <img className="mh3 mv2" src={client_ashoka} alt="ashoka" />
