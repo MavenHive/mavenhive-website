@@ -13,12 +13,12 @@ const Footer = () => {
   return (
     <footer className='h3-l pv2 content-box bt b--light-gray'>
       <div className='mw-mavenhive center ph4 flex-l items-center justify-between h-100 tc tl-l'>
-        <a className='dib link ma2 mr4-l' href='/'><img src={Logo} alt='mavenhive logo' /></a>
+        <Link className='dib link ma2 mr4-l' to='/'><img src={Logo} alt='mavenhive logo' /></Link>
         <ul className='list ma2 mv3 pa0 f6 mr-auto'>
           <li className='dib mh1'><Link className='dib pa2 link silver' to='/alumni'>Alumni</Link></li>
-          <li className='dib mh1'><a className='dib pa2 link silver' href='https://blog.mavenhive.in/'>Blog</a></li>
+          <li className='dib mh1'><a target='_blank' className='dib pa2 link silver' href='https://blog.mavenhive.in/'>Blog</a></li>
           <li className='dib mh1'><Link className='dib pa2 link silver' to='/updates'>Updates</Link></li>
-          <li className='dib mh1'><Link className='dib pa2 link silver' href='/contact'>Start a Project with Us</Link></li>
+          <li className='dib mh1'><Link className='dib pa2 link silver' to='/contact'>Start a Project with Us</Link></li>
         </ul>
         <ul className='list ma2 pa0'>
           <li className='dib mr2'><a className='dib link' href='https://www.facebook.com/mavenhive' target='_blank'><img className='w2' src={FacebookIcon} alt='link to mavenhive facebook page' /></a></li>

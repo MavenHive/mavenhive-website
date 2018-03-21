@@ -1,10 +1,12 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 import Member from '../components/Member'
 
 export default () => {
   return (
-    <div className='mw-mavenhive center ph4 mv5 pt3'>
+    <div className='mw-mavenhive center ph4 mt5 mb4 pt3'>
+      <Helmet title='Alumni | MavenHive' />
       <h1 className='f2 lh-title mb5'>Our Alumni</h1>
       {[22,32,90,94,81, 85].map((id,i) => (
         <Member

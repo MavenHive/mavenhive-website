@@ -29,7 +29,7 @@ const Feature = ({ icon, title, description }) => (
 
 export default () => (
   <div>
-    <Helmet title='Projects'>
+    <Helmet title='People | MavenHive'>
     </Helmet>
     <div className='mw-mavenhive center ph4 mv5 pt3 h5 cover' style={{ backgroundImage: `url(${Background})`, backgroundRepeat: 'no-repeat'}}>
       <h1 className="f2 normal measure-mh-narrow">&ldquo;We deliver far more for our clients than what would be thought possible&rdquo;</h1>

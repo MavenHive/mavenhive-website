@@ -19,10 +19,16 @@ h1 {
   font-size: 1.125rem;
   line-height: 1.67;
 }
+.f-2 {
+  font-size: 1.625rem;
+}
 
 /* spacing */
 .lh-mh {
   line-height: 2.5;
+}
+.lh-mh-1 {
+  line-height: 1.875;
 }
 .measure-mh {
   max-width: 40em;
@@ -45,7 +51,7 @@ h1 {
 .bg-brand {
   background-color: #EE5061;
 }
-.bg-purple {
+.bg-mh-purple {
   background-color: #3C2763;
 }
 .silver {
@@ -62,6 +68,9 @@ h1 {
 }
 .bg-mh-gray {
   background-color: #F8F8F8;
+}
+.mh-mid-gray {
+  color: #E1E1E1;
 }
 
 .img-member {

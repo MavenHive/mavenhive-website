@@ -3,6 +3,9 @@ import Link from 'gatsby-link'
 import Clients from '../components/Clients'
 
 import Illustration from '../images/Bulb_illustration.png'
+import IconTechnology from '../icons/icon_technology.svg'
+import IconGrowth from '../icons/icon_growth.svg'
+import IconInnovation from '../icons/icon_innovation.svg'
 
 const IndexPage = () => (
   <div>
@@ -14,33 +17,37 @@ const IndexPage = () => (
         <p><a href="#" className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand">See what we have built</a></p>
       </div>
     </section>
-    <section className="bg-mh-gray ph4 pv3 pv5-l tc-l">
+    <section className="bg-mh-gray ph4 pv3 pt5-l tc-l">
       <div className="mw-mavenhive center">
         <h1 className="f3 mb4 pb4-l normal">We are a team of imaginators helping business at all stages of growth</h1>
-        <div className="flex-l justify-between">
+        <div className="flex-l justify-between mh-gray tracked-mh">
           <div className="mv4 w-third-l ph3-l pl5-l pr4-l">
-            <h3 className="">MVP</h3>
-            <p className="lh-copy ph4-l">We form tech partnerships with our clients to validate idea. We help build MVPs from scratch, complete with end-to end product design, development, deployment and scaling.</p>
+            <h3 className="f5">MVP</h3>
+            <p className="lh-mh-1 ph4-l">We form tech partnerships with our clients to validate idea. We help build MVPs from scratch, complete with end-to end product design, development, deployment and scaling.</p>
           </div>
           <div className="mv4 w-third-l ph3-l ph4-l">
-            <h3 className="">Re-Architecture</h3>
-            <p className="lh-copy ph4-l">Growing fast but the tech lacks? Product needs bracing for rapid user influx? We rebuild product designed to sustain long term growth.</p>
+            <h3 className="f5">Re-Architecture</h3>
+            <p className="lh-mh-1 ph4-l">Growing fast but the tech lacks? Product needs bracing for rapid user influx? We rebuild product designed to sustain long term growth.</p>
           </div>
           <div className="mv4 w-third-l ph3-l pl4-l pr5-l">
-            <h3 className="">Establishment and Stability</h3>
-            <p className="lh-copy ph4-l">That’s not all though, we also provide you with agile process consulting, onsite coaching and technical training relevant to your team’s needs.</p>
+            <h3 className="f5">Establishment and Stability</h3>
+            <p className="lh-mh-1 ph4-l">That’s not all though, we also provide you with agile process consulting, onsite coaching and technical training relevant to your team’s needs.</p>
           </div>
         </div>
       </div>
     </section>
 
     <section className="mw-mavenhive center ph4 pv3 pv4-ns tc">
+      <div className='flex-l justify-center mb4'>
+        <p className="f-2 pb3 brand mh2 b">Training to help you grow.</p>
+        <p className="f-2 pb3 brand mh2 b">Technology that help you build.</p>
+        <p className="f-2 pb3 brand mh2 b">Expertise to help you scale.</p>
+      </div>
       <div className="flex-l justify-center mb4">
         <div className="w-feature-l">
-          <h2 className="f3 pb3 brand">Technology that help you build.</h2>
-          <img className="w4 h4" src="./assets/wedding-couple.svg" alt="" />
+          <img className="w3 h3 content-box pa1" src={IconTechnology} alt="" />
           <h3 className="f-1 brand ttu">Tech Partnership</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy">
+          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Core Product or Project delivery</li>
             <li className="mv2">Build MVP</li>
             <li className="mv2">Inception and Project planning</li>
@@ -49,10 +56,9 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="w-feature-l">
-          <h2 className="f3 pb3 brand">Training to help you grow.</h2>
-          <img className="w4 h4" src="./assets/monitor-window.svg" alt="" />
+          <img className="w3 h3 content-box pa1" src={IconGrowth} alt="" />
           <h3 className="f-1 brand ttu">Enablement</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy">
+          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Agile process consulting</li>
             <li className="mv2">Training Developers</li>
             <li className="mv2">Technical Training </li>
@@ -60,10 +66,9 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="w-feature-l">
-          <h2 className="f3 pb3 brand">Expertise to help you scale.</h2>
-          <img className="w4 h4" src="./assets/netherlands-windmill.svg" alt="" />
+          <img className="w3 h3 content-box pa1" src={IconInnovation} alt="" />
           <h3 className="f-1 brand ttu">Innovation</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy">
+          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Design Thinking</li>
             <li className="mv2">Rapid prototyping</li>
             <li className="mv2">New technology research and migration</li>
@@ -104,7 +109,7 @@ const IndexPage = () => (
 
     <div className="mw-mavenhive center">
       <section className="mv4 pv3">
-        <ul className="list ma0 pa0 tc flex-l justify-center">
+        <ul className="list ma0 pa0 tc flex-l justify-center tracked-mh">
           <li className="dib mw6 ph4">
             <section>
               <h4 className="f5 lh-title">EVP Strategic Partnerships, Ashoka</h4>
@@ -130,15 +135,15 @@ const IndexPage = () => (
       </section>
     </div>
 
-    <section className="pv4-ns bg-purple white tc">
+    <section className="pv4-ns bg-mh-purple white tc">
       <div className="mw8 center ph4 pv3 ph5-l">
         <h3 className="ttu mb4 f4 lh-title">We’d like to work with you</h3>
-        <div className="lh-copy f-1 mb4 mb5-l">
+        <div className="lh-copy f-1 mb4 mb5-l tracked-mh mh-mid-gray">
           <p>We refuse to conform to obsolete ways of the past and believe in the idea that even a simple atypical opinion reserves the power to catapult a business idea into a transformative force for the future.</p>
-          <p>“Consistent delivery with high quality, constant evolution, and superior productivity are the only true measures of success.”<br />
+          <p>“Consistent delivery with <b>high quality, constant evolution,</b> and <b>superior productivity</b> are the only true measures of success.”<br />
           This philosophy is hard coded into our work ethic. With these goals in our sights, we deliver bespoke software - moulded with care, fabricated to revolutionize and designed to satisfy.</p>
         </div>
-        <p><a href="#" className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand">Start a project with us</a></p>
+        <p><Link to="/contact" className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand">Start a project with us</Link></p>
       </div>
     </section>
   </div>

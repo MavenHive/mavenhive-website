@@ -12,7 +12,7 @@ const frontmatter = {
 }
 export default () => (
   <div>
-    <Helmet title='Projects' />
+    <Helmet title='Projects | MavenHive' />
     <div className='mw-mavenhive center ph4 mt5 pt3'>
       <h1 className="f2 normal measure-narrow">&ldquo;We deliver far more for our clients than what would be thought possible&rdquo;</h1>
     </div>
