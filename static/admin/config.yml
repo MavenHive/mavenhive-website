@@ -9,6 +9,11 @@ collections:
     files:
       - label: "Updates Page"
         name: "updates"
-        file: "content/updates.json"
+        file: "src/content/updates.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+      - label: "Test Page"
+        name: 'test'
+        file: "src/content/test/json"
         fields:
           - {label: Title, name: title, widget: string}
