@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import Member from '../components/Member'
 
-import Background from '../images/image_people.png'
+import Background from '../images/image_people.svg'
 import VideoImage from '../images/image_teamvideo.png'
 import IconPolyglot from '../icons/icon_polyglot.svg'
 import IconFlexible from '../icons/icon_flexible.svg'
@@ -31,16 +31,21 @@ export default () => (
   <div>
     <Helmet title="People | MavenHive" />
     <div
-      className="mw-mavenhive center ph4 mv5 pt3 h5 cover"
+      className="cover"
       style={{
         backgroundImage: `url(${Background})`,
         backgroundRepeat: 'no-repeat',
+        height: 0,
+        paddingBottom: '20%',
+        position: 'relative'
       }}
     >
-      <h1 className="f2 normal measure-mh-narrow">
-        &ldquo;We deliver far more for our clients than what would be thought
-        possible&rdquo;
-      </h1>
+      <div className='mw-mavenhive center ph4 mv5 pt3 h5'>
+        <h1 className="f2 normal measure-mh-narrow">
+          &ldquo;We deliver far more for our clients than what would be thought
+          possible&rdquo;
+        </h1>
+      </div>
     </div>
 
     <div className="mw-mavenhive center mt6 pa3 shadow-2">

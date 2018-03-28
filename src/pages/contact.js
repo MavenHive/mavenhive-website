@@ -1,21 +1,26 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Background from '../images/image_clienthive.png'
+import Background from '../images/image_clienthive.svg'
 
 export default () => (
   <div>
     <Helmet title="Start a project with us | MavenHive" />
     <div
-      className="mw-mavenhive center ph4 mv5 pt3 h5 cover"
+      className="cover mv5"
       style={{
         backgroundImage: `url(${Background})`,
         backgroundRepeat: 'no-repeat',
+        height: 0,
+        paddingBottom: '20%',
+        position: 'relative'
       }}
     >
-      <h1 className="f2 normal measure-mh-narrow lh-mh-1">
-        &ldquo;Start a Project with us to build awesome product&rdquo;
-      </h1>
+      <div className='mw-mavenhive center ph4 pt3 h5'>
+        <h1 className="f2 normal measure-mh-narrow lh-mh-1">
+          &ldquo;Start a Project with us to build awesome product&rdquo;
+        </h1>
+      </div>
     </div>
     <div className="mw-mavenhive center ph4 mt6 mb5">
       <h2 className="f3 normal mt0 mb4 pb3">
