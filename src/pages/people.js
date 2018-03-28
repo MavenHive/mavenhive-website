@@ -98,6 +98,7 @@ export default () => (
           twitter="http://twitter.com/apnerve"
           linkedin="http://linkedin.com/in/apnerve"
           blurb="Was one of the up-and-coming talents at MavenHive until she edited our website, promising anyone who dropped in to our offices a beer. This shameful episode cost us millions in out-of-court settlements with drop-in-ees who were given herbal tea instead. And a once-promising career has been blighted forever. Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content ."
+          key={`member-${i}`}
         />
       ))}
     </div>

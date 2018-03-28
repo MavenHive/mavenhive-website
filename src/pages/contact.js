@@ -38,7 +38,7 @@ export default () => (
           <input
             className="h-75 w-100 pa3 ba br2 b--moon-gray"
             type="text"
-            nmae="company-name"
+            name="company-name"
           />
         </div>
         <div className="h3 mv4">

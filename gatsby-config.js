@@ -10,6 +10,7 @@ module.exports = {
         path: `${__dirname}/src/pages`,
         name: "markdown-pages"
       }
-    }
+    },
+    'gatsby-plugin-netlify-cms'
   ],
 };
