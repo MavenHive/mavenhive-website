@@ -1,3 +1,57 @@
 {
-  "title": "Talks, Blogs and Events"
+  "title": "Events/Blog/Talk Updates",
+  "heading": "“What our team has been upto?…”",
+  "updates": [
+    {
+      "update": {
+        "type": "talk",
+        "title": "RubyConf India 2013 Write your ruby in Style",
+        "author": "Bhavin Javia",
+        "url": "https://youtu.be/J03pbYLeO_A"
+      }
+    },
+    {
+      "update": {
+        "type": "talk",
+        "title": "Make Ruby 'talk' to your users - literally",
+        "author": "Bhavin Javia",
+        "url": "https://youtu.be/dLp-O1w1Duw"
+      }
+    },
+    {
+      "update": {
+        "type": "event",
+        "title": "We are Silver Sponsors @ RubyConf India",
+        "content": "2018 RubyConf India is going to be at Namma Bengaluru, Welcome! The Chancery Pavilion Hotel, Bengaluru. 9-10 February 2018",
+        "author": "Bhavin",
+        "url": "http://rubyconfindia.org/#sponsor"
+      }
+    },
+    {
+      "update": {
+        "type": "talk",
+        "title": "Lightning talk - How I missed my date",
+        "author": "Manohar",
+        "url": "https://youtu.be/0MG_jrV7km4"
+      }
+    },
+    {
+      "update": {
+        "type": "blog",
+        "title": " Javascript Object, Prototype and Inheritance",
+        "content": "Most of the things we create in javascript is an object including arrays, functions",
+        "author": "shiva kumar",
+        "url": "https://blog.mavenhive.in/javascript-object-prototype-and-inheritance-9b2eb62a0503"
+      }
+    },
+    {
+      "update": {
+        "type": "blog",
+        "title": "Lessons learnt while automating People Processes",
+        "content": "It’s been a while since I blogged about my mistakes. It’s a great feeling to not have made a mistake in a long time that is worthy of going up on the blog",
+        "author": "manohar",
+        "url": "https://blog.mavenhive.in/automation-driven-development-e74c5f163f86"
+      }
+    }
+  ]
 }
