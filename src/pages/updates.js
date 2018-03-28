@@ -14,15 +14,15 @@ const NotFoundPage = () => (
 
     <div className="mb5">
       <Talk
-        title='RubyConf India 2013 Write your ruby in Style'
-        author='Bhavin Javia'
-        url='https://youtu.be/J03pbYLeO_A'
+        title="RubyConf India 2013 Write your ruby in Style"
+        author="Bhavin Javia"
+        url="https://youtu.be/J03pbYLeO_A"
       />
       <Blog
-        title='Javascript Object, Prototype and Inheritance'
-        content='Most of the things we create in javascript is an object including arrays, functions.'
-        url='https://blog.mavenhive.in/javascript-object-prototype-and-inheritance-9b2eb62a0503'
-        author='shiva kumar'
+        title="Javascript Object, Prototype and Inheritance"
+        content="Most of the things we create in javascript is an object including arrays, functions."
+        url="https://blog.mavenhive.in/javascript-object-prototype-and-inheritance-9b2eb62a0503"
+        author="shiva kumar"
       />
     </div>
   </div>

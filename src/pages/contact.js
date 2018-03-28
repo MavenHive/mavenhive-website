@@ -13,10 +13,10 @@ export default () => (
         backgroundRepeat: 'no-repeat',
         height: 0,
         paddingBottom: '20%',
-        position: 'relative'
+        position: 'relative',
       }}
     >
-      <div className='mw-mavenhive center ph4 pt3 h5'>
+      <div className="mw-mavenhive center ph4 pt3 h5">
         <h1 className="f2 normal measure-mh-narrow lh-mh-1">
           &ldquo;Start a Project with us to build awesome product&rdquo;
         </h1>

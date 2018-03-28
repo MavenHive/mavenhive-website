@@ -21,8 +21,8 @@ const IndexPage = () => (
         </p>
         <p>
           <Link
-            to='/projects'
-            className='dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand'
+            to="/projects"
+            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
           >
             See what we have built
           </Link>

@@ -37,10 +37,10 @@ export default () => (
         backgroundRepeat: 'no-repeat',
         height: 0,
         paddingBottom: '20%',
-        position: 'relative'
+        position: 'relative',
       }}
     >
-      <div className='mw-mavenhive center ph4 mv5 pt3 h5'>
+      <div className="mw-mavenhive center ph4 mv5 pt3 h5">
         <h1 className="f2 normal measure-mh-narrow">
           &ldquo;We deliver far more for our clients than what would be thought
           possible&rdquo;
