@@ -22,8 +22,7 @@ export default () => (
         &ldquo;We build solution for users problems.&rdquo;
       </h1>
       <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
-        We combine our software and product craftsmanship with our client’s
-        disruptive ideas to achieve their business goals with high ROI
+        We combine our software and product craftsmanship with our client’s disruptive ideas to achieve their business goals with high ROI
       </p>
     </section>
 
@@ -80,7 +79,7 @@ export default () => (
       </div>
       <div className='tc'>
         <p className='mh-light-gray f3 lh-copy'>We have perfect team of rockstars to assist you transform your ambitions into success and your idea into an enterprise can be hard work.</p>
-        <Link to='/projects' className='mh-gray dib link f-1 pv1 ph4 ba br2 tc w-100 w-auto-ns bg-white'>See what we have built</Link>
+        <Link to='/projects' className='mh-gray dib link f-1 pv2 ph4 ba br2 b--silver tc w-100 w-auto-ns bg-white'>See what we have built</Link>
       </div>
     </section>
 
