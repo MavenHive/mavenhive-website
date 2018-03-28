@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: apnerve/mavenhive
+  name: git-gateway
 
 media_folder: static/img
 
