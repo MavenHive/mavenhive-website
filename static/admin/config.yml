@@ -8,13 +8,29 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Updates Page"
+      - label: "Updates"
         name: "updates"
         file: "src/content/updates.json"
         fields:
           - {label: Title, name: title, widget: string}
-      - label: "Test Page"
-        name: 'test'
-        file: "src/content/test/json"
-        fields:
+          - {label: Page Heading, name: heading, widget: string}
+          - label: "Updates"
+            name: "updates"
+            widget: "list"
+            fields:
+              - label: "Update"
+                name: "update"
+                widget: "object"
+                fields:
+                  - {label: Type, name: type, widget: select, options: ['talk', 'event', 'blog']}
+                  - {label: Title, name: title, widget: string}
+                  - {label: Content, name: content, widget: text, required: false}
+                  - {label: Author, name: author, widget: string}
+                  - {label: URL, name: url, widget: string}
+      - label: "Home"
+        name: "home"
+        file: "src/content/home.json"
+        fileds:
           - {label: Title, name: title, widget: string}
+          - {label: Page Heading, name: heading, widget: string}
+          - {label: Sub Heading, name: sub-heading, widget: text}
