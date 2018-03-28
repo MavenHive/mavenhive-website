@@ -9,7 +9,7 @@ collections:
     files:
       - label: "Updates Page"
         name: "updates"
-        file: "src/content/updates.json"
+        file: "src/content/updates.yml"
         fields:
           - {label: Title, name: title, widget: string}
       - label: "Test Page"
