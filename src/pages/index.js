@@ -20,12 +20,12 @@ const IndexPage = () => (
           disruptive ideas to achieve business goals with high ROI.
         </p>
         <p>
-          <a
-            href="#"
-            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
+          <Link
+            to='/projects'
+            className='dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand'
           >
             See what we have built
-          </a>
+          </Link>
         </p>
       </div>
     </section>

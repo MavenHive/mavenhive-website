@@ -15,8 +15,7 @@ const TemplateWrapper = ({ children }) => (
           name: 'description',
           content:
             "We combine our software and product craftsmanship with our client's disruptive ideas to achieve business goals with high ROI",
-        },
-        { name: 'keywords', content: '' },
+        }
       ]}
     >
       <link

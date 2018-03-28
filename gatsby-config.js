@@ -10,7 +10,6 @@ module.exports = {
         path: `${__dirname}/src/pages`,
         name: "markdown-pages"
       }
-    },
-    'gatsby-transformer-remark'
+    }
   ],
 };
