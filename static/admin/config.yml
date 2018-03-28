@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  branch: development
 
 media_folder: static/img
 
@@ -9,7 +10,7 @@ collections:
     files:
       - label: "Updates Page"
         name: "updates"
-        file: "src/content/updates.yml"
+        file: "src/content/updates.json"
         fields:
           - {label: Title, name: title, widget: string}
       - label: "Test Page"
