@@ -122,7 +122,6 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Page Heading, name: heading, widget: string}
           - {label: Sub Heading, name: sub-heading, widget: text}
-          - {}
           - label: Features
             name: features
             widget: list

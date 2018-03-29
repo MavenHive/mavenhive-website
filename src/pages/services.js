@@ -6,6 +6,8 @@ import IconTechnology from '../icons/icon_technology.svg'
 import IconGrowth from '../icons/icon_growth.svg'
 import IconInnovation from '../icons/icon_innovation.svg'
 
+import page from '../content/services.json'
+
 const frontmatter = {
   cta: {
     title: 'title',
@@ -16,15 +18,10 @@ const frontmatter = {
 }
 export default () => (
   <div>
-    <Helmet title="Services | MavenHive" />
+    <Helmet title={`${page.title} | MavenHive`} />
     <section className="mw-mavenhive center ph4 mt5 pt3">
-      <h1 className="f2 normal">
-        &ldquo;We build solution for users problems.&rdquo;
-      </h1>
-      <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
-        We combine our software and product craftsmanship with our client’s
-        disruptive ideas to achieve their business goals with high ROI
-      </p>
+      <h1 className="f2 normal">{page.heading}</h1>
+      <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">{page['sub-heading']}</p>
     </section>
 
     <section className="mw-mavenhive center ph4 pv3 pv4-ns tc mb5">
@@ -66,70 +63,34 @@ export default () => (
     </section>
 
     <section className="mw8 center mb5 ph5">
-      <div className="mb5">
-        <h3 className="f3">Tech Partnership</h3>
-        <p className="f5 mh-gray lh-mh-1">
-          Some dummy text ….. “Consistent delivery with high quality and
-          productivityContinual growth and extraordinary performance are the
-          only true measures of success.” This philosophy is hard coded into our
-          work ethic. With these goals in our sights we persistently work hard
-          to deliver bespoke software for our clients.perfect for the fruitful
-          realisation of your ideas.{' '}
-        </p>
-      </div>
-      <div className="mb5">
-        <h3 className="f3">Enablement</h3>
-        <p className="f5 mh-gray lh-mh-1">
-          Some dummy text ….. “Consistent delivery with high quality and
-          productivityContinual growth and extraordinary performance are the
-          only true measures of success.” This philosophy is hard coded into our
-          work ethic. With these goals in our sights we persistently work hard
-          to deliver bespoke software for our clients.perfect for the fruitful
-          realisation of your ideas.{' '}
-        </p>
-      </div>
-      <div className="mb5">
-        <h3 className="f3">Innovation</h3>
-        <p className="f5 mh-gray lh-mh-1">
-          Some dummy text ….. “Consistent delivery with high quality and
-          productivityContinual growth and extraordinary performance are the
-          only true measures of success.” This philosophy is hard coded into our
-          work ethic. With these goals in our sights we persistently work hard
-          to deliver bespoke software for our clients.perfect for the fruitful
-          realisation of your ideas.{' '}
-        </p>
-      </div>
+      {page.features.map((feature, i) => {
+        return (
+          <div className="mb5" key={`feature-${i}`}>
+            <h3 className="f3">{feature.heading}</h3>
+            <p className="f5 mh-gray lh-mh-1">{feature.content}</p>
+          </div>
+        )
+      })}
       <div className="tc">
-        <p className="mh-light-gray f3 lh-copy">
-          We have perfect team of rockstars to assist you transform your
-          ambitions into success and your idea into an enterprise can be hard
-          work.
-        </p>
+        <p className="mh-light-gray f3 lh-copy">{page.cta1.content}</p>
         <Link
-          to="/projects"
+          to={page.cta1.button.link}
           className="mh-gray dib link f-1 pv2 ph4 ba br2 b--silver tc w-100 w-auto-ns bg-white"
-        >
-          See what we have built
-        </Link>
+        >{page.cta1.button.label}</Link>
       </div>
     </section>
 
     <section className="pv4-ns bg-navy white tc">
       <div className="mw8 center ph4 pv3 ph5-l">
-        <h3 className="ttu mb4 f4 lh-title">Let’s craft awesome products!</h3>
+        <h3 className="ttu mb4 f4 lh-title">{page.cta.heading}</h3>
         <div className="measure-mh center lh-copy f-1 mb4 mb5-l">
-          <p>
-            We combine our software and product craftsmanship with our client’s
-            disruptive ideas to achieve their business goals with high ROI.
-          </p>
+          <p>{page.cta.content}</p>
         </div>
         <p>
           <Link
-            to="/contact"
+            to={page.cta.button.link}
             className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
-          >
-            Start a project with Us
-          </Link>
+          >{page.cta.button.label}</Link>
         </p>
       </div>
     </section>
