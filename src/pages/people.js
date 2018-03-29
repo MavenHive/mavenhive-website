@@ -11,6 +11,8 @@ import IconFlexible from '../icons/icon_flexible.svg'
 import IconExperienced from '../icons/icon_experienced.svg'
 import IconSkeptical from '../icons/icon_skeptical.svg'
 
+import people from '../content/people.json'
+
 const frontmatter = {
   cta: {
     title: 'title',
@@ -29,7 +31,7 @@ const Feature = ({ icon, title, description }) => (
 
 export default () => (
   <div>
-    <Helmet title="People | MavenHive" />
+    <Helmet title={`${people.title} | MavenHive`} />
     <div
       className="cover"
       style={{
@@ -41,10 +43,7 @@ export default () => (
       }}
     >
       <div className="mw-mavenhive center ph4 mv5 pt3 h5">
-        <h1 className="f2 normal measure-mh-narrow">
-          &ldquo;We deliver far more for our clients than what would be thought
-          possible&rdquo;
-        </h1>
+        <h1 className="f2 normal measure-mh-narrow">{people.heading}</h1>
       </div>
     </div>
 
@@ -88,39 +87,31 @@ export default () => (
 
     <div className="mw-mavenhive center mt3 pa4 mb6">
       <h2 className="f3 ttu tc mh-gray normal mb4 tracked">Our Team</h2>
-      {[90, 94, 81, 85].map((id, i) => (
+      {people.team.map((member, i) => {
+        const person = member.member
+        return (
         <Member
-          name="Name"
-          role="Senior Associate"
-          avatar={`https://randomuser.me/api/portraits/${
-            i % 2 ? 'men' : 'women'
-          }/${id}.jpg`}
-          twitter="http://twitter.com/apnerve"
-          linkedin="http://linkedin.com/in/apnerve"
-          blurb="Was one of the up-and-coming talents at MavenHive until she edited our website, promising anyone who dropped in to our offices a beer. This shameful episode cost us millions in out-of-court settlements with drop-in-ees who were given herbal tea instead. And a once-promising career has been blighted forever. Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content ."
-          key={`member-${i}`}
+          name={person.name}
+          role={person.role}
+          avatar={person.avatar}
+          twitter={person.twitter}
+          linkedin={person.linkedin}
+          blurb={person.blurb}
+          key={`person-${i}`}
         />
-      ))}
+      )})}
     </div>
     <section className="pv4-ns bg-brand white tc">
       <div className="mw-mavenhive center ph4 pv2 ph5-l">
-        <h3 className="mb3 f4 lh-title">We are always Hiring!!</h3>
+        <h3 className="mb3 f4 lh-title">{people.cta.heading}</h3>
         <div className="lh-copy f-1 mb4 pb2 ph5-l">
-          <p>
-            We have a saying at MavenHive, “We are always Hiring!”<br /> That’s
-            not because we are in need of more warm bodies to bill to clients !
-            But, because it is so difficult to find the right people to work
-            with that you have to constantly be on the lookout for the next
-            perfect fit.
-          </p>
+          <p>{people.cta.content}</p>
         </div>
         <p>
           <Link
-            to="/careers"
+            to={people.cta.button.link}
             className="dib link f-1 pv1 ph4 br2 fw5 tc w-100 w-auto-ns white ba"
-          >
-            Join our Team
-          </Link>
+          >{people.cta.button.label}</Link>
         </p>
       </div>
     </section>

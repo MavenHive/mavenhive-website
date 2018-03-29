@@ -3,6 +3,7 @@ backend:
   branch: development
 
 media_folder: "static/img"
+public_folder: "/img"
 
 collections:
   - label: "Pages"
