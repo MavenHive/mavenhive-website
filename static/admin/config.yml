@@ -2,12 +2,99 @@ backend:
   name: git-gateway
   branch: development
 
-media_folder: static/img
+media_folder: "static/img"
 
 collections:
   - label: "Pages"
     name: "pages"
     files:
+      - label: "Projects"
+        name: "projects"
+        file: "src/content/projects.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Page Heading, name: heading, widget: string}
+          - {label: Sub Heading, name: sub-heading, widget: text}
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Client, name: client, widget: string}
+              - {label: Services, name: services, widget: string}
+              - {label: Summary, name: summary, widget: text}
+              - {label: Details, name: details, widget: text}
+          - label: "Showcase"
+            name: "showcase"
+            widget: "object"
+            fields:
+              - {label: Heading, name: heading, widget: text}
+              - {label: URL, name: url, widget: string}
+          - label: "Call to action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Content, name: content, widget: markdown}
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - {label: Label, name: label, widget: string}
+                  - {label: Link to, name: link, widget: string}
+      - label: "People"
+        name: "people"
+        file: "src/content/people.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Page Heading, name: heading, widget: string}
+          - {label: Cover, name: cover, widget: image}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - label: Member
+                name: member
+                widget: object
+                fields:
+                  - {label: Avatar, name: avatar, widget: image}
+                  - {label: Name, name: name, widget: string}
+                  - {label: Role, name: role, widget: string}
+                  - {label: Blurb, name: blurb, widget: text}
+                  - {label: Twitter URL, name: twitter, widget: string}
+                  - {label: Linkedin URL, name: linkedin, widget: string}
+          - label: Call to action
+            name: cta
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Content, name: content, widget: markdown}
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - {label: Label, name: label, widget: string}
+                  - {label: Link to, name: link, widget: string}
+      - label: Alumni
+        name: alumni
+        file: "src/content/alumni.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Page Heading, name: heading, widget: string}
+          - label: Alumni
+            name: alumni
+            widget: list
+            fields:
+              - label: Member
+                name: member
+                widget: object
+                fields:
+                  - {label: Avatar, name: avatar, widget: image}
+                  - {label: Name, name: name, widget: string}
+                  - {label: Role, name: role, widget: string}
+                  - {label: Blurb, name: blurb, widget: text}
+                  - {label: Twitter URL, name: twitter, widget: string}
+                  - {label: Linkedin URL, name: linkedin, widget: string}
       - label: "Updates"
         name: "updates"
         file: "src/content/updates.json"
@@ -27,10 +114,3 @@ collections:
                   - {label: Content, name: content, widget: text, required: false}
                   - {label: Author, name: author, widget: string}
                   - {label: URL, name: url, widget: string}
-      - label: "Home"
-        name: "home"
-        file: "src/content/home.json"
-        fileds:
-          - {label: Title, name: title, widget: string}
-          - {label: Page Heading, name: heading, widget: string}
-          - {label: Sub Heading, name: sub-heading, widget: text}

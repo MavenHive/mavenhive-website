@@ -9,7 +9,7 @@ import './index.css'
 const TemplateWrapper = ({ children }) => (
   <div className="flex flex-column min-vh-100">
     <Helmet
-      title="MavenHive"
+      title="MavenHive - Trusted companion for your product journey"
       meta={[
         {
           name: 'description',
