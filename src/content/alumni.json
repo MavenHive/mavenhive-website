@@ -1,1 +1,16 @@
-{}
+{
+  "title": "Alumni",
+  "heading": "Alumni",
+  "alumni": [
+    {
+      "member": {
+        "avatar": "/static/img/22.jpg",
+        "name": "Jane Doe",
+        "role": "Senior Associate",
+        "blurb": "Was one of the up-and-coming talents at MavenHive until she edited our website, promising anyone who dropped in to our offices a beer. This shameful episode cost us millions in out-of-court settlements with drop-in-ees who were given herbal tea instead. And a once-promising career has been blighted forever. Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content .",
+        "twitter": "https://twitter.com/apnerve",
+        "linkedin": "https://linkedin.com/in/apnerve"
+      }
+    }
+  ]
+}
