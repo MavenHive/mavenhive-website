@@ -11,6 +11,15 @@
         "twitter": "https://twitter.com/apnerve",
         "linkedin": "https://linkedin.com/in/apnerve"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/jake_h.jpg",
+        "name": "Jake test",
+        "role": "Role test",
+        "blurb": "some blurb to be provided here",
+        "linkedin": "https://www.linkedin.com/in/anandhakrishnanj"
+      }
     }
   ]
 }
