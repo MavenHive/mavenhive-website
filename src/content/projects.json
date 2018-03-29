@@ -1,1 +1,33 @@
-{}
+{
+  "title": "Projects",
+  "heading": "“We have worked in all major domains.”",
+  "sub-heading": "E-commerce, Fintech, Telecom, Non Profit, Real Estate, Social Media, Sports & Fitness, Non-Profit, Marketing, Consulting and many more…",
+  "projects": [
+    {
+      "heading": "The Non-profit MVP story",
+      "client": "GRASSHOPPER",
+      "services": "PRODUCT DESIGN AND DEVELOPMENT",
+      "summary": "A US client’s MVP built by a 3 person team and launched in 6 months resulted in $1M+ funding",
+      "details": "Grasshopper is a US based 13+ years old company providing cloud based telephony services to startups. They wanted to enter international markets and expand. But their decade old system was not scaling. So they wanted to re-architect and rebuild their core system. MicroService Architecture. API based system. Adhersion."
+    },
+    {
+      "heading": "Training for Grads",
+      "client": "THOUGHTWORKS",
+      "services": "TRAINING",
+      "summary": "Some catchy text to define MavenHive teams work there.",
+      "details": "Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work."
+    }
+  ],
+  "showcase": {
+    "heading": "“Watch the GrassHopper team share how MavenHive helped them build and launch the international version of their core telephony product”",
+    "url": "https://youtu.be/uvlo4LO8P90"
+  },
+  "cta": {
+    "heading": "LET’S CRAFT AWESOME PRODUCTS!",
+    "content": "We combine our software and product craftsmanship with our client’s disruptive ideas to achieve their business goals with high ROI.",
+    "button": {
+      "label": "Start a project with Us",
+      "link": "/contact"
+    }
+  }
+}
