@@ -12,22 +12,22 @@ export default ({ name, role, avatar, blurb, twitter, linkedin }) => (
       <h2 className="f6 ma0">{name}</h2>
       <p className="lh-copy f6 mh-light-gray mv2">{role}</p>
       <p className="lh-copy f6 mt0 pr4">{blurb}</p>
-      <p>
-        <a target="_blank" href={twitter}>
+      {(twitter || linkedin) && <p>
+        {twitter && <a target="_blank" href={twitter}>
           <img
             className="w1 h1 mr2"
             src={TwitterIcon}
             alt="link to twitter profile"
           />
-        </a>{' '}
-        <a target="_blank" href={linkedin}>
+        </a>}
+        {linkedin && <a target="_blank" href={linkedin}>
           <img
             className="w1 h1"
             src={LinkedinIcon}
             alt="link to linkedin profile"
           />
-        </a>
-      </p>
+        </a>}
+      </p>}
     </div>
   </div>
 )

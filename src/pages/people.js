@@ -89,6 +89,7 @@ export default () => (
       <h2 className="f3 ttu tc mh-gray normal mb4 tracked">Our Team</h2>
       {people.team.map((member, i) => {
         const person = member.member
+        if (!person) return null
         return (
         <Member
           name={person.name}
