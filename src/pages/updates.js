@@ -4,11 +4,11 @@ import updates from '../content/updates.json'
 
 import { Talk, Blog, Event } from '../components/Updates'
 
-const getComponent = function (type) {
+const getComponent = function(type) {
   const components = {
     talk: Talk,
     blog: Blog,
-    event: Event
+    event: Event,
   }
   return components[type]
 }
@@ -23,12 +23,14 @@ const Updates = () => (
     <div className="mb5">
       {updates.updates.map((update, i) => {
         const Update = getComponent(update.update.type)
-        return <Update
-          title={update.update.title}
-          author={update.update.author}
-          url={update.update.url}
-          key={`update-${i}`}
-        />
+        return (
+          <Update
+            title={update.update.title}
+            author={update.update.author}
+            url={update.update.url}
+            key={`update-${i}`}
+          />
+        )
       })}
     </div>
   </div>

@@ -21,7 +21,8 @@ export default () => {
             blurb={person.blurb}
             key={`alumni-${i}`}
           />
-      )})}
+        )
+      })}
     </div>
   )
 }

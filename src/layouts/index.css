@@ -85,7 +85,7 @@ h1 {
   padding-bottom: 14px;
 }
 
-.link:focus {
+*:focus {
   outline: none !important;
 }
 

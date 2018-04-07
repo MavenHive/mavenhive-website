@@ -13,7 +13,13 @@ const Update = ({ type, thumbnail, title, content, url, author }) => {
       href={url}
     >
       {thumbnail && (
-        <img className="mr3" src={thumbnail} alt="" width="160" height="90" />
+        <img
+          className="mr3 bg-light-gray"
+          src={thumbnail}
+          alt=""
+          width="160"
+          height="90"
+        />
       )}
       <div>
         <h3 className="mt0 mb2 f4">

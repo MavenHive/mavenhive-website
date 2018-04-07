@@ -21,7 +21,9 @@ export default () => (
     <Helmet title={`${page.title} | MavenHive`} />
     <section className="mw-mavenhive center ph4 mt5 pt3">
       <h1 className="f2 normal">{page.heading}</h1>
-      <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">{page['sub-heading']}</p>
+      <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
+        {page['sub-heading']}
+      </p>
     </section>
 
     <section className="mw-mavenhive center ph4 pv3 pv4-ns tc mb5">
@@ -76,7 +78,9 @@ export default () => (
         <Link
           to={page.cta1.button.link}
           className="mh-gray dib link f-1 pv2 ph4 ba br2 b--silver tc w-100 w-auto-ns bg-white"
-        >{page.cta1.button.label}</Link>
+        >
+          {page.cta1.button.label}
+        </Link>
       </div>
     </section>
 
@@ -90,7 +94,9 @@ export default () => (
           <Link
             to={page.cta.button.link}
             className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
-          >{page.cta.button.label}</Link>
+          >
+            {page.cta.button.label}
+          </Link>
         </p>
       </div>
     </section>

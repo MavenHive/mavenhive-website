@@ -91,16 +91,17 @@ export default () => (
         const person = member.member
         if (!person) return null
         return (
-        <Member
-          name={person.name}
-          role={person.role}
-          avatar={person.avatar}
-          twitter={person.twitter}
-          linkedin={person.linkedin}
-          blurb={person.blurb}
-          key={`person-${i}`}
-        />
-      )})}
+          <Member
+            name={person.name}
+            role={person.role}
+            avatar={person.avatar}
+            twitter={person.twitter}
+            linkedin={person.linkedin}
+            blurb={person.blurb}
+            key={`person-${i}`}
+          />
+        )
+      })}
     </div>
     <section className="pv4-ns bg-brand white tc">
       <div className="mw-mavenhive center ph4 pv2 ph5-l">
@@ -112,7 +113,9 @@ export default () => (
           <Link
             to={people.cta.button.link}
             className="dib link f-1 pv1 ph4 br2 fw5 tc w-100 w-auto-ns white ba"
-          >{people.cta.button.label}</Link>
+          >
+            {people.cta.button.label}
+          </Link>
         </p>
       </div>
     </section>

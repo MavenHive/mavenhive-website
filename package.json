@@ -13,7 +13,8 @@
     "lodash.capitalize": "^4.2.1",
     "lodash.startcase": "^4.4.0",
     "lodash.upperfirst": "^4.3.1",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-modal": "^3.3.2"
   },
   "keywords": [
     "gatsby"
