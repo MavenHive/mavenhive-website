@@ -11,7 +11,7 @@ import YoutubeIcon from '../../icons/youtube.svg'
 const Footer = () => {
   // Can manage footer links here
   return (
-    <footer className="h3-l pv2 content-box bt b--light-gray">
+    <footer className="h3-l pv2 content-box">
       <div className="mw-mavenhive center ph4 flex-l items-center justify-between h-100 tc tl-l">
         <Link className="dib link ma2 mr4-l" to="/">
           <img src={Logo} alt="mavenhive logo" />

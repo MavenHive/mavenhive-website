@@ -72,9 +72,17 @@ h1 {
 .mh-mid-gray {
   color: #E1E1E1;
 }
+.mh-blue {
+  color: #4A90E2;
+}
 
 .img-member {
   flex: 0 0 8rem;
+}
+
+.hiring-link {
+  background: no-repeat center bottom;
+  padding-bottom: 14px;
 }
 
 .link:focus {
