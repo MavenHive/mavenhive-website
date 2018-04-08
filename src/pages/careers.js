@@ -138,7 +138,7 @@ class NotFoundPage extends Component {
             allowFullScreen
           />
           <button
-            className="f3 w2 h2 absolute right--1 top--1 br-100 bg-dark-red white bw0 pointer"
+            className="f3 w2 h2 absolute right--1 top--1 br-100 bg-brand white bw0 pointer"
             onClick={this.handleCloseModal}
           >
             &times;
