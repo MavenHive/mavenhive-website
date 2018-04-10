@@ -3,6 +3,7 @@ import React from 'react'
 import startcase from 'lodash.startcase'
 import upperfirst from 'lodash.upperfirst'
 import getYoutubeId from 'get-youtube-id'
+import Video from '../Video'
 
 const Update = ({ type, thumbnail, title, content, url, author }) => {
   // const
@@ -37,7 +38,7 @@ const Blog = props => <Update type="blog" {...props} />
 const Talk = props => {
   const id = getYoutubeId(props.url)
   const thumbnail = `https://i1.ytimg.com/vi/${id}/mqdefault.jpg`
-  return <Update type="talk" thumbnail={thumbnail} {...props} />
+  return <Video url={`https://youtube.com/embed/${id}`} ><Update type="talk" thumbnail={thumbnail} {...props} /></Video>
 }
 
 const Event = props => <Update type="event" {...props} />

@@ -5,6 +5,8 @@ import ReactModal from 'react-modal'
 import videoImage from '../images/image_pitchvideo.png'
 import hiringIcon from '../icons/line.svg'
 
+import page from '../content/careers.json'
+
 class Careers extends Component {
   constructor() {
     super()
@@ -30,10 +32,10 @@ class Careers extends Component {
   render() {
     return (
       <div className="ph4 center mt2 pt3">
-        <Helmet title="Join us | MavenHive" />
+        <Helmet title={`${page.title} | MavenHive`} />
         <div className="mw-mavenhive center bg-mh-gray pt4 tc mb3">
           <h1 className="f2 lh-title mv5">
-            “We are constantly looking for ways to improve our{' '}
+            {page.heading}
             <a
               className="link black hiring-link"
               href="https://blog.mavenhive.in/"

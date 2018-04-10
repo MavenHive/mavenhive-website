@@ -7,18 +7,15 @@ import IconTechnology from '../icons/icon_technology.svg'
 import IconGrowth from '../icons/icon_growth.svg'
 import IconInnovation from '../icons/icon_innovation.svg'
 
+import page from '../content/home.json'
+
 const IndexPage = () => (
   <div>
     <section className="mw-mavenhive center ph4 pv3 pt4-l mt3-l flex-l items-center justify-between tc tl-l">
       <img className="order-1" src={Illustration} alt="" />
       <div>
-        <h1 className="f2 normal">
-          Trusted companion for your product journey
-        </h1>
-        <p className="measure measure-wide-l lh-copy f4 mb4 mb5-l">
-          We combine our software and product craftsmanship with our client’s
-          disruptive ideas to achieve business goals with high ROI.
-        </p>
+        <h1 className="f2 normal">{page.heading}</h1>
+        <p className="measure measure-wide-l lh-copy f4 mb4 mb5-l">{page['sub-heading']}</p>
         <p>
           <Link
             to="/projects"
