@@ -151,3 +151,21 @@ collections:
                 fields:
                   - {label: Label, name: label, widget: string}
                   - {label: Link to, name: link, widget: string}
+      - label: "Careers"
+        name: "careers"
+        file: "src/content/careers.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Page Heading, name: heading, widget: string}
+      - label: "Home"
+        name: "home"
+        file: "src/content/home.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Page Heading, name: heading, widget: string}
+      - label: "Contact"
+        name: "contact"
+        file: "src/content/contact.json"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Page Heading, name: heading, widget: string}

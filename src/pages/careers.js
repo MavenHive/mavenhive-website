@@ -5,7 +5,7 @@ import ReactModal from 'react-modal'
 import videoImage from '../images/image_pitchvideo.png'
 import hiringIcon from '../icons/line.svg'
 
-class NotFoundPage extends Component {
+class Careers extends Component {
   constructor() {
     super()
     this.state = {
@@ -149,4 +149,4 @@ class NotFoundPage extends Component {
   }
 }
 
-export default NotFoundPage
+export default Careers

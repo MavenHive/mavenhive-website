@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import './index.css'
+import './mavenhive.css'
 
 const TemplateWrapper = ({ children }) => (
   <div className="flex flex-column min-vh-100">
