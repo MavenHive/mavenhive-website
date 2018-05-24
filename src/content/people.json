@@ -12,6 +12,24 @@
         "twitter": "https://twitter.com/apnerve",
         "linkedin": "https://linkedin.com/in/apnerve"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/screen shot 2018-05-24 at 10.21.11 am.png",
+        "name": "Sneha Koti",
+        "role": "Senior Associate",
+        "blurb": "MavenHive used to be an idyllic commune of trusting mavens working in harmony. And then she joined us. We now have a generally distrustful atmosphere replete with hot-dogging and vote fudging. Will post a blurb as soon as our official PR person can find his laptop, which he had forgotten to chain to his desk."
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/screen shot 2018-05-24 at 10.23.14 am.png",
+        "name": "Chetan K",
+        "role": "Senior Associate",
+        "blurb": "Likes to code. and many more ...",
+        "twitter": "https://twitter.com/chetan_kothari",
+        "linkedin": "https://www.linkedin.com/in/kotharichetan/"
+      }
     }
   ],
   "cta": {
