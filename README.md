@@ -1,26 +1,11 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Mavenhive Website
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+## Setup
 
-## Install
+* Unzip the file and run `npm install` to install all the dependencies. 
+* Run `npm run build` to build the site ( or `npm run develop` to start the development mode)
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
+## Libraries used
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-npm run develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+* [GatsbyJS](https://www.gatsbyjs.org/) - A static site generator for React
+* [TachyonsCSS](https://tachyons.io/) - A functional CSS Toolkit
