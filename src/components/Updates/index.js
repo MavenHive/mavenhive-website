@@ -9,7 +9,7 @@ const Update = ({ type, thumbnail, title, content, url, author }) => {
   // const
   return (
     <a
-      className={`db link black dim mv3 pv3 ${thumbnail ? 'flex' : ''}`}
+      className={`db link black dim mv3 pv3 ${thumbnail ? 'flex-ns' : ''}`}
       target="_blank"
       href={url}
     >

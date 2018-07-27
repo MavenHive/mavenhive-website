@@ -4,14 +4,14 @@ import TwitterIcon from '../../icons/twitter-profile.svg'
 import LinkedinIcon from '../../icons/linkedin-profile.svg'
 
 export default ({ name, role, avatar, blurb, twitter, linkedin }) => (
-  <div className="flex mv3">
+  <div className="flex-l mv4 tc tl-l">
     <div className="img-member">
-      <img className="br-100 w4" src={avatar} />
+      <img className="br-100 w4 h4" src={avatar} />
     </div>
-    <div className="w-90 pl3">
+    <div className="mw8 pl3-l">
       <h2 className="f6 ma0">{name}</h2>
       <p className="lh-copy f6 mh-light-gray mv2">{role}</p>
-      <p className="lh-copy f6 mt0 pr4">{blurb}</p>
+      <p className="lh-copy f6 mt0 pr4-l">{blurb}</p>
       {(twitter || linkedin) && (
         <p>
           {twitter && (

@@ -40,13 +40,18 @@ class Video extends Component {
     const { url, VideoIcon } = this.props
     return (
       <a
+        className="db"
+        style={{
+          boxShadow: 'inset 0 -6px 4px -3px rgba(0, 0, 0, 0.2), 0 5px 10px -3px rgba(0, 0, 0, 0.1)',
+          overflow: 'hidden'
+        }}
         href={url}
         onClick={e => {
           e.preventDefault()
           this.handleOpenModal()
         }}
       >
-        <img src={VideoIcon} alt="" />
+        <img style={{marginBottom: '-3px'}} src={VideoIcon} alt="" />
         <ReactModal
           isOpen={this.state.showModal}
           onRequestClose={this.handleCloseModal}
@@ -76,7 +81,7 @@ class Video extends Component {
 }
 
 const Feature = ({ icon, title, description }) => (
-  <div className="tc mw5 ph2">
+  <div className="tc mw5 ph2 center mt5 mt0-l">
     <img className="w2" src={icon} alt="" />
     <h3 className="f6 mb2">{title}</h3>
     <p className="f6 lh-copy ma0">{description}</p>

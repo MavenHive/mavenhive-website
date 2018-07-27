@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 import Background from '../images/image_clienthive.svg'
+import FormBackground from '../images/image_lauchpad.png'
 
 export default () => (
   <div>
@@ -22,7 +23,11 @@ export default () => (
         </h1>
       </div>
     </div>
-    <div className="mw-mavenhive center ph4 mt6 mb5">
+    <div className="mw-mavenhive center ph4 mt6 mb5" style={{
+      backgroundImage: `url(${FormBackground})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'right top'
+    }}>
       <h2 className="f3 normal mt0 mb4 pb3">
         Please add your project details, we will get back to you
       </h2>

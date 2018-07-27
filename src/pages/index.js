@@ -2,10 +2,15 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Clients from '../components/Clients'
 
-import Illustration from '../images/Bulb_illustration.png'
+import Illustration from '../images/image_illustration.svg'
 import IconTechnology from '../icons/icon_technology.svg'
 import IconGrowth from '../icons/icon_growth.svg'
 import IconInnovation from '../icons/icon_innovation.svg'
+import IconMVP from '../icons/icon_mvp.svg'
+import IconRearchitect from '../icons/icon_rearchitect.svg'
+import IconEstablishment from '../icons/icon_establishment.svg'
+import IconStart from '../icons/icon_start.svg'
+import IconArrow from '../icons/icon_arrow.png'
 
 import page from '../content/home.json'
 
@@ -31,6 +36,31 @@ const IndexPage = () => (
         <h1 className="f3 mb4 pb4-l normal">
           We are a team of imaginators helping business at all stages of growth
         </h1>
+        <div style={{
+          overflow: 'auto',
+        }}>
+          <ul className="relative list pa0 ma0 flex justify-between items-end w-100 h-100 mb4 mh-gray tracked-mh f5" style={{
+            width: '840px',
+            height: '120px',
+            marginLeft: 'auto',
+            marginRight: 'auto'
+          }}>
+            <li className="absolute bt bw1 flex justify-around mh-gray" style={{
+              top: 'calc(50% - 0.5rem)',
+              right: '0',
+              left: '0',
+              zIndex: '0',
+            }}>
+              <img width="11" height="21" src={IconArrow} alt="" style={{marginTop: '-11px'}} />
+              <img width="11" height="21" src={IconArrow} alt="" style={{marginTop: '-11px'}} />
+              <img width="11" height="21" src={IconArrow} alt="" style={{marginTop: '-11px'}} />
+            </li>
+            <li className="relative"><img className="db center mb2 pb1" src={IconMVP} width="75" height="75" alt="" />MVP</li>
+            <li className="relative"><img className="db center mb2 pb1" src={IconRearchitect} width="75" height="75" alt="" />Re-Architecture</li>
+            <li className="relative"><img className="db center mb2 pb1" src={IconEstablishment} width="75" height="75" alt="" />Establishment</li>
+            <li className="relative"><img className="db center mb2 pb1" src={IconStart} width="75" height="75" alt="" />Start</li>
+          </ul>
+        </div>
         <div className="flex-l justify-between mh-gray tracked-mh">
           <div className="mv4 w-third-l ph3-l pl5-l pr4-l">
             <h3 className="f5">MVP</h3>

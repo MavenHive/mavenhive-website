@@ -39,10 +39,13 @@ class Careers extends Component {
             <a
               className="link black hiring-link"
               href="https://blog.mavenhive.in/"
-              style={{ backgroundImage: `url(${hiringIcon})` }}
+              style={{
+                backgroundImage: `url(${hiringIcon})`,
+                whiteSpace: 'nowrap'
+              }}
             >
-              hiring process
-            </a>”
+              hiring process”
+            </a>
           </h1>
           <a
             className="link dib"
@@ -56,7 +59,7 @@ class Careers extends Component {
           </a>
         </div>
         <div className="mw-mavenhive center ph4 tc pt2 mb5 pb3">
-          <h2 className="mh-gray mb4">
+          <h2 className="mh-gray mb4 fw5">
             Our current interview process for hiring Polyglot Developers
           </h2>
           <p className="f4 flex justify-around ph4">
@@ -66,39 +69,39 @@ class Careers extends Component {
             <span>HR Interview and Offer</span>
           </p>
         </div>
-        <div className="mw-mavenhive center ph4">
+        <div className="mw-mavenhive center ph4-ns">
           <h2 className="ttu tc mh-gray fw5 lh-title">
             We are currently looking for…
           </h2>
-          <div className="flex mb5">
-            <div className="tc ph4 w-third">
+          <div className="flex-l mb5">
+            <div className="tc ph4-ns w-third-l mt5 mt0-l">
               <h3 className="f4">Polyglot Developers (Senior)</h3>
               <p className="f4 lh-mh-1">
                 Are you hands on with coding and have a proven track record of
                 building, mentoring and managing teams ?
               </p>
               <p>
-                <a className="f4 link mh-blue">Learn more and Apply…</a>
+                <a className="f4 link mh-blue" href="https://angel.co/mavenhive/jobs" target="_blank">Learn more and Apply…</a>
               </p>
             </div>
-            <div className="tc ph4 w-third">
+            <div className="tc ph4-ns w-third-l mt5 mt0-l">
               <h3 className="f4">Polyglot Developers (Junior)</h3>
               <p className="f4 lh-mh-1">
                 Do you have passion for programming and are hands on in working
                 in highly productive teams ?
               </p>
               <p>
-                <a className="f4 link mh-blue">Learn more and Apply…</a>
+                <a className="f4 link mh-blue" href="https://angel.co/mavenhive/jobs" target="_blank">Learn more and Apply…</a>
               </p>
             </div>
-            <div className="tc ph4 w-third">
+            <div className="tc ph4-ns w-third-l mt5 mt0-l">
               <h3 className="f4">DevOps (Senior)</h3>
               <p className="f4 lh-mh-1">
                 Do you love to build and scale systems for high growth products
                 ?
               </p>
               <p>
-                <a className="f4 link mh-blue">Learn more and Apply…</a>
+                <a className="f4 link mh-blue" href="https://angel.co/mavenhive/jobs" target="_blank">Learn more and Apply…</a>
               </p>
             </div>
           </div>

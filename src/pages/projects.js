@@ -11,7 +11,7 @@ import projects from '../content/projects.json'
 
 const Project = ({ heading, client, services, summary, details }) => (
   <div className="pv2 mw8">
-    <h3 className="f3 mv3">{heading}</h3>
+    <h3 className="f3 mv3 mh-gray">{heading}</h3>
     <p className="mh-light-gray ttu b f6 mv3 tracked">
       {client} - {services}
     </p>
@@ -109,7 +109,7 @@ export default () => (
     </section>
 
     <section className="mw-mavenhive center ph4 mb5 tc">
-      <p className="mw8 center f3 lh-mh ph6 mv0">{projects.showcase.heading}</p>
+      <p className="mw8 center f3 lh-mh ph6-l mv0">{projects.showcase.heading}</p>
       <div className="mb3">
         <img src={Citrix} alt="" />
       </div>
