@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import ReactModal from 'react-modal'
+import marked from 'marked'
 
 import Member from '../components/Member'
 
@@ -166,11 +167,9 @@ export default () => (
       })}
     </div>
     <section className="pv4-ns bg-brand white tc">
-      <div className="mw-mavenhive center ph4 pv2 ph5-l">
+      <div className="mw-mavenhive center ph4 pv2 ph5-l cta">
         <h3 className="mb3 f4 lh-title">{people.cta.heading}</h3>
-        <div className="lh-copy f-1 mb4 pb2 ph5-l">
-          <p>{people.cta.content}</p>
-        </div>
+        <div className="lh-copy f-1 mb4 pb2 ph5-l" dangerouslySetInnerHTML={{__html: marked(people.cta.content)}} />
         <p>
           <Link
             to={people.cta.button.link}

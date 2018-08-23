@@ -170,6 +170,12 @@ collections:
               - {label: Position, name: position, widget: string}
               - {label: Name, name: name, widget: string}
               - {label: Content, name: content, widget: text}
+          - label: "Stats"
+            name: "stats"
+            widget: "list"
+            fields:
+              - {label: Metric, name: metric, widget: string}
+              - {label: Value, name: value, widget: string}
           - label: "Call to action"
             name: "cta"
             widget: "object"

@@ -89,6 +89,19 @@ h1 {
   outline: none !important;
 }
 
+/* Slick slider */
+body .slick-prev, body .slick-next {
+  width: 2rem;
+  height: 2rem;
+}
+body .slick-prev:before, body .slick-next:before {
+  font-size: 2rem;
+  color: #4A4A4A;
+}
+body .slick-dots li button:before {
+  font-size: 0.75rem;
+}
+
 @media screen and (min-width: 64rem) {
   .w-feature-l {
     width: 22rem;

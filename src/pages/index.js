@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import marked from 'marked'
+import Carousel from 'react-slick'
 import Clients from '../components/Clients'
 
 import Illustration from '../images/image_illustration.svg'
@@ -12,7 +14,37 @@ import IconEstablishment from '../icons/icon_establishment.svg'
 import IconStart from '../icons/icon_start.svg'
 import IconArrow from '../icons/icon_arrow.png'
 
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
 import page from '../content/home.json'
+
+const carouselSettings = {
+  infinite: false,
+  dots: true,
+  arrows: true,
+  dotsClass: 'slick-dots bottom--2',
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 2
+      },
+    },
+    {
+      breakpoint: 640,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+}
 
 const IndexPage = () => (
   <div>
@@ -20,7 +52,9 @@ const IndexPage = () => (
       <img className="order-1" src={Illustration} alt="" />
       <div>
         <h1 className="f2 normal">{page.heading}</h1>
-        <p className="measure measure-wide-l lh-copy f4 mb4 mb5-l">{page['sub-heading']}</p>
+        <p className="measure measure-wide-l lh-copy f4 mb4 mb5-l">
+          {page['sub-heading']}
+        </p>
         <p>
           <Link
             to="/projects"
@@ -36,29 +70,87 @@ const IndexPage = () => (
         <h1 className="f3 mb4 pb4-l normal">
           We are a team of imaginators helping business at all stages of growth
         </h1>
-        <div style={{
-          overflow: 'auto',
-        }}>
-          <ul className="relative list pa0 ma0 flex justify-between items-end w-100 h-100 mb4 mh-gray tracked-mh f5" style={{
-            width: '840px',
-            height: '120px',
-            marginLeft: 'auto',
-            marginRight: 'auto'
-          }}>
-            <li className="absolute bt bw1 flex justify-around mh-gray" style={{
-              top: 'calc(50% - 0.5rem)',
-              right: '0',
-              left: '0',
-              zIndex: '0',
-            }}>
-              <img width="11" height="21" src={IconArrow} alt="" style={{marginTop: '-11px'}} />
-              <img width="11" height="21" src={IconArrow} alt="" style={{marginTop: '-11px'}} />
-              <img width="11" height="21" src={IconArrow} alt="" style={{marginTop: '-11px'}} />
+        <div
+          style={{
+            overflow: 'auto',
+          }}
+        >
+          <ul
+            className="relative list pa0 ma0 flex justify-between items-end w-100 h-100 mb4 mh-gray tracked-mh f5"
+            style={{
+              width: '840px',
+              height: '120px',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+            }}
+          >
+            <li
+              className="absolute bt bw1 flex justify-around mh-gray"
+              style={{
+                top: 'calc(50% - 0.5rem)',
+                right: '0',
+                left: '0',
+                zIndex: '0',
+              }}
+            >
+              <img
+                width="11"
+                height="21"
+                src={IconArrow}
+                alt=""
+                style={{ marginTop: '-11px' }}
+              />
+              <img
+                width="11"
+                height="21"
+                src={IconArrow}
+                alt=""
+                style={{ marginTop: '-11px' }}
+              />
+              <img
+                width="11"
+                height="21"
+                src={IconArrow}
+                alt=""
+                style={{ marginTop: '-11px' }}
+              />
             </li>
-            <li className="relative"><img className="db center mb2 pb1" src={IconMVP} width="75" height="75" alt="" />MVP</li>
-            <li className="relative"><img className="db center mb2 pb1" src={IconRearchitect} width="75" height="75" alt="" />Re-Architecture</li>
-            <li className="relative"><img className="db center mb2 pb1" src={IconEstablishment} width="75" height="75" alt="" />Establishment</li>
-            <li className="relative"><img className="db center mb2 pb1" src={IconStart} width="75" height="75" alt="" />Start</li>
+            <li className="relative">
+              <img
+                className="db center mb2 pb1"
+                src={IconMVP}
+                width="75"
+                height="75"
+                alt=""
+              />MVP
+            </li>
+            <li className="relative">
+              <img
+                className="db center mb2 pb1"
+                src={IconRearchitect}
+                width="75"
+                height="75"
+                alt=""
+              />Re-Architecture
+            </li>
+            <li className="relative">
+              <img
+                className="db center mb2 pb1"
+                src={IconEstablishment}
+                width="75"
+                height="75"
+                alt=""
+              />Establishment
+            </li>
+            <li className="relative">
+              <img
+                className="db center mb2 pb1"
+                src={IconStart}
+                width="75"
+                height="75"
+                alt=""
+              />Start
+            </li>
           </ul>
         </div>
         <div className="flex-l justify-between mh-gray tracked-mh">
@@ -143,95 +235,49 @@ const IndexPage = () => (
 
     <section className="bg-mh-gray pa4 tc">
       <div className="mw-mavenhive center flex flex-wrap justify-center pv3 mb4">
-        <div className="w4 h4 bg-white br-100 pa3 ma3 ma4-ns content-box">
-          <h2 className="f2 normal ma2">5+</h2>
-          <p className="lh-copy">Years in Business</p>
-        </div>
-        <div className="w4 h4 bg-white br-100 pa3 ma3 ma4-ns content-box">
-          <h2 className="f2 normal ma2">8x</h2>
-          <p className="lh-copy">Growth being bootstrapped</p>
-        </div>
-        <div className="w4 h4 bg-white br-100 pa3 ma3 ma4-ns content-box">
-          <h2 className="f2 normal ma2">50+</h2>
-          <p className="lh-copy">Projects</p>
-        </div>
-        <div className="w4 h4 bg-white br-100 pa3 ma3 ma4-ns content-box">
-          <h2 className="f2 normal ma2">2</h2>
-          <p className="lh-copy">Unicorn Clients</p>
-        </div>
-        <div className="w4 h4 bg-white br-100 pa3 ma3 ma4-ns content-box">
-          <h2 className="f2 normal ma2">9</h2>
-          <p className="lh-copy">Training Bootcamps</p>
-        </div>
+        {page.stats.map((stat, i) => (
+          <div
+            className="w4 h4 bg-white br-100 pa3 ma3 ma4-ns content-box"
+            key={`stat-${i}`}
+          >
+            <h2 className="f2 normal ma2">{stat.value}</h2>
+            <p className="lh-copy">{stat.metric}</p>
+          </div>
+        ))}
       </div>
       <Clients />
     </section>
 
     <div className="mw-mavenhive center">
-      <section className="mv4 pv3">
-        <ul className="list ma0 pa0 tc flex-l justify-center tracked-mh">
-          <li className="dib mw6 ph4">
-            <section>
-              <h4 className="f5 lh-title">
-                EVP Strategic Partnerships, Ashoka
-              </h4>
-              <h5 className="f5 normal">Alan Landis</h5>
-              <p className="lh-copy">
-                I have enjoyed working closely with the MavenHive team across
-                the past year building our online community platform. They have
-                been incredibly responsive to our requests and helped us design
-                and build a truly high-quality site. They are among the most
-                flexible and creative technology consultants that I have ever
-                had the pleasure to call a partner.
-              </p>
-            </section>
-          </li>
-          <li className="dib mw6 ph4">
-            <section>
-              <h4 className="f5 lh-title">Principal Architect, Flipkart</h4>
-              <h5 className="f5 normal">Yogi Kulkarni</h5>
-              <p className="lh-copy">
-                Bhavin and Ananda were involved as consultants in re-building
-                some of the Supply Chain services at Flipkart. They bring deep
-                technical expertise, strong software engineering skills and a
-                high degree of ownership. Would recommend them highly.
-              </p>
-            </section>
-          </li>
-          <li className="dib mw6 ph4">
-            <section>
-              <h4 className="f5 lh-title">Principal Architect, Flipkart</h4>
-              <h5 className="f5 normal">Yogi Kulkarni</h5>
-              <p className="lh-copy">
-                Bhavin and Ananda were involved as consultants in re-building
-                some of the Supply Chain services at Flipkart. They bring deep
-                technical expertise, strong software engineering skills and a
-                high degree of ownership. Would recommend them highly.
-              </p>
-            </section>
-          </li>
-        </ul>
+      <section className="mt4 mb5 pv3">
+        <div className="tc tracked-mh">
+          <Carousel
+            {...carouselSettings}
+          >
+            {page.testimonials.map((testimonial, i) => (
+              <div
+                className="dib mw6 ph4 ws-normal v-top h5"
+                key={`testimonial-${i}`}
+              >
+                <section>
+                  <h4 className="f5 lh-title">{testimonial.position}</h4>
+                  <h5 className="f5 normal">{testimonial.name}</h5>
+                  <p className="lh-copy">{testimonial.content}</p>
+                </section>
+              </div>
+            ))}
+          </Carousel>
+        </div>
       </section>
     </div>
 
     <section className="pv4-ns bg-mh-purple white tc">
       <div className="mw8 center ph4 pv3 ph5-l">
-        <h3 className="ttu mb4 f4 lh-title">We’d like to work with you</h3>
-        <div className="lh-copy f-1 mb4 mb5-l tracked-mh mh-mid-gray">
-          <p>
-            We refuse to conform to obsolete ways of the past and believe in the
-            idea that even a simple atypical opinion reserves the power to
-            catapult a business idea into a transformative force for the future.
-          </p>
-          <p>
-            “Consistent delivery with <b>high quality, constant evolution,</b>{' '}
-            and <b>superior productivity</b> are the only true measures of
-            success.”<br />
-            This philosophy is hard coded into our work ethic. With these goals
-            in our sights, we deliver bespoke software - moulded with care,
-            fabricated to revolutionize and designed to satisfy.
-          </p>
-        </div>
+        <h3 className="ttu mb4 f4 lh-title">{page.cta.heading}</h3>
+        <div
+          className="lh-copy f-1 mb4 mb5-l tracked-mh mh-mid-gray"
+          dangerouslySetInnerHTML={{ __html: marked(page.cta.content) }}
+        />
         <p>
           <Link
             to="/contact"

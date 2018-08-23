@@ -1,6 +1,7 @@
 {
   "title": "Trusted companion for your product journey",
   "heading": "Trusted companion for your product journey",
+  "sub-heading": "We combine our software and product craftsmanship with our client’s disruptive ideas to achieve business goals with high ROI.",
   "testimonials": [
     {
       "position": "EVP Strategic Partnerships, Ashoka",
@@ -11,11 +12,43 @@
       "position": "Principal Architect, Flipkart",
       "name": "Yogi Kulkarni",
       "content": "Bhavin and Ananda were involved as consultants in re-building some of the Supply Chain services at Flipkart. They bring deep technical expertise, strong software engineering skills and a high degree of ownership. Would recommend them highly."
+    },
+    {
+      "position": "Principal Architect, Flipkart",
+      "name": "Yogi Kulkarni",
+      "content": "Bhavin and Ananda were involved as consultants in re-building some of the Supply Chain services at Flipkart. They bring deep technical expertise, strong software engineering skills and a high degree of ownership. Would recommend them highly."
+    },
+    {
+      "position": "Principal Architect, Flipkart",
+      "name": "Yogi Kulkarni",
+      "content": "Bhavin and Ananda were involved as consultants in re-building some of the Supply Chain services at Flipkart. They bring deep technical expertise, strong software engineering skills and a high degree of ownership. Would recommend them highly."
+    }
+  ],
+  "stats": [
+    {
+      "metric": "Years in Business",
+      "value": "5+"
+    },
+    {
+      "metric": "Growth being bootstrapped",
+      "value": "8x"
+    },
+    {
+      "metric": "Projects",
+      "value": "50+"
+    },
+    {
+      "metric": "Unicorn Clients",
+      "value": "2"
+    },
+    {
+      "metric": "Training Bootcamps",
+      "value": "9"
     }
   ],
   "cta": {
     "heading": "WE’D LIKE TO WORK WITH YOU",
-    "content": "We refuse to conform to obsolete ways of the past and believe in the idea that even a simple atypical opinion reserves the power to catapult a business idea into a transformative force for the future.\n\n“Consistent delivery with **high quality**, **constant evolution**, and **superior productivity** are the only true measures of success.”\nThis philosophy is hard coded into our work ethic. With these goals in our sights, we deliver bespoke software - moulded with care, fabricated to revolutionize and designed to satisfy.",
+    "content": "We refuse to conform to obsolete ways of the past and believe in the idea that even a simple atypical opinion reserves the power to catapult a business idea into a transformative force for the future.\n\n“Consistent delivery with **high quality**, **constant evolution**, and **superior productivity** are the only true measures of success.”<br />This philosophy is hard coded into our work ethic. With these goals in our sights, we deliver bespoke software - moulded with care, fabricated to revolutionize and designed to satisfy.",
     "button": {
       "label": "Start a Project with us",
       "link": "/contact"
