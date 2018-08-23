@@ -76,7 +76,7 @@ collections:
                 fields:
                   - {label: Label, name: label, widget: string}
                   - {label: Link to, name: link, widget: string}
-      - label: Alumni
+      - label: "Alumni"
         name: alumni
         file: "src/content/alumni.json"
         fields:
@@ -163,6 +163,25 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Page Heading, name: heading, widget: string}
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - {label: Position, name: position, widget: string}
+              - {label: Name, name: name, widget: string}
+              - {label: Content, name: content, widget: text}
+          - label: "Call to action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Content, name: content, widget: markdown}
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - {label: Label, name: label, widget: string}
+                  - {label: Link to, name: link, widget: string}
       - label: "Contact"
         name: "contact"
         file: "src/content/contact.json"
