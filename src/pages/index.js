@@ -28,7 +28,7 @@ const carouselSettings = {
   slidesToScroll: 3,
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 1024,
       settings: {
         arrows: false,
         slidesToShow: 2,
