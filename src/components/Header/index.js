@@ -28,12 +28,12 @@ class HeaderLinks extends Component {
     }
   }
 
-  componentWillMount () {
-    document.addEventListener('click', this.hideMenu, false)
+  componentDidMount () {
+    window.document.addEventListener('click', this.hideMenu, false)
   }
 
   componentWillUnmount () {
-    document.removeEventListener('click', this.hideMenu, false)
+    window.document.removeEventListener('click', this.hideMenu, false)
   }
 
   render() {
