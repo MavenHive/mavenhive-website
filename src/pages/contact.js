@@ -35,7 +35,7 @@ export default () => (
         <div className="h3 mv4">
           <label className="db f5 mb1">Company/Project Name</label>
           <input
-            className="h-75 w-100 pa3 ba br2 b--moon-gray"
+            className="h-75 w-100 ph3 ba br2 b--moon-gray"
             type="text"
             name="company-name"
           />
@@ -43,7 +43,7 @@ export default () => (
         <div className="h3 mv4">
           <label className="db f5 mb1">Contact Name</label>
           <input
-            className="h-75 w-100 pa3 ba br2 b--moon-gray"
+            className="h-75 w-100 ph3 ba br2 b--moon-gray"
             type="text"
             name="contact-name"
           />
@@ -51,7 +51,7 @@ export default () => (
         <div className="h3 mv4">
           <label className="db f5 mb1">Email Address *</label>
           <input
-            className="h-75 w-100 pa3 ba br2 b--moon-gray"
+            className="h-75 w-100 ph3 ba br2 b--moon-gray"
             type="text"
             name="email"
           />
@@ -59,7 +59,7 @@ export default () => (
         <div className="h3 mv4">
           <label className="db f5 mb1">Phone Number</label>
           <input
-            className="h-75 w-100 pa3 ba br2 b--moon-gray"
+            className="h-75 w-100 ph3 ba br2 b--moon-gray"
             type="text"
             name="phone"
           />
@@ -67,10 +67,9 @@ export default () => (
         <div className="h3 mv4">
           <label className="db f5 mb1">Approx Budget *</label>
           <select
-            className="h-75 w-100 pa3 ba br2 b--moon-gray bg-white"
+            className="h-75 w-100 ph3 ba br2 b--moon-gray bg-white"
             name="budget"
           >
-            <option disabled>Select Budget</option>
             <option>&lt; $5000</option>
             <option>&gt; $5000</option>
             <option>&gt; $10000</option>
