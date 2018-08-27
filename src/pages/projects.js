@@ -84,8 +84,8 @@ class Video extends Component {
 export default () => (
   <div>
     <Helmet title={`${projects.title} | MavenHive`} />
-    <section className="mw-mavenhive center ph4 mt5 pt3 flex-l items-center justify-between">
-      <img className="self-end order-1" src={Illustration} alt="" />
+    <section className="mw-mavenhive center ph3 mt5-l pt3 flex-l items-center justify-between">
+      <img className="dn db-l self-end order-1" src={Illustration} alt="" />
       <div className="mb6">
         <h1 className="f2 normal measure-narrow">{projects.heading}</h1>
         <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
@@ -94,7 +94,7 @@ export default () => (
       </div>
     </section>
 
-    <section className="mw-mavenhive center ph4 mb5">
+    <section className="mw-mavenhive center ph3 mb5">
       <h2 className="f3 brand mb4">Our Projects</h2>
       {projects.projects.map((project, i) => (
         <Project
@@ -108,7 +108,7 @@ export default () => (
       ))}
     </section>
 
-    <section className="mw-mavenhive center ph4 mb5 tc">
+    <section className="mw-mavenhive center ph3 mb5 tc">
       <p className="mw8 center f3 lh-mh ph6-l mv0">{projects.showcase.heading}</p>
       <div className="mb3">
         <img src={Citrix} alt="" />
@@ -119,7 +119,7 @@ export default () => (
     </section>
 
     <section className="pv4-ns bg-navy white tc">
-      <div className="mw8 center ph4 pv3 ph5-l">
+      <div className="mw8 center pa3 ph5-l">
         <h3 className="ttu mb4 f4 lh-title">{projects.cta.heading}</h3>
         <div className="measure-mh center lh-copy f-1 mb4 mb5-l">
           <p>{projects.cta.content}</p>

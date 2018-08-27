@@ -14,7 +14,7 @@ const getComponent = function(type) {
 }
 
 const Updates = () => (
-  <div className="mw-mavenhive ph4 center mt5 pt3">
+  <div className="mw-mavenhive ph3 center mt5-l pt3">
     <Helmet title={`${updates.title} | MavenHive`} />
     <h1 className="mb5 pb4">{updates.heading}</h1>
 

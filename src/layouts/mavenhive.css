@@ -8,6 +8,18 @@ html {
   box-sizing: content-box;
 }
 
+.bg-people:before {
+  /* content: ''; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('/img/image_people.png') no-repeat center;
+  background-size: cover;
+  z-index: 0;
+}
+
 /* fonts */
 h1 {
   font-size: 2.25rem;
@@ -89,21 +101,25 @@ h1 {
   outline: none !important;
 }
 
-/* Slick slider */
-body .slick-prev, body .slick-next {
-  width: 2rem;
-  height: 2rem;
+@media screen and (max-width: 959px) {
+  .bg-form {
+    background-image: none !important;
+  }
 }
+
+/* Slick slider */
 body .slick-prev:before, body .slick-next:before {
-  font-size: 2rem;
-  color: #4A4A4A;
+  content: '';
+  width: 22px;
+  height: 42px;
+  display: block;
+}
+body .slick-prev:before {
+  background: url('/img/icon_left.svg') no-repeat center;
+}
+body .slick-next:before {
+  background: url('/img/icon_right.svg') no-repeat center;
 }
 body .slick-dots li button:before {
   font-size: 0.75rem;
-}
-
-@media screen and (min-width: 64rem) {
-  .w-feature-l {
-    width: 22rem;
-  } 
 }

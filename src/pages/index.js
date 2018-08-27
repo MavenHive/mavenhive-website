@@ -28,7 +28,7 @@ const carouselSettings = {
   slidesToScroll: 3,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 960,
       settings: {
         arrows: false,
         slidesToShow: 2,
@@ -48,11 +48,11 @@ const carouselSettings = {
 
 const IndexPage = () => (
   <div>
-    <section className="mw-mavenhive center ph4 pv3 pt4-l mt3-l flex-l items-center justify-between tc tl-l">
-      <img className="order-1" src={Illustration} alt="" />
+    <section className="mw-mavenhive center pa3 pa4-l mt3-l flex-l items-center justify-between tc tl-l">
+      <img className="order-1 w-60 w-auto-ns" src={Illustration} alt="" />
       <div>
         <h1 className="f2 normal">{page.heading}</h1>
-        <p className="measure measure-wide-l lh-copy f4 mb4 mb5-l">
+        <p className="measure measure-wide-l lh-copy f4 mb4 mh2 mb5-l">
           {page['sub-heading']}
         </p>
         <p>
@@ -65,16 +65,12 @@ const IndexPage = () => (
         </p>
       </div>
     </section>
-    <section className="bg-mh-gray ph4 pv3 pt5-l tc-l">
+    <section className="bg-mh-gray pa3 pt5-l tc-l">
       <div className="mw-mavenhive center">
         <h1 className="f3 mb4 pb4-l normal">
           We are a team of imaginators helping business at all stages of growth
         </h1>
-        <div
-          style={{
-            overflow: 'auto',
-          }}
-        >
+        <div className='dn db-l'>
           <ul
             className="relative list pa0 ma0 flex justify-between items-end w-100 h-100 mb4 mh-gray tracked-mh f5"
             style={{
@@ -182,15 +178,16 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="mw-mavenhive center ph4 pv3 pv4-ns tc">
-      <div className="flex-l justify-center mb4">
+    <section className="mw-mavenhive center pa3 pv4-ns tc">
+      <div className="dn db-l flex-l justify-center mb4">
         <p className="f-2 pb3 brand mh2 b">Training to help you grow.</p>
         <p className="f-2 pb3 brand mh2 b">Technology that help you build.</p>
         <p className="f-2 pb3 brand mh2 b">Expertise to help you scale.</p>
       </div>
       <div className="flex-l justify-center mb4">
-        <div className="w-feature-l">
-          <img className="w3 h3 content-box pa1" src={IconTechnology} alt="" />
+        <div className="w-third-l mb5">
+          <p className="dn-l f-2 pb3 brand ma2 b">Training to help you grow.</p>
+          <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconTechnology})` }} alt="" />
           <h3 className="f-1 brand ttu">Tech Partnership</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Core Product or Project delivery</li>
@@ -200,8 +197,9 @@ const IndexPage = () => (
             <li className="mv2">Development, Deployment and Scaling</li>
           </ul>
         </div>
-        <div className="w-feature-l">
-          <img className="w3 h3 content-box pa1" src={IconGrowth} alt="" />
+        <div className="w-third-l mb5">
+          <p className="dn-l f-2 pb3 brand ma2 b">Technology that help you build.</p>
+          <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconGrowth})` }} alt="" />
           <h3 className="f-1 brand ttu">Enablement</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Agile process consulting</li>
@@ -210,8 +208,9 @@ const IndexPage = () => (
             <li className="mv2">Onsite Coaching</li>
           </ul>
         </div>
-        <div className="w-feature-l">
-          <img className="w3 h3 content-box pa1" src={IconInnovation} alt="" />
+        <div className="w-third-l">
+          <p className="dn-l f-2 pb3 brand ma2 b">Expertise to help you scale.</p>
+          <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconInnovation})` }} alt="" />
           <h3 className="f-1 brand ttu">Innovation</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Design Thinking</li>
@@ -224,20 +223,20 @@ const IndexPage = () => (
         </div>
       </div>
       <p className="">
-        <a
-          href="#"
+        <Link
+          to="/services"
           className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
         >
           See all our services
-        </a>
+        </Link>
       </p>
     </section>
 
-    <section className="bg-mh-gray pa4 tc">
-      <div className="mw-mavenhive center flex flex-wrap justify-center pv3 mb4">
+    <section className="bg-mh-gray pa3 tc">
+      <div className="mw-mavenhive center flex flex-wrap justify-around justify-center-ns pv3 mb4">
         {page.stats.map((stat, i) => (
           <div
-            className="w4 h4 bg-white br-100 pa3 ma3 ma4-ns content-box"
+            className="w4 h4 bg-white br-100 pa3 mv3 mh1 ma4-ns content-box"
             key={`stat-${i}`}
           >
             <h2 className="f2 normal ma2">{stat.value}</h2>
@@ -249,7 +248,7 @@ const IndexPage = () => (
     </section>
 
     <div className="mw-mavenhive center">
-      <section className="mt4 mb5 pv3">
+      <section className="mt4 mb5 pa3 ph4-l">
         <div className="tc tracked-mh">
           <Carousel
             {...carouselSettings}
@@ -272,7 +271,7 @@ const IndexPage = () => (
     </div>
 
     <section className="pv4-ns bg-mh-purple white tc">
-      <div className="mw8 center ph4 pv3 ph5-l">
+      <div className="mw8 center pa3 ph5-l">
         <h3 className="ttu mb4 f4 lh-title">{page.cta.heading}</h3>
         <div
           className="lh-copy f-1 mb4 mb5-l tracked-mh mh-mid-gray"

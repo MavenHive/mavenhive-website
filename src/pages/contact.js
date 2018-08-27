@@ -8,25 +8,19 @@ export default () => (
   <div>
     <Helmet title="Start a project with us | MavenHive" />
     <div
-      className="cover mv5"
+      className="cover mv3 relative bg-center h5 pv5 content-box"
       style={{
-        backgroundImage: `url(${Background})`,
-        backgroundRepeat: 'no-repeat',
-        height: 0,
-        paddingBottom: '20%',
-        position: 'relative',
+        backgroundImage: `url(${Background})`
       }}
     >
-      <div className="mw-mavenhive center ph4 pt3 h5">
+      <div className="mw-mavenhive center ph3">
         <h1 className="f2 normal measure-mh-narrow lh-mh-1">
           &ldquo;Start a Project with us to build awesome product&rdquo;
         </h1>
       </div>
     </div>
-    <div className="mw-mavenhive center ph4 mt6 mb5" style={{
-      backgroundImage: `url(${FormBackground})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: 'right top'
+    <div className="mw-mavenhive bg-form center ph3 mv4 bg-right bg-white" style={{
+      backgroundImage: `url(${FormBackground})`
     }}>
       <h2 className="f3 normal mt0 mb4 pb3">
         Please add your project details, we will get back to you

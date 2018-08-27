@@ -12,7 +12,7 @@ const Footer = () => {
   // Can manage footer links here
   return (
     <footer className="h3-l pv2 content-box">
-      <div className="mw-mavenhive center ph4 flex-l items-center justify-between h-100 tc tl-l">
+      <div className="mw-mavenhive center ph3 ph4-l flex-l items-center justify-between h-100 tc tl-l">
         <Link className="dib link ma2 mr4-l" to="/">
           <img src={Logo} alt="mavenhive logo" />
         </Link>

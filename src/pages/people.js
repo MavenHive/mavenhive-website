@@ -90,24 +90,20 @@ const Feature = ({ icon, title, description }) => (
 )
 
 export default () => (
-  <div>
+  <div className=''>
     <Helmet title={`${people.title} | MavenHive`} />
     <div
-      className="cover"
+      className="bg-people cover bg-center relative h5 pb5 content-box"
       style={{
-        backgroundImage: `url(${Background})`,
-        backgroundRepeat: 'no-repeat',
-        height: 0,
-        paddingBottom: '20%',
-        position: 'relative',
+        backgroundImage: `url(${Background})`
       }}
     >
-      <div className="mw-mavenhive center ph4 mv5 pt3 h5">
+      <div className="mw-mavenhive center ph3 mv5 pt3 h5">
         <h1 className="f2 normal measure-mh-narrow">{people.heading}</h1>
       </div>
     </div>
 
-    <div className="mw-mavenhive center mt6 pa3 shadow-2">
+    <div className="mw-mavenhive center mt4 mt6-l pa3 shadow-2">
       <p className="f-1 lh-mh mh-gray tc measure-mh center">
         MavenHive combines the flexibility of freelancing with the support of a
         close-knit team. Our team members decide where, when and how much they
@@ -148,7 +144,7 @@ export default () => (
       />
     </div>
 
-    <div className="mw-mavenhive center mt3 pa4 mb6">
+    <div className="mw-mavenhive center mv3 pa3">
       <h2 className="f3 ttu tc mh-gray normal mb4 tracked">Our Team</h2>
       {people.team.map((member, i) => {
         const person = member.member
@@ -167,7 +163,7 @@ export default () => (
       })}
     </div>
     <section className="pv4-ns bg-brand white tc">
-      <div className="mw-mavenhive center ph4 pv2 ph5-l cta">
+      <div className="mw-mavenhive center pa3 ph5-l cta">
         <h3 className="mb3 f4 lh-title">{people.cta.heading}</h3>
         <div className="lh-copy f-1 mb4 pb2 ph5-l" dangerouslySetInnerHTML={{__html: marked(people.cta.content)}} />
         <p>
