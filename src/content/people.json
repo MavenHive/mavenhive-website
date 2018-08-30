@@ -30,6 +30,33 @@
         "twitter": "https://twitter.com/chetan_kothari",
         "linkedin": "https://www.linkedin.com/in/kotharichetan/"
       }
+    },
+    {
+      "member": {
+        "name": "Piyush",
+        "role": "Consultant",
+        "blurb": "Some text some text",
+        "twitter": "w",
+        "linkedin": "w"
+      }
+    },
+    {
+      "member": {
+        "name": "Chetan Kumar",
+        "role": "Associate",
+        "blurb": "Some text some text",
+        "twitter": "w",
+        "linkedin": "w"
+      }
+    },
+    {
+      "member": {
+        "name": "Monika",
+        "role": "Associate",
+        "blurb": "some text some text",
+        "twitter": "w",
+        "linkedin": "w"
+      }
     }
   ],
   "cta": {
