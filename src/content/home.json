@@ -4,14 +4,34 @@
   "sub-heading": "We combine our software and product craftsmanship with our client’s disruptive ideas to achieve business goals with high ROI.",
   "testimonials": [
     {
+      "position": "Director, Digital Strategy & Online Services, The Arc",
+      "name": "Abe Rafi",
+      "content": "I have worked with MavenHive for several months now and have recently started a second project with them. They have been very efficient and quick to respond to ever changing business requirements. They have taken keen interest in understanding features and have offered valuable advice about interaction design. Their experience in building tools for the Non-profit organisations in the past is evident in how they employ a build vs buy strategy. Overall, a well oiled and reliable product development team that has delivered consistently despite operating in a remote work mode."
+    },
+    {
+      "position": "Co-Founder, Barkloudly.com",
+      "name": "Anupam Kundu",
+      "content": "Bhavin, the co-founder at MavenHive is a solid growth engineer. He has all the technical chops that any technical team can make use of. Added to that is his tremendous understanding of business models. I have been lucky to work with Bhavin and Mavenhive and will love to work with him again."
+    },
+    {
+      "position": "Co-Founder, Grasshopper",
+      "name": "David Hauser",
+      "content": "Bhavin and team are outstanding, blending technical expertise, project management and long term view of code and projects."
+    },
+    {
+      "position": "Senior Institution Builder, Ashoka",
+      "name": "Subramanian Viswanathan",
+      "content": "I have worked with MavenHive for more than 2 years now. They are thorough professionals, and the quality of work is top class. MavenHive team worked very well in a distributed setting like ours, and have the knack of rolling out solutions quickly. I am very happy for this association. Looking forward to seeing them grow and be successful​."
+    },
+    {
       "position": "EVP Strategic Partnerships, Ashoka",
       "name": "Alan Landis",
       "content": "I have enjoyed working closely with the MavenHive team across the past year building our online community platform. They have been incredibly responsive to our requests and helped us design and build a truly high-quality site. They are among the most flexible and creative technology consultants that I have ever had the pleasure to call a partner."
     },
     {
-      "position": "Principal Architect, Flipkart",
-      "name": "Yogi Kulkarni",
-      "content": "Bhavin and Ananda were involved as consultants in re-building some of the Supply Chain services at Flipkart. They bring deep technical expertise, strong software engineering skills and a high degree of ownership. Would recommend them highly."
+      "position": "Founder & CEO, Synup",
+      "name": "Ashwin Ramesh",
+      "content": "The reason we'd recommend Mavenhive is that they actually get it. A lot of contractors don't. We could go to them with a half-baked wire frame and our code base all over the place and they would get back with a plan, a timeline and a workflow for us. They understand the full product development cycle. They just get it and that's why we love to work with them and will work with them in future."
     },
     {
       "position": "Principal Architect, Flipkart",
@@ -19,9 +39,14 @@
       "content": "Bhavin and Ananda were involved as consultants in re-building some of the Supply Chain services at Flipkart. They bring deep technical expertise, strong software engineering skills and a high degree of ownership. Would recommend them highly."
     },
     {
-      "position": "Principal Architect, Flipkart",
-      "name": "Yogi Kulkarni",
-      "content": "Bhavin and Ananda were involved as consultants in re-building some of the Supply Chain services at Flipkart. They bring deep technical expertise, strong software engineering skills and a high degree of ownership. Would recommend them highly."
+      "position": "Chief Technology Officer, Zinc Learning Labs",
+      "name": "Karthik Chandrasekariah",
+      "content": "MavenHive team consists of highly talented people. What we liked most about them was they were very adaptive. At one time, we had a huge requirement which needed them to expand their team. Within no time, they hired and trained a 7 member team, which worked with us through the project. They adhere to high standards of development. Looking back we feel we made a very good decision."
+    },
+    {
+      "position": "CTO, Scripbox",
+      "name": "Nilakanta Mallick",
+      "content": "I understand the value of MavenHive’s work, as I am a practitioner of some of the values that they adhere to. They do a great job of ensuring that there is continuous integration and deployment. Another practice that they comply with is test-driven development which is not exactly followed by all vendors. There is no compromise on getting a good solution in place. They also understand the challenges faced by a product and are flexible to accommodate any changes needed at any point of time."
     }
   ],
   "stats": [
