@@ -6,6 +6,7 @@
       "update": {
         "type": "talk",
         "title": "RubyConf India 2013 Write your ruby in Style",
+        "content": "Some content",
         "author": "Bhavin Javia",
         "url": "https://youtu.be/J03pbYLeO_A"
       }
