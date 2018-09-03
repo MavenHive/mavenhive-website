@@ -38,7 +38,11 @@ const Blog = props => <Update type="blog" {...props} />
 const Talk = props => {
   const id = getYoutubeId(props.url)
   const thumbnail = `https://i1.ytimg.com/vi/${id}/mqdefault.jpg`
-  return <Video url={`https://youtube.com/embed/${id}`} ><Update type="talk" thumbnail={thumbnail} {...props} /></Video>
+  return (
+    <Video url={`https://youtube.com/embed/${id}`}>
+      <Update type="talk" thumbnail={thumbnail} {...props} />
+    </Video>
+  )
 }
 
 const Event = props => <Update type="event" {...props} />

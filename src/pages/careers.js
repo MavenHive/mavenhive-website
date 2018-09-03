@@ -65,9 +65,9 @@ class Careers extends Component {
             Our current interview process for hiring Polyglot Developers
           </h2>
           <p className="f6 f5-ns f4-l flex justify-around ph4">
-            <span>Offline Coding Assignment</span> <span>→</span>{' '}
-            <span>In office Code Pairing</span> <span>→</span>{' '}
-            <span>Tech Interviews</span> <span>→</span>{' '}
+            <span>Offline Coding Assignment</span> <span>→</span>
+            <span>In office Code Pairing</span> <span>→</span>
+            <span>Tech Interviews</span> <span>→</span>
             <span>HR Interview and Offer</span>
           </p>
         </div>

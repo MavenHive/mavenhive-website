@@ -43,8 +43,9 @@ class Video extends Component {
       <a
         className="db"
         style={{
-          boxShadow: 'inset 0 -6px 4px -3px rgba(0, 0, 0, 0.2), 0 5px 10px -3px rgba(0, 0, 0, 0.1)',
-          overflow: 'hidden'
+          boxShadow:
+            'inset 0 -6px 4px -3px rgba(0, 0, 0, 0.2), 0 5px 10px -3px rgba(0, 0, 0, 0.1)',
+          overflow: 'hidden',
         }}
         href={url}
         onClick={e => {
@@ -52,7 +53,7 @@ class Video extends Component {
           this.handleOpenModal()
         }}
       >
-        <img style={{marginBottom: '-3px'}} src={VideoIcon} alt="" />
+        <img style={{ marginBottom: '-3px' }} src={VideoIcon} alt="" />
         <ReactModal
           isOpen={this.state.showModal}
           onRequestClose={this.handleCloseModal}
@@ -90,12 +91,12 @@ const Feature = ({ icon, title, description }) => (
 )
 
 export default () => (
-  <div className=''>
+  <div className="">
     <Helmet title={`${people.title} | MavenHive`} />
     <div
       className="bg-people cover bg-center relative h5 pb5 content-box"
       style={{
-        backgroundImage: `url(${Background})`
+        backgroundImage: `url(${Background})`,
       }}
     >
       <div className="mw-mavenhive center ph3 mv5 pt3 h5">
@@ -165,7 +166,10 @@ export default () => (
     <section className="pv4-ns bg-brand white tc">
       <div className="mw-mavenhive center pa3 ph5-l cta">
         <h3 className="mb3 f4 lh-title">{people.cta.heading}</h3>
-        <div className="lh-copy f-1 mb4 pb2 ph5-l" dangerouslySetInnerHTML={{__html: marked(people.cta.content)}} />
+        <div
+          className="lh-copy f-1 mb4 pb2 ph5-l"
+          dangerouslySetInnerHTML={{ __html: marked(people.cta.content) }}
+        />
         <p>
           <Link
             to={people.cta.button.link}

@@ -32,7 +32,7 @@ const carouselSettings = {
       settings: {
         arrows: false,
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
       },
     },
     {
@@ -52,7 +52,7 @@ const IndexPage = () => (
       <img className="order-1 w-60 w-auto-ns" src={Illustration} alt="" />
       <div>
         <h1 className="f2 normal">{page.heading}</h1>
-        <p className="measure measure-wide-l lh-copy f4 mb4 mh2 mb5-l">
+        <p className="measure measure-wide-l center lh-copy f4 mb4 mh2 mb5-l">
           {page['sub-heading']}
         </p>
         <p>
@@ -70,7 +70,7 @@ const IndexPage = () => (
         <h1 className="f3 mb4 pb4-l normal">
           We are a team of imaginators helping business at all stages of growth
         </h1>
-        <div className='dn db-l'>
+        <div className="dn db-l">
           <ul
             className="relative list pa0 ma0 flex justify-between items-end w-100 h-100 mb4 mh-gray tracked-mh f5"
             style={{
@@ -187,7 +187,11 @@ const IndexPage = () => (
       <div className="flex-l justify-center mb4">
         <div className="w-third-l mb5">
           <p className="dn-l f-2 pb3 brand ma2 b">Training to help you grow.</p>
-          <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconTechnology})` }} alt="" />
+          <div
+            className="w3 h3 content-box pa2 center contain bg-center"
+            style={{ backgroundImage: `url(${IconTechnology})` }}
+            alt=""
+          />
           <h3 className="f-1 brand ttu">Tech Partnership</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Core Product or Project delivery</li>
@@ -198,8 +202,14 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="w-third-l mb5">
-          <p className="dn-l f-2 pb3 brand ma2 b">Technology that help you build.</p>
-          <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconGrowth})` }} alt="" />
+          <p className="dn-l f-2 pb3 brand ma2 b">
+            Technology that help you build.
+          </p>
+          <div
+            className="w3 h3 content-box pa2 center contain bg-center"
+            style={{ backgroundImage: `url(${IconGrowth})` }}
+            alt=""
+          />
           <h3 className="f-1 brand ttu">Enablement</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Agile process consulting</li>
@@ -209,8 +219,14 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="w-third-l">
-          <p className="dn-l f-2 pb3 brand ma2 b">Expertise to help you scale.</p>
-          <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconInnovation})` }} alt="" />
+          <p className="dn-l f-2 pb3 brand ma2 b">
+            Expertise to help you scale.
+          </p>
+          <div
+            className="w3 h3 content-box pa2 center contain bg-center"
+            style={{ backgroundImage: `url(${IconInnovation})` }}
+            alt=""
+          />
           <h3 className="f-1 brand ttu">Innovation</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Design Thinking</li>
@@ -250,12 +266,10 @@ const IndexPage = () => (
     <div className="mw-mavenhive center">
       <section className="mt4 mb5 pa3 ph4-l">
         <div className="tc tracked-mh">
-          <Carousel
-            {...carouselSettings}
-          >
+          <Carousel {...carouselSettings}>
             {page.testimonials.map((testimonial, i) => (
               <div
-                className="dib mw6 ph4 ws-normal v-top h5"
+                className="dib mw6 ph4 ws-normal v-top"
                 key={`testimonial-${i}`}
               >
                 <section>

@@ -5,34 +5,38 @@ import Logo from '../../images/MavenHive-logo_red.svg'
 import Menu from '../../icons/menu.svg'
 
 class HeaderLinks extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
-      showMenu: false
+      showMenu: false,
     }
     this.showMenu = this.showMenu.bind(this)
     this.hideMenu = this.hideMenu.bind(this)
   }
 
-  showMenu () {
+  showMenu() {
     this.setState({
-      showMenu: true
+      showMenu: true,
     })
   }
-  
-  hideMenu (e) {
-    if (this.state.showMenu && (e.target.id !== 'menu-button' && e.target.parentNode.id !== 'menu-button')) {
+
+  hideMenu(e) {
+    if (
+      this.state.showMenu &&
+      (e.target.id !== 'menu-button' &&
+        e.target.parentNode.id !== 'menu-button')
+    ) {
       this.setState({
-        showMenu: false
+        showMenu: false,
       })
     }
   }
 
-  componentDidMount () {
+  componentDidMount() {
     window.document.addEventListener('click', this.hideMenu, false)
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     window.document.removeEventListener('click', this.hideMenu, false)
   }
 
@@ -40,10 +44,18 @@ class HeaderLinks extends Component {
     const children = this.props.children
     return (
       <div className="dt relative">
-        <button className="dtc bw0 bg-transparent pa0 dn-l" id='menu-button' onClick={this.showMenu}>
+        <button
+          className="dtc bw0 bg-transparent pa0 dn-l"
+          id="menu-button"
+          onClick={this.showMenu}
+        >
           <img className="db" src={Menu} alt="menu" />
         </button>
-        <div className={`${this.state.showMenu ? 'db' : 'dn'} dn-l absolute relative-l top--1 top-0-l right-0 pa3 ba b--moon-gray bw0-l br2 z-1 bg-white tr tl-l`}>
+        <div
+          className={`${
+            this.state.showMenu ? 'db' : 'dn'
+          } dn-l absolute relative-l top--1 top-0-l right-0 pa3 ba b--moon-gray bw0-l br2 z-1 bg-white tr tl-l`}
+        >
           <button className="f3 bw0 bg-white pa0 ma0 lh-solid mid-gray">
             &times;
           </button>

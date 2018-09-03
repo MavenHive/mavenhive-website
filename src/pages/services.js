@@ -27,9 +27,13 @@ export default () => (
     </section>
 
     <section className="mw-mavenhive center pa3 pv4-ns tc mb3 mb5-l">
-    <div className="flex-l justify-center mb4">
+      <div className="flex-l justify-center mb4">
         <div className="w-third-l mb5">
-        <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconTechnology})` }} alt="" />
+          <div
+            className="w3 h3 content-box pa2 center contain bg-center"
+            style={{ backgroundImage: `url(${IconTechnology})` }}
+            alt=""
+          />
           <h3 className="f-1 brand ttu">Tech Partnership</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Core Product or Project delivery</li>
@@ -40,7 +44,11 @@ export default () => (
           </ul>
         </div>
         <div className="w-third-l mb5">
-        <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconGrowth})` }} alt="" />
+          <div
+            className="w3 h3 content-box pa2 center contain bg-center"
+            style={{ backgroundImage: `url(${IconGrowth})` }}
+            alt=""
+          />
           <h3 className="f-1 brand ttu">Enablement</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Agile process consulting</li>
@@ -50,7 +58,11 @@ export default () => (
           </ul>
         </div>
         <div className="w-third-l">
-          <div className="w3 h3 content-box pa2 center contain bg-center" style={{backgroundImage: `url(${IconInnovation})` }} alt="" />
+          <div
+            className="w3 h3 content-box pa2 center contain bg-center"
+            style={{ backgroundImage: `url(${IconInnovation})` }}
+            alt=""
+          />
           <h3 className="f-1 brand ttu">Innovation</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
             <li className="mv2">Design Thinking</li>

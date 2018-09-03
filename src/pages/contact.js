@@ -10,7 +10,7 @@ export default () => (
     <div
       className="cover mv3 relative bg-center h5 pv5 content-box"
       style={{
-        backgroundImage: `url(${Background})`
+        backgroundImage: `url(${Background})`,
       }}
     >
       <div className="mw-mavenhive center ph3">
@@ -19,9 +19,12 @@ export default () => (
         </h1>
       </div>
     </div>
-    <div className="mw-mavenhive bg-form center ph3 mv4 bg-right bg-white" style={{
-      backgroundImage: `url(${FormBackground})`
-    }}>
+    <div
+      className="mw-mavenhive bg-form center ph3 mv4 bg-right bg-white"
+      style={{
+        backgroundImage: `url(${FormBackground})`,
+      }}
+    >
       <h2 className="f3 normal mt0 mb4 pb3">
         Please add your project details, we will get back to you
       </h2>

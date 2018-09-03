@@ -109,7 +109,9 @@ export default () => (
     </section>
 
     <section className="mw-mavenhive center ph3 mb5 tc">
-      <p className="mw8 center f3 lh-mh ph6-l mv0">{projects.showcase.heading}</p>
+      <p className="mw8 center f3 lh-mh ph6-l mv0">
+        {projects.showcase.heading}
+      </p>
       <div className="mb3">
         <img src={Citrix} alt="" />
       </div>
