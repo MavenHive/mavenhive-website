@@ -5,16 +5,6 @@
   "team": [
     {
       "member": {
-        "avatar": "/img/22.jpg",
-        "name": "Daisy Johnson",
-        "role": "Junior Associate",
-        "blurb": "Was one of the up-and-coming talents at MavenHive until she edited our website, promising anyone who dropped in to our offices a beer. This shameful episode cost us millions in out-of-court settlements with drop-in-ees who were given herbal tea instead. And a once-promising career has been blighted forever. Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content .",
-        "twitter": "https://twitter.com/apnerve",
-        "linkedin": "https://linkedin.com/in/apnerve"
-      }
-    },
-    {
-      "member": {
         "avatar": "/img/screen shot 2018-05-24 at 10.21.11 am.png",
         "name": "Sneha Koti",
         "role": "Senior Associate",
@@ -29,6 +19,16 @@
         "blurb": "Likes to code. and many more ...",
         "twitter": "https://twitter.com/chetan_kothari",
         "linkedin": "https://www.linkedin.com/in/kotharichetan/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/22.jpg",
+        "name": "Daisy Johnson",
+        "role": "Junior Associate",
+        "blurb": "Was one of the up-and-coming talents at MavenHive until she edited our website, promising anyone who dropped in to our offices a beer. This shameful episode cost us millions in out-of-court settlements with drop-in-ees who were given herbal tea instead. And a once-promising career has been blighted forever. Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content Some background and experience content .",
+        "twitter": "https://twitter.com/apnerve",
+        "linkedin": "https://linkedin.com/in/apnerve"
       }
     },
     {
