@@ -71,6 +71,11 @@
       "value": "9"
     }
   ],
+  "clients": [
+    {
+      "logo": "/img/client_ashoka.png"
+    }
+  ],
   "cta": {
     "heading": "WE’D LIKE TO WORK WITH YOU",
     "content": "We refuse to conform to obsolete ways of the past and believe in the idea that even a simple atypical opinion reserves the power to catapult a business idea into a transformative force for the future.\n\n“Consistent delivery with **high quality**, **constant evolution**, and **superior productivity** are the only true measures of success.”<br />This philosophy is hard coded into our work ethic. With these goals in our sights, we deliver bespoke software - moulded with care, fabricated to revolutionize and designed to satisfy.",
