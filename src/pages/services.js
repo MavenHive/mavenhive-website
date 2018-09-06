@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import marked from 'marked'
 
 import IconTechnology from '../icons/icon_technology.svg'
 import IconGrowth from '../icons/icon_growth.svg'
@@ -81,7 +82,7 @@ export default () => (
         return (
           <div className="mb4 mb5-l" key={`feature-${i}`}>
             <h3 className="f3">{feature.heading}</h3>
-            <p className="f5 mh-gray lh-mh-1">{feature.content}</p>
+            <div className="f5 mh-gray lh-mh-1" dangerouslySetInnerHTML={{ __html: marked(feature.content) }} />
           </div>
         )
       })}
@@ -100,7 +101,7 @@ export default () => (
       <div className="mw8 center pa3 ph5-l">
         <h3 className="ttu mb4 f4 lh-title">{page.cta.heading}</h3>
         <div className="measure-mh center lh-copy f-1 mb4 mb5-l">
-          <p>{page.cta.content}</p>
+          <div dangerouslySetInnerHTML={{ __html: marked(page.cta.content) }} />
         </div>
         <p>
           <Link

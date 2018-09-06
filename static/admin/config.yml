@@ -155,18 +155,6 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Page Heading, name: heading, widget: string}
-          - label: Page Heading Link
-            name: heading-link
-            widget: object
-            fields:
-              - {label: Page Heading Link Label, name: heading-link-label, widget: string}
-              - {label: Page Heading Link URL, name: heading-link-url, widget: string}
-          - label: Video
-            name: video
-            widget: object
-            fields:
-              - {label: Video Thumbnail, name: video-thumbnail, widget: image}
-              - {label: YouTube URL, name: video-link, widget: string}
           - label: Jobs
             name: jobs
             widget: object
