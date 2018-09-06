@@ -71,11 +71,47 @@
       "value": "9"
     }
   ],
-  "clients": [
-    {
-      "logo": "/img/client_ashoka.png"
-    }
-  ],
+  "clients": {
+    "heading": "… and worked with over 20 clients globally…",
+    "list": [
+      {
+        "logo": "/img/client_Gojek.png"
+      },
+      {
+        "logo": "/img/client_thoughtworks.png"
+      },
+      {
+        "logo": "/img/client_scripbox.png"
+      },
+      {
+        "logo": "/img/client_grasshopper.png"
+      },
+      {
+        "logo": "/img/client_housing.png"
+      },
+      {
+        "logo": "/img/client_flipkart.png"
+      },
+      {
+        "logo": "/img/client_zinc.png"
+      },
+      {
+        "logo": "/img/client_barkloudly.png"
+      },
+      {
+        "logo": "/img/client_PG.png"
+      },
+      {
+        "logo": "/img/client_thearc.png"
+      },
+      {
+        "logo": "/img/client_synup.png"
+      },
+      {
+        "logo": "/img/client_ashoka.png"
+      }
+    ]
+  },
   "cta": {
     "heading": "WE’D LIKE TO WORK WITH YOU",
     "content": "We refuse to conform to obsolete ways of the past and believe in the idea that even a simple atypical opinion reserves the power to catapult a business idea into a transformative force for the future.\n\n“Consistent delivery with **high quality**, **constant evolution**, and **superior productivity** are the only true measures of success.”<br />This philosophy is hard coded into our work ethic. With these goals in our sights, we deliver bespoke software - moulded with care, fabricated to revolutionize and designed to satisfy.",

@@ -80,7 +80,7 @@ class Careers extends Component {
                 <p className="f5 f4-ns lh-mh-1">{job.description}</p>
                 <p>
                   <a
-                    className="f5 f4-ns link mh-blue"
+                    className="f5 f4-ns link mh-blue underline-hover"
                     href={job.link}
                     target="_blank"
                   >
@@ -97,7 +97,7 @@ class Careers extends Component {
               If you dont see above openings fit for you but resonate with our
               culture and want to join us , we would love to hear from you. Send
               email to{' '}
-              <a className="link mh-blue" href="mailto:careers@mavenhive.com">
+              <a className="link mh-blue underline-hover" href="mailto:careers@mavenhive.com">
                 careers@mavenhive.com
               </a>
             </p>

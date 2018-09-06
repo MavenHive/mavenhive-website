@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import marked from 'marked'
 import Carousel from 'react-slick'
-import Clients from '../components/Clients'
+// import Clients from '../components/Clients'
 
 import Illustration from '../images/image_illustration.svg'
 import IconTechnology from '../icons/icon_technology.svg'
@@ -260,7 +260,14 @@ const IndexPage = () => (
           </div>
         ))}
       </div>
-      <Clients />
+      <div className="mw-mavenhive center">
+        <p className="f3">{ page.clients.heading }</p>
+        <div className="flex items-center justify-center flex-wrap">
+          {page.clients.list.map((client, i) => (
+            <img className="mh3 mv2" src={client.logo} alt="" key={`client-${i}`} />
+          ))}
+        </div>
+      </div>
     </section>
 
     <div className="mw-mavenhive center">

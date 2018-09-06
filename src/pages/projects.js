@@ -5,7 +5,6 @@ import ReactModal from 'react-modal'
 
 import Illustration from '../images/image_projects.svg'
 import VideoIcon from '../icons/icon_play.svg'
-import Citrix from '../images/Bitmap.png'
 
 import projects from '../content/projects.json'
 
@@ -113,7 +112,7 @@ export default () => (
         {projects.showcase.heading}
       </p>
       <div className="mb3">
-        <img src={Citrix} alt="" />
+        <img src={projects.showcase.logo} alt="" />
       </div>
       <div>
         <Video VideoIcon={VideoIcon} url={projects.showcase.url} />
