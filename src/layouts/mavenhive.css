@@ -121,10 +121,10 @@ body .slick-prev:before, body .slick-next:before {
   transition: opacity 300ms ease-in-out;
 }
 body .slick-prev:before {
-  background: url('/img/icon_left.svg') no-repeat center;
+  background: url('/icons/icon_left.svg') no-repeat center;
 }
 body .slick-next:before {
-  background: url('/img/icon_right.svg') no-repeat center;
+  background: url('/icons/icon_right.svg') no-repeat center;
 }
 body .slick-prev.slick-disabled:before, body .slick-next.slick-disabled:before {
   opacity: 0;
