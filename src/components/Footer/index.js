@@ -18,26 +18,35 @@ const Footer = () => {
         </Link>
         <ul className="list ma2 mv3 pa0 f6 mr-auto">
           <li className="dib mh1">
-            <Link className="dib pa2 link silver" to="/alumni">
+            <Link
+              className="dib pa2 link silver hover-dark-gray underline-hover"
+              to="/alumni"
+            >
               Alumni
             </Link>
           </li>
           <li className="dib mh1">
             <a
               target="_blank"
-              className="dib pa2 link silver"
+              className="dib pa2 link silver hover-dark-gray underline-hover"
               href="https://blog.mavenhive.in/"
             >
               Blog
             </a>
           </li>
           <li className="dib mh1">
-            <Link className="dib pa2 link silver" to="/updates">
+            <Link
+              className="dib pa2 link silver hover-dark-gray underline-hover"
+              to="/updates"
+            >
               Updates
             </Link>
           </li>
           <li className="dib mh1">
-            <Link className="dib pa2 link silver" to="/contact">
+            <Link
+              className="dib pa2 link silver hover-dark-gray underline-hover"
+              to="/contact"
+            >
               Start a Project with Us
             </Link>
           </li>
@@ -45,7 +54,7 @@ const Footer = () => {
         <ul className="list ma2 pa0">
           <li className="dib mr2">
             <a
-              className="dib link"
+              className="dib link grow"
               href="https://www.facebook.com/mavenhive"
               target="_blank"
             >
@@ -58,7 +67,7 @@ const Footer = () => {
           </li>
           <li className="dib mh2">
             <a
-              className="dib link"
+              className="dib link grow"
               href="https://twitter.com/Mavenhive"
               target="_blank"
             >
@@ -71,7 +80,7 @@ const Footer = () => {
           </li>
           <li className="dib mh2">
             <a
-              className="dib link"
+              className="dib link grow"
               href="https://www.linkedin.com/company/mavenhive-technologies-pvt-ltd/"
               target="_blank"
             >
@@ -84,7 +93,7 @@ const Footer = () => {
           </li>
           <li className="dib mh2">
             <a
-              className="dib link"
+              className="dib link grow"
               href="https://github.com/mavenhive"
               target="_blank"
             >
@@ -97,7 +106,7 @@ const Footer = () => {
           </li>
           <li className="dib ml2">
             <a
-              className="dib link"
+              className="dib link grow"
               href="https://www.youtube.com/channel/UCqdjB9e5zXnMA6CgVt-pp8Q/featured"
               target="_blank"
             >

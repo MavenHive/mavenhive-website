@@ -1,4 +1,24 @@
 {
   "title": "Join us",
-  "heading": "“We are constantly looking for ways to improve our "
+  "heading": "“We are constantly looking for ways to improve our ",
+  "jobs": {
+    "heading":  "We are currently looking for…",
+    "list": [
+      {
+        "title": "Associate (Full Stack Developer)",
+        "description": "We are looking for mid level full stack developers with passion for programming, expertise with at least one tech stack and experience working with highly productive and distributed teams.",
+        "link": "https://angel.co/mavenhive/jobs/22419-associate-full-stack-developer"
+      },
+      {
+        "title": "Senior Associate (Full Stack Developer)",
+        "description": "We are looking for someone with passion for programming, building complex and scalable products, hands with coding and proven track record of building, mentoring and managing teams.",
+        "link": "https://angel.co/mavenhive/jobs/22465-senior-associate-full-stack-developer"
+      },
+      {
+        "title": "Junior Associate (Full Stack Developer)",
+        "description": "We are looking for someone with passion for programming and is hands on in working in highly productive teams.",
+        "link": "https://angel.co/mavenhive/jobs/252290-junior-associate-full-stack-developer"
+      }
+    ]
+  }
 }

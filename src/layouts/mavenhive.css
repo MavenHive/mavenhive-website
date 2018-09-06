@@ -100,6 +100,11 @@ h1 {
 *:focus {
   outline: none !important;
 }
+input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: inset 1px 1px 1px 0 #ccc;
+}
 
 @media screen and (max-width: 959px) {
   .bg-form {
@@ -113,6 +118,7 @@ body .slick-prev:before, body .slick-next:before {
   width: 22px;
   height: 42px;
   display: block;
+  transition: opacity 300ms ease-in-out;
 }
 body .slick-prev:before {
   background: url('/img/icon_left.svg') no-repeat center;
@@ -120,6 +126,10 @@ body .slick-prev:before {
 body .slick-next:before {
   background: url('/img/icon_right.svg') no-repeat center;
 }
+body .slick-prev.slick-disabled:before, body .slick-next.slick-disabled:before {
+  opacity: 0;
+}
 body .slick-dots li button:before {
   font-size: 0.75rem;
+  transition: opacity 300ms;
 }

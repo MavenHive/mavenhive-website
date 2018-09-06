@@ -173,7 +173,7 @@ export default () => (
         <p>
           <Link
             to={people.cta.button.link}
-            className="dib link f-1 pv1 ph4 br2 fw5 tc w-100 w-auto-ns white ba"
+            className="dib link f-1 pv1 ph4 br2 fw5 tc w-100 w-auto-ns white ba grow"
           >
             {people.cta.button.label}
           </Link>

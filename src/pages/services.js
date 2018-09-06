@@ -89,7 +89,7 @@ export default () => (
         <p className="mh-light-gray f3 lh-copy">{page.cta1.content}</p>
         <Link
           to={page.cta1.button.link}
-          className="mh-gray dib link f-1 pv2 ph4 ba br2 b--silver tc w-100 w-auto-ns bg-white"
+          className="mh-gray dib link f-1 pv2 ph4 ba br2 b--silver tc w-100 w-auto-ns bg-white grow"
         >
           {page.cta1.button.label}
         </Link>
@@ -105,7 +105,7 @@ export default () => (
         <p>
           <Link
             to={page.cta.button.link}
-            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
+            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand grow"
           >
             {page.cta.button.label}
           </Link>

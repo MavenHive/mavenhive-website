@@ -1,9 +1,8 @@
 backend:
-  name: test-repo
-
+  name: git-gateway
+  branch: master
 media_folder: "static/img"
 public_folder: "/img"
-
 collections:
   - label: "Pages"
     name: "pages"
@@ -126,7 +125,7 @@ collections:
             widget: list
             fields:
               - {label: Heading, name: heading, widget: string}
-              - {label: Content, name: content, widget: text}
+              - {label: Content, name: content, widget: markdown}
           - label: Call to action 1
             name: cta1
             widget: object
@@ -168,6 +167,18 @@ collections:
             fields:
               - {label: Video Thumbnail, name: video-thumbnail, widget: image}
               - {label: YouTube URL, name: video-link, widget: string}
+          - label: Jobs
+            name: jobs
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - label: Jobs List
+                name: list
+                widget: list
+                fields:
+                  - {label: Title, name: title, widget: string}
+                  - {label: Description, name: description, widget: string}
+                  - {label: Link, name: link, widget: string}
       - label: "Home"
         name: "home"
         file: "src/content/home.json"
@@ -188,6 +199,11 @@ collections:
             fields:
               - {label: Metric, name: metric, widget: string}
               - {label: Value, name: value, widget: string}
+          - label: "Clients"
+            name: "clients"
+            widget: "list"
+            fields:
+              - {label: Logo, name: logo, widget: image}
           - label: "Call to action"
             name: "cta"
             widget: "object"

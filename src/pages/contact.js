@@ -90,7 +90,7 @@ export default () => (
             Don’t fill this out: <input name="bot-field" />
           </label>
         </p>
-        <button className="f-1 bg-brand br2 white pv2 ph4 tc bw0">
+        <button className="f-1 bg-brand br2 white pv2 ph4 tc bw0 pointer grow">
           Submit
         </button>
       </form>

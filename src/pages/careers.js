@@ -72,58 +72,23 @@ class Careers extends Component {
           </p>
         </div>
         <div className="mw-mavenhive center ph3">
-          <h2 className="ttu tc mh-gray fw5 lh-title">
-            We are currently looking for…
-          </h2>
+          <h2 className="ttu tc mh-gray fw5 lh-title">{page.jobs.heading}</h2>
           <div className="flex-l mb5">
-            <div className="tc ph4-ns w-third-l mt5 mt0-l">
-              <h3 className="f4">Polyglot Developers (Senior)</h3>
-              <p className="f5 f4-ns lh-mh-1">
-                Are you hands on with coding and have a proven track record of
-                building, mentoring and managing teams ?
-              </p>
-              <p>
-                <a
-                  className="f5 f4-ns link mh-blue"
-                  href="https://angel.co/mavenhive/jobs"
-                  target="_blank"
-                >
-                  Learn more and Apply…
-                </a>
-              </p>
-            </div>
-            <div className="tc ph4-ns w-third-l mt5 mt0-l">
-              <h3 className="f4">Polyglot Developers (Junior)</h3>
-              <p className="f5 f4-ns lh-mh-1">
-                Do you have passion for programming and are hands on in working
-                in highly productive teams ?
-              </p>
-              <p>
-                <a
-                  className="f5 f4-ns link mh-blue"
-                  href="https://angel.co/mavenhive/jobs"
-                  target="_blank"
-                >
-                  Learn more and Apply…
-                </a>
-              </p>
-            </div>
-            <div className="tc ph4-ns w-third-l mt5 mt0-l">
-              <h3 className="f4">DevOps (Senior)</h3>
-              <p className="f5 f4-ns lh-mh-1">
-                Do you love to build and scale systems for high growth products
-                ?
-              </p>
-              <p>
-                <a
-                  className="f5 f4-ns link mh-blue"
-                  href="https://angel.co/mavenhive/jobs"
-                  target="_blank"
-                >
-                  Learn more and Apply…
-                </a>
-              </p>
-            </div>
+            {page.jobs.list.map((job, i) => (
+              <div className="tc ph4-ns w-third-l mt5 mt0-l" key={`job-${i}`}>
+                <h3 className="f4">{job.title}</h3>
+                <p className="f5 f4-ns lh-mh-1">{job.description}</p>
+                <p>
+                  <a
+                    className="f5 f4-ns link mh-blue"
+                    href={job.link}
+                    target="_blank"
+                  >
+                    Learn more and Apply…
+                  </a>
+                </p>
+              </div>
+            ))}
           </div>
         </div>
         <div className="bg-light-gray">
