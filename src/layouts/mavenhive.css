@@ -60,6 +60,9 @@ h1 {
 .hover-brand:hover {
   color: #EE5061 !important;
 }
+.b--brand {
+  border-color: #EE5061;
+}
 .bg-brand {
   background-color: #EE5061;
 }

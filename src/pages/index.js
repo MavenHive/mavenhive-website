@@ -2,12 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 import marked from 'marked'
 import Carousel from 'react-slick'
-// import Clients from '../components/Clients'
+import Services from '../components/Services'
 
 import Illustration from '../images/image_illustration.svg'
-import IconTechnology from '../icons/icon_technology.svg'
-import IconGrowth from '../icons/icon_growth.svg'
-import IconInnovation from '../icons/icon_innovation.svg'
 import IconMVP from '../icons/icon_mvp.svg'
 import IconRearchitect from '../icons/icon_rearchitect.svg'
 import IconEstablishment from '../icons/icon_establishment.svg'
@@ -46,6 +43,37 @@ const carouselSettings = {
   ],
 }
 
+const Arrow = () => (
+  <img
+    width="11"
+    height="21"
+    src={IconArrow}
+    alt=""
+    style={{ marginTop: '-11px' }}
+  />
+)
+
+const Step = ({icon, label}) => (
+  <li className="relative">
+    <img
+      className="db center mb2 pb1"
+      src={icon}
+      width="75"
+      height="75"
+      alt=""
+    />{label}
+  </li>
+)
+
+const Process = ({title, content}) => (
+  <div className="mv4 w-third-l ph3-l">
+    <h3 className="f5">{title}</h3>
+    <p className="lh-mh-1 ph4-l">
+      {content}
+    </p>
+  </div>
+)
+
 const IndexPage = () => (
   <div>
     <section className="mw-mavenhive center pa3 pa4-l mt3-l flex-l items-center justify-between tc tl-l">
@@ -58,7 +86,7 @@ const IndexPage = () => (
         <p>
           <Link
             to="/projects"
-            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
+            className="dib link f-1 pv1 ph4 ba b--brand br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
           >
             See what we have built
           </Link>
@@ -81,99 +109,34 @@ const IndexPage = () => (
             }}
           >
             <li
-              className="absolute bt bw1 flex justify-around mh-gray"
+              className="absolute bt bw1 flex justify-around gray"
               style={{
                 top: 'calc(50% - 0.5rem)',
-                right: '0',
-                left: '0',
+                right: '2rem',
+                left: '2rem',
                 zIndex: '0',
               }}
             >
-              <img
-                width="11"
-                height="21"
-                src={IconArrow}
-                alt=""
-                style={{ marginTop: '-11px' }}
-              />
-              <img
-                width="11"
-                height="21"
-                src={IconArrow}
-                alt=""
-                style={{ marginTop: '-11px' }}
-              />
-              <img
-                width="11"
-                height="21"
-                src={IconArrow}
-                alt=""
-                style={{ marginTop: '-11px' }}
-              />
+              <Arrow />
+              <Arrow />
+              <Arrow />
             </li>
-            <li className="relative">
-              <img
-                className="db center mb2 pb1"
-                src={IconMVP}
-                width="75"
-                height="75"
-                alt=""
-              />MVP
-            </li>
-            <li className="relative">
-              <img
-                className="db center mb2 pb1"
-                src={IconRearchitect}
-                width="75"
-                height="75"
-                alt=""
-              />Re-Architecture
-            </li>
-            <li className="relative">
-              <img
-                className="db center mb2 pb1"
-                src={IconEstablishment}
-                width="75"
-                height="75"
-                alt=""
-              />Establishment
-            </li>
-            <li className="relative">
-              <img
-                className="db center mb2 pb1"
-                src={IconStart}
-                width="75"
-                height="75"
-                alt=""
-              />Start
-            </li>
+            <Step icon={IconMVP} label='MVP' />
+            <Step icon={IconRearchitect} label='Re-Architecture' />
+            <Step icon={IconEstablishment} label='Establishment' />
+            <Step icon={IconStart} label='Start' />
           </ul>
         </div>
         <div className="flex-l justify-between mh-gray tracked-mh">
-          <div className="mv4 w-third-l ph3-l pl5-l pr4-l">
-            <h3 className="f5">MVP</h3>
-            <p className="lh-mh-1 ph4-l">
-              We form tech partnerships with our clients to validate idea. We
+          <Process title='MVP' content='We form tech partnerships with our clients to validate idea. We
               help build MVPs from scratch, complete with end-to end product
-              design, development, deployment and scaling.
-            </p>
-          </div>
-          <div className="mv4 w-third-l ph3-l ph4-l">
-            <h3 className="f5">Re-Architecture</h3>
-            <p className="lh-mh-1 ph4-l">
-              Growing fast but the tech lacks? Product needs bracing for rapid
+              design, development, deployment and scaling.' />
+          <Process title='Re-Architecture' content='Growing fast but the tech lacks? Product needs bracing for rapid
               user influx? We rebuild product designed to sustain long term
-              growth.
-            </p>
-          </div>
-          <div className="mv4 w-third-l ph3-l pl4-l pr5-l">
-            <h3 className="f5">Establishment and Stability</h3>
-            <p className="lh-mh-1 ph4-l">
-              That’s not all though, we also provide you with agile process
+              growth.' />
+          <Process title='Establishment and Stability' content='That’s not all though, we also provide you with agile process
               consulting, onsite coaching and technical training relevant to
-              your team’s needs.
-            </p>
-          </div>
+              your team’s needs.' />
         </div>
       </div>
     </section>
@@ -184,64 +147,11 @@ const IndexPage = () => (
         <p className="f-2 pb3 brand mh2 b">Technology that help you build.</p>
         <p className="f-2 pb3 brand mh2 b">Expertise to help you scale.</p>
       </div>
-      <div className="flex-l justify-center mb4">
-        <div className="w-third-l mb5">
-          <p className="dn-l f-2 pb3 brand ma2 b">Training to help you grow.</p>
-          <div
-            className="w3 h3 content-box pa2 center contain bg-center"
-            style={{ backgroundImage: `url(${IconTechnology})` }}
-            alt=""
-          />
-          <h3 className="f-1 brand ttu">Tech Partnership</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
-            <li className="mv2">Core Product or Project delivery</li>
-            <li className="mv2">Build MVP</li>
-            <li className="mv2">Inception and Project planning</li>
-            <li className="mv2">End-to-end Product Design</li>
-            <li className="mv2">Development, Deployment and Scaling</li>
-          </ul>
-        </div>
-        <div className="w-third-l mb5">
-          <p className="dn-l f-2 pb3 brand ma2 b">
-            Technology that help you build.
-          </p>
-          <div
-            className="w3 h3 content-box pa2 center contain bg-center"
-            style={{ backgroundImage: `url(${IconGrowth})` }}
-            alt=""
-          />
-          <h3 className="f-1 brand ttu">Enablement</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
-            <li className="mv2">Agile process consulting</li>
-            <li className="mv2">Training Developers</li>
-            <li className="mv2">Technical Training </li>
-            <li className="mv2">Onsite Coaching</li>
-          </ul>
-        </div>
-        <div className="w-third-l">
-          <p className="dn-l f-2 pb3 brand ma2 b">
-            Expertise to help you scale.
-          </p>
-          <div
-            className="w3 h3 content-box pa2 center contain bg-center"
-            style={{ backgroundImage: `url(${IconInnovation})` }}
-            alt=""
-          />
-          <h3 className="f-1 brand ttu">Innovation</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
-            <li className="mv2">Design Thinking</li>
-            <li className="mv2">Rapid prototyping</li>
-            <li className="mv2">New technology research and migration</li>
-            <li className="mv2">
-              Experimentation with business models, products and features
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Services />
       <p className="">
         <Link
           to="/services"
-          className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
+          className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
         >
           See all our services
         </Link>
@@ -261,10 +171,15 @@ const IndexPage = () => (
         ))}
       </div>
       <div className="mw-mavenhive center">
-        <p className="f3">{ page.clients.heading }</p>
+        <p className="f3">{page.clients.heading}</p>
         <div className="flex items-center justify-center flex-wrap">
           {page.clients.list.map((client, i) => (
-            <img className="mh3 mv2" src={client.logo} alt="" key={`client-${i}`} />
+            <img
+              className="mh3 mv2"
+              src={client.logo}
+              alt=""
+              key={`client-${i}`}
+            />
           ))}
         </div>
       </div>
@@ -300,10 +215,10 @@ const IndexPage = () => (
         />
         <p>
           <Link
-            to="/contact"
-            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
+            to={page.cta.button.link}
+            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
           >
-            Start a project with us
+            {page.cta.button.label}
           </Link>
         </p>
       </div>

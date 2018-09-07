@@ -2,11 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import marked from 'marked'
-
-import IconTechnology from '../icons/icon_technology.svg'
-import IconGrowth from '../icons/icon_growth.svg'
-import IconInnovation from '../icons/icon_innovation.svg'
-
+import Services from '../components/Services'
 import page from '../content/services.json'
 
 const frontmatter = {
@@ -28,53 +24,7 @@ export default () => (
     </section>
 
     <section className="mw-mavenhive center pa3 pv4-ns tc mb3 mb5-l">
-      <div className="flex-l justify-center mb4">
-        <div className="w-third-l mb5">
-          <div
-            className="w3 h3 content-box pa2 center contain bg-center"
-            style={{ backgroundImage: `url(${IconTechnology})` }}
-            alt=""
-          />
-          <h3 className="f-1 brand ttu">Tech Partnership</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
-            <li className="mv2">Core Product or Project delivery</li>
-            <li className="mv2">Build MVP</li>
-            <li className="mv2">Inception and Project planning</li>
-            <li className="mv2">End-to-end Product Design</li>
-            <li className="mv2">Development, Deployment and Scaling</li>
-          </ul>
-        </div>
-        <div className="w-third-l mb5">
-          <div
-            className="w3 h3 content-box pa2 center contain bg-center"
-            style={{ backgroundImage: `url(${IconGrowth})` }}
-            alt=""
-          />
-          <h3 className="f-1 brand ttu">Enablement</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
-            <li className="mv2">Agile process consulting</li>
-            <li className="mv2">Training Developers</li>
-            <li className="mv2">Technical Training </li>
-            <li className="mv2">Onsite Coaching</li>
-          </ul>
-        </div>
-        <div className="w-third-l">
-          <div
-            className="w3 h3 content-box pa2 center contain bg-center"
-            style={{ backgroundImage: `url(${IconInnovation})` }}
-            alt=""
-          />
-          <h3 className="f-1 brand ttu">Innovation</h3>
-          <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
-            <li className="mv2">Design Thinking</li>
-            <li className="mv2">Rapid prototyping</li>
-            <li className="mv2">New technology research and migration</li>
-            <li className="mv2">
-              Experimentation with business models, products and features
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Services />
     </section>
 
     <section className="mw8 center mb4 mb5-l ph3 ph5-l">
@@ -90,7 +40,7 @@ export default () => (
         <p className="mh-light-gray f3 lh-copy">{page.cta1.content}</p>
         <Link
           to={page.cta1.button.link}
-          className="mh-gray dib link f-1 pv2 ph4 ba br2 b--silver tc w-100 w-auto-ns bg-white"
+          className="mh-gray dib link f-1 pv2 ph4 ba br2 b--silver tc w-100 w-auto-ns bg-white hover-bg-near-white bg-animate"
         >
           {page.cta1.button.label}
         </Link>
@@ -106,7 +56,7 @@ export default () => (
         <p>
           <Link
             to={page.cta.button.link}
-            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand"
+            className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
           >
             {page.cta.button.label}
           </Link>

@@ -6,7 +6,6 @@ import marked from 'marked'
 
 import Member from '../components/Member'
 
-import Background from '../images/image_people.svg'
 import VideoImage from '../images/image_teamvideo.png'
 import IconPolyglot from '../icons/icon_polyglot.svg'
 import IconFlexible from '../icons/icon_flexible.svg'
@@ -96,7 +95,7 @@ export default () => (
     <div
       className="bg-people cover bg-center relative h5 pb5 content-box"
       style={{
-        backgroundImage: `url(${Background})`,
+        backgroundImage: `url(${people.cover})`,
       }}
     >
       <div className="mw-mavenhive center ph3 mv5 pt3 h5">
@@ -173,7 +172,7 @@ export default () => (
         <p>
           <Link
             to={people.cta.button.link}
-            className="dib link f-1 pv1 ph4 br2 fw5 tc w-100 w-auto-ns white ba"
+            className="dib link f-1 pv1 ph4 br2 fw5 tc w-100 w-auto-ns white ba bg-brand hover-bg-dark-red bg-animate"
           >
             {people.cta.button.label}
           </Link>

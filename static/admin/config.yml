@@ -216,3 +216,4 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Page Heading, name: heading, widget: string}
+          - {label: Form Heading, name: formHeading, widget: string}

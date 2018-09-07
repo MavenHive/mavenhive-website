@@ -1,21 +1,21 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-import Background from '../images/image_clienthive.svg'
 import FormBackground from '../images/image_lauchpad.png'
+import page from '../content/contact.json'
 
-export default () => (
+export default (props) => (
   <div>
-    <Helmet title="Start a project with us | MavenHive" />
+    <Helmet title={`${page.title} | MavenHive`} />
     <div
       className="cover mv3 relative bg-center h5 pv5 content-box"
       style={{
-        backgroundImage: `url(${Background})`,
+        backgroundImage: `url(${page.cover})`,
       }}
     >
       <div className="mw-mavenhive center ph3">
         <h1 className="f2 normal measure-mh-narrow lh-mh-1">
-          &ldquo;Start a Project with us to build awesome product&rdquo;
+          {page.heading}
         </h1>
       </div>
     </div>
@@ -26,7 +26,7 @@ export default () => (
       }}
     >
       <h2 className="f3 normal mt0 mb4 pb3">
-        Please add your project details, we will get back to you
+        {page.formHeading}
       </h2>
       <form
         className="mw6 tracked-mh"
@@ -90,7 +90,7 @@ export default () => (
             Don’t fill this out: <input name="bot-field" />
           </label>
         </p>
-        <button className="f-1 bg-brand br2 white pv2 ph4 tc bw0 pointer">
+        <button className="f-1 bg-brand br2 white pv2 ph4 tc bw0 pointer hover-bg-dark-red bg-animate">
           Submit
         </button>
       </form>
