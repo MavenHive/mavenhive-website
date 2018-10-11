@@ -1,5 +1,8 @@
 # Mavenhive Website
 
+You can deploy this to Netlify using this: 
+<a href="https://app.netlify.com/start/deploy?repository=https://github.com/MavenHive/mavenhive-website&amp;stack=cms"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a>
+
 ## Setup
 
 * Unzip the file or clone the repo and run `npm install` to install all the dependencies. 
