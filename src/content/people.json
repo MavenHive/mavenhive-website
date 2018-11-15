@@ -25,20 +25,12 @@
     },
     {
       "member": {
-        "avatar": "/img/screen shot 2018-05-24 at 10.21.11 am.png",
-        "name": "Sneha Koti",
-        "role": "Senior Associate",
-        "blurb": "MavenHive used to be an idyllic commune of trusting mavens working in harmony. And then she joined us. We now have a generally distrustful atmosphere replete with hot-dogging and vote fudging. Will post a blurb as soon as our official PR person can find his laptop, which he had forgotten to chain to his desk."
-      }
-    },
-    {
-      "member": {
-        "avatar": "/img/rsz_dsc_0104.jpg",
-        "name": "Piyush Sinha",
-        "role": "Associate ",
-        "blurb": "Some text some text",
-        "twitter": "",
-        "linkedin": "https://www.linkedin.com/in/piyushsinha94/"
+        "avatar": "/img/0.jpeg",
+        "name": "Monika",
+        "role": "Associate",
+        "blurb": "some text some text",
+        "twitter": "w",
+        "linkedin": "https://www.linkedin.com/in/monika-m-a9a8b932/"
       }
     },
     {
@@ -53,12 +45,20 @@
     },
     {
       "member": {
-        "avatar": "/img/0.jpeg",
-        "name": "Monika",
-        "role": "Associate",
-        "blurb": "some text some text",
-        "twitter": "w",
-        "linkedin": "https://www.linkedin.com/in/monika-m-a9a8b932/"
+        "avatar": "/img/screen shot 2018-05-24 at 10.21.11 am.png",
+        "name": "Sneha Koti",
+        "role": "Senior Associate",
+        "blurb": "MavenHive used to be an idyllic commune of trusting mavens working in harmony. And then she joined us. We now have a generally distrustful atmosphere replete with hot-dogging and vote fudging. Will post a blurb as soon as our official PR person can find his laptop, which he had forgotten to chain to his desk."
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/rsz_dsc_0104.jpg",
+        "name": "Piyush Sinha",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/piyushsinha94/"
       }
     },
     {
