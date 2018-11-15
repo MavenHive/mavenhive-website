@@ -49,6 +49,14 @@
         "twitter": "w",
         "linkedin": "w"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/dsc_0123.jpg",
+        "name": "Pujith M",
+        "role": "Associate",
+        "linkedin": "https://www.linkedin.com/in/pujith-m/"
+      }
     }
   ],
   "cta": {
