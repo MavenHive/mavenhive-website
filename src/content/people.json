@@ -68,6 +68,15 @@
         "twitter": "w",
         "linkedin": "https://www.linkedin.com/in/nikshep-av/"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/dsc_0094.jpg",
+        "name": "Shashidhara Gopal",
+        "role": "Associate",
+        "blurb": "some text some text",
+        "linkedin": "https://www.linkedin.com/in/shashidhara-gopal/"
+      }
     }
   ],
   "cta": {
