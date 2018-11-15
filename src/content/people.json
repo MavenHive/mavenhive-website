@@ -77,6 +77,24 @@
         "blurb": "some text some text",
         "linkedin": "https://www.linkedin.com/in/shashidhara-gopal/"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/dsc_0112.jpg",
+        "name": "Arpit Shah",
+        "role": "Associate",
+        "blurb": "some text some text"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/screen shot 2018-05-24 at 10.26.58 am.png",
+        "name": "Jayaraman Anandha Krishnan",
+        "role": "Co-Founder",
+        "blurb": "We asked him to tell us a bit about himself. After three-and-a-half hours, we knew everything about why we shouldn't buy multiple houses (even though he buys a new one every other month), the state of Bangalore's schooling system, and something about scuba diving that cannot be mentioned here. Of course, we still didn't get to him telling us anything about himself, so his blurb is still WIP.",
+        "twitter": "https://twitter.com/anandhak",
+        "linkedin": "https://www.linkedin.com/in/anandhakrishnanj/"
+      }
     }
   ],
   "cta": {
