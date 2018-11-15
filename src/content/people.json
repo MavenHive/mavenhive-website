@@ -47,16 +47,6 @@
         "twitter": "w",
         "linkedin": "w"
       }
-    },
-    {
-      "member": {
-        "avatar": "/img/profilepic.jpeg",
-        "name": "Pujith M",
-        "role": "Associate ",
-        "blurb": "Likes to code. and many more ...",
-        "twitter": "https://twitter.com/pujith_M",
-        "linkedin": "https://www.linkedin.com/in/pujith-m"
-      }
     }
   ],
   "cta": {
