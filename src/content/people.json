@@ -5,9 +5,19 @@
   "team": [
     {
       "member": {
+        "avatar": "/img/bhavin_h.jpg",
+        "name": "Bhavin Chandulal Javia",
+        "role": "Founder & Director",
+        "blurb": "As a programming enthusiast, he founded a firm meant to put the fun back into application development. Now spends 70 hours a week doing taxes, approving expense reports, and other administrative stuff. We thought it best to give him a wide berth.",
+        "twitter": "https://twitter.com/bhavinjavia",
+        "linkedin": "https://www.linkedin.com/in/bhavinjavia/"
+      }
+    },
+    {
+      "member": {
         "avatar": "/img/screen shot 2018-05-24 at 10.26.58 am.png",
         "name": "Jayaraman Anandha Krishnan",
-        "role": "Co-Founder",
+        "role": "Co-Founder & Director",
         "blurb": "We asked him to tell us a bit about himself. After three-and-a-half hours, we knew everything about why we shouldn't buy multiple houses (even though he buys a new one every other month), the state of Bangalore's schooling system, and something about scuba diving that cannot be mentioned here. Of course, we still didn't get to him telling us anything about himself, so his blurb is still WIP.",
         "twitter": "https://twitter.com/anandhak",
         "linkedin": "https://www.linkedin.com/in/anandhakrishnanj/"
@@ -94,16 +104,6 @@
         "name": "Arpit Shah",
         "role": "Associate",
         "blurb": "some text some text"
-      }
-    },
-    {
-      "member": {
-        "avatar": "/img/bhavin_h.jpg",
-        "name": "Bhavin Chandulal Javia",
-        "role": "Founder & Director",
-        "blurb": "As a programming enthusiast, he founded a firm meant to put the fun back into application development. Now spends 70 hours a week doing taxes, approving expense reports, and other administrative stuff. We thought it best to give him a wide berth.",
-        "twitter": "https://twitter.com/bhavinjavia",
-        "linkedin": "https://www.linkedin.com/in/bhavinjavia/"
       }
     }
   ],
