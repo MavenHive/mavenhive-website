@@ -35,10 +35,10 @@
       "member": {
         "avatar": "/img/dsc_0102.jpg",
         "name": "Chetan Kumar",
-        "role": "Associate",
+        "role": "Admin",
         "blurb": "Some text some text",
-        "twitter": "w",
-        "linkedin": "w"
+        "twitter": "",
+        "linkedin": "https://www.linkedin.com/in/chethan-kumar-a4055a49/"
       }
     },
     {
