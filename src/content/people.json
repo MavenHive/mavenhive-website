@@ -95,6 +95,16 @@
         "role": "Associate",
         "blurb": "some text some text"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/bhavin_h.jpg",
+        "name": "Bhavin Chandulal Javia",
+        "role": "Founder & Director",
+        "blurb": "As a programming enthusiast, he founded a firm meant to put the fun back into application development. Now spends 70 hours a week doing taxes, approving expense reports, and other administrative stuff. We thought it best to give him a wide berth.",
+        "twitter": "https://twitter.com/bhavinjavia",
+        "linkedin": "https://www.linkedin.com/in/bhavinjavia/"
+      }
     }
   ],
   "cta": {
