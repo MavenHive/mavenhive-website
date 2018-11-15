@@ -58,6 +58,16 @@
         "role": "Associate",
         "linkedin": "https://www.linkedin.com/in/pujith-m/"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/dsc_0115.jpg",
+        "name": "Nikshep A V",
+        "role": "Associate",
+        "blurb": "Some text some text",
+        "twitter": "w",
+        "linkedin": "https://www.linkedin.com/in/nikshep-av/"
+      }
     }
   ],
   "cta": {
