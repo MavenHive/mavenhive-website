@@ -43,11 +43,12 @@
     },
     {
       "member": {
+        "avatar": "/img/0.jpeg",
         "name": "Monika",
         "role": "Associate",
         "blurb": "some text some text",
         "twitter": "w",
-        "linkedin": "w"
+        "linkedin": "https://www.linkedin.com/in/monika-m-a9a8b932/"
       }
     },
     {
