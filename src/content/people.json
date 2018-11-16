@@ -107,6 +107,16 @@
         "twitter": "w",
         "linkedin": "https://www.linkedin.com/in/arpitshah1990/"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/0 (1).jpeg",
+        "name": "Shivakumar H G",
+        "role": "Associate",
+        "blurb": "some text some text",
+        "twitter": "https://twitter.com/Shivhg",
+        "linkedin": "https://www.linkedin.com/in/shivhg/"
+      }
     }
   ],
   "cta": {
