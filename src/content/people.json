@@ -135,6 +135,16 @@
         "blurb": "some text some text",
         "linkedin": "https://www.linkedin.com/in/thestrongenough/"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/raju_h.jpg",
+        "name": "Raju G T",
+        "role": "Associate ",
+        "blurb": "some text some text",
+        "twitter": "https://twitter.com/_rajuGT",
+        "linkedin": "https://www.linkedin.com/in/rajugt/"
+      }
     }
   ],
   "cta": {
