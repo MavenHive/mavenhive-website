@@ -145,6 +145,15 @@
         "twitter": "https://twitter.com/_rajuGT",
         "linkedin": "https://www.linkedin.com/in/rajugt/"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/anoop_h.jpg",
+        "name": "Anoop Narang",
+        "role": "Associate",
+        "blurb": "some text some text",
+        "linkedin": "https://www.linkedin.com/in/anoop-narang-b029837b/"
+      }
     }
   ],
   "cta": {
