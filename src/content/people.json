@@ -154,7 +154,18 @@
         "blurb": "some text some text",
         "linkedin": "https://www.linkedin.com/in/anoop-narang-b029837b/"
       }
-    }
+    },
+    {
+      "member": {
+        "avatar": "/img/vijit_h.jpg",
+        "name": "Vijith M V",
+        "role": "Associate ",
+        "blurb": "some text some text",
+        "twitter": "https://twitter.com/vijithmv1",
+        "linkedin": "https://www.linkedin.com/in/vijith-mv-64661bb0/"
+      }
+    },
+    {}
   ],
   "cta": {
     "heading": "We are always Hiring!!",
