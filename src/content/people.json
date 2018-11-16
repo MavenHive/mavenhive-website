@@ -165,7 +165,15 @@
         "linkedin": "https://www.linkedin.com/in/vijith-mv-64661bb0/"
       }
     },
-    {}
+    {
+      "member": {
+        "avatar": "/img/sachin_s_hover.jpg",
+        "name": "Sachin Sudheendra ",
+        "role": "Consultant ",
+        "blurb": "Some text ",
+        "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
+      }
+    }
   ],
   "cta": {
     "heading": "We are always Hiring!!",
