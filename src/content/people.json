@@ -103,7 +103,9 @@
         "avatar": "/img/dsc_0112.jpg",
         "name": "Arpit Shah",
         "role": "Associate",
-        "blurb": "some text some text"
+        "blurb": "some text some text",
+        "twitter": "w",
+        "linkedin": "https://www.linkedin.com/in/arpitshah1990/"
       }
     }
   ],
