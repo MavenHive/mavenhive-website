@@ -173,6 +173,15 @@
         "blurb": "Some text some text",
         "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
       }
+    },
+    {
+      "member": {
+        "avatar": "/img/jaya_h.jpg",
+        "name": "Jayalaxmi Dinni",
+        "role": "Senior Designer",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/jayaa/"
+      }
     }
   ],
   "cta": {
