@@ -14,6 +14,9 @@ import IconSkeptical from '../icons/icon_skeptical.svg'
 
 import people from '../content/people.json'
 
+const width = window.document.body.offsetWidth
+const gridGap = width > 1280 ? '1rem' : '2rem'
+const gridWidth = width > 1280 ? '220px' : '160px'
 class Video extends Component {
   constructor(props) {
     super(props)
@@ -146,21 +149,29 @@ export default () => (
 
     <div className="mw-mavenhive center mv3 pa3">
       <h2 className="f3 ttu tc mh-gray normal mb4 tracked">Our Team</h2>
-      {people.team.map((member, i) => {
-        const person = member.member
-        if (!person) return null
-        return (
-          <Member
-            name={person.name}
-            role={person.role}
-            avatar={person.avatar}
-            twitter={person.twitter}
-            linkedin={person.linkedin}
-            blurb={person.blurb}
-            key={`person-${i}`}
-          />
-        )
-      })}
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: `repeat(auto-fill, minmax(${gridWidth}, 1fr))`,
+          gridGap: gridGap,
+        }}
+      >
+        {people.team.map((member, i) => {
+          const person = member.member
+          if (!person) return null
+          return (
+            <Member
+              name={person.name}
+              role={person.role}
+              avatar={person.avatar}
+              twitter={person.twitter}
+              linkedin={person.linkedin}
+              blurb={person.blurb}
+              key={`person-${i}`}
+            />
+          )
+        })}
+      </div>
     </div>
     <section className="pv4-ns bg-brand white tc">
       <div className="mw-mavenhive center pa3 ph5-l cta">

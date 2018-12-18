@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
 import Logo from '../../images/MavenHive-logo_red.svg'
-import Menu from '../../icons/menu.svg'
+import Menu from '../../icons/icon-menu.svg'
 
 class HeaderLinks extends Component {
   constructor(props) {
@@ -45,7 +45,7 @@ class HeaderLinks extends Component {
     return (
       <div className="dt relative">
         <button
-          className="dtc bw0 bg-transparent pa0 dn-l"
+          className="dtc bw0 bg-transparent pa0 dn-l v-top w2 h2"
           id="menu-button"
           onClick={this.showMenu}
         >
