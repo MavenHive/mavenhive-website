@@ -14,9 +14,8 @@ import IconSkeptical from '../icons/icon_skeptical.svg'
 
 import people from '../content/people.json'
 
-const width = window.document.body.offsetWidth
-const gridGap = width > 1280 ? '1rem' : '2rem'
-const gridWidth = width > 1280 ? '220px' : '160px'
+const gridGap = '1rem'
+const gridWidth = '160px'
 class Video extends Component {
   constructor(props) {
     super(props)

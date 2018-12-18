@@ -5,9 +5,8 @@ import Member from '../components/Member'
 import page from '../content/alumni.json'
 
 export default () => {
-  const width = window.document.body.offsetWidth
-  const gridGap = width > 1280 ? '1rem' : '2rem'
-  const gridWidth = width > 1280 ? '220px' : '160px'
+  const gridGap = '1rem'
+  const gridWidth = '160px'
   return (
     <div className="mw-mavenhive center ph3 mt5 mb4 pt3">
       <Helmet title={`${page.title} | MavenHive`} />
