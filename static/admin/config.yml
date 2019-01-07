@@ -9,7 +9,7 @@ collections:
     files:
       - label: "Projects"
         name: "projects"
-        file: "src/content/projects.json"
+        file: "src/content/portfolio.json"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Page Heading, name: heading, widget: string}

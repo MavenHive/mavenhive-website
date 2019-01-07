@@ -85,10 +85,10 @@ const IndexPage = () => (
         </p>
         <p>
           <Link
-            to="/projects"
+            to="/portfolio"
             className="dib link f-1 pv1 ph4 ba b--brand br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
           >
-            See what we have built
+              {page['hero-cta']}<i icon={IconStart}/>
           </Link>
         </p>
       </div>
@@ -124,17 +124,17 @@ const IndexPage = () => (
             <Step icon={IconMVP} label='MVP' />
             <Step icon={IconRearchitect} label='Re-Architecture' />
             <Step icon={IconEstablishment} label='Establishment' />
-            <Step icon={IconStart} label='Start' />
+            <Step icon={IconStart} label='Stability' />
           </ul>
         </div>
         <div className="flex-l justify-between mh-gray tracked-mh">
-          <Process title='MVP' content='We form tech partnerships with our clients to validate idea. We
+          <Process title='MVP' content='We form tech partnerships with our clients to validate ideas. We
               help build MVPs from scratch, complete with end-to end product
               design, development, deployment and scaling.' />
           <Process title='Re-Architecture' content='Growing fast but the tech lacks? Product needs bracing for rapid
-              user influx? We rebuild product designed to sustain long term
+              user influx? We rebuild products and help design to sustain long term
               growth.' />
-          <Process title='Establishment and Stability' content='That’s not all though, we also provide you with agile process
+          <Process title='Establishment and Stability' content='That’s not all though, we provide agile process
               consulting, onsite coaching and technical training relevant to
               your team’s needs.' />
         </div>
@@ -143,9 +143,9 @@ const IndexPage = () => (
 
     <section className="mw-mavenhive center pa3 pv4-ns tc">
       <div className="dn db-l flex-l justify-center mb4">
-        <p className="f-2 pb3 brand mh2 b">Training to help you grow.</p>
-        <p className="f-2 pb3 brand mh2 b">Technology that help you build.</p>
+        <p className="f-2 pb3 brand mh2 b">Technology that helps you build.</p>
         <p className="f-2 pb3 brand mh2 b">Expertise to help you scale.</p>
+        <p className="f-2 pb3 brand mh2 b">Training to help you grow.</p>
       </div>
       <Services />
       <p className="">

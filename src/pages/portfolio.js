@@ -3,10 +3,10 @@ import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import ReactModal from 'react-modal'
 
-import Illustration from '../images/image_projects.svg'
+import Illustration from '../images/image_portfolio.svg'
 import VideoIcon from '../icons/icon_play.svg'
 
-import projects from '../content/projects.json'
+import portfolio from '../content/portfolio.json'
 
 const Project = ({ heading, client, services, summary, details }) => (
   <div className="pv2 mw8">
@@ -82,20 +82,20 @@ class Video extends Component {
 
 export default () => (
   <div>
-    <Helmet title={`${projects.title} | MavenHive`} />
+    <Helmet title={`${portfolio.title} | MavenHive`} />
     <section className="mw-mavenhive center ph3 mt5-l pt3 flex-l items-center justify-between">
       <img className="dn db-l self-end order-1" src={Illustration} alt="" />
       <div className="mb6">
-        <h1 className="f2 normal measure-narrow">{projects.heading}</h1>
+        <h1 className="f2 normal measure-narrow">{portfolio.heading}</h1>
         <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
-          {projects['sub-heading']}
+          {portfolio['sub-heading']}
         </p>
       </div>
     </section>
 
     <section className="mw-mavenhive center ph3 mb5">
       <h2 className="f3 brand mb4">Our Projects</h2>
-      {projects.projects.map((project, i) => (
+      {portfolio.portfolio.map((project, i) => (
         <Project
           heading={project.heading}
           client={project.client}
@@ -109,28 +109,28 @@ export default () => (
 
     <section className="mw-mavenhive center ph3 mb5 tc">
       <p className="mw8 center f3 lh-mh ph6-l mv0">
-        {projects.showcase.heading}
+        {portfolio.showcase.heading}
       </p>
       <div className="mb3">
-        <img src={projects.showcase.logo} alt="" />
+        <img src={portfolio.showcase.logo} alt="" />
       </div>
       <div>
-        <Video VideoIcon={VideoIcon} url={projects.showcase.url} />
+        <Video VideoIcon={VideoIcon} url={portfolio.showcase.url} />
       </div>
     </section>
 
     <section className="pv4-ns bg-navy white tc">
       <div className="mw8 center pa3 ph5-l">
-        <h3 className="ttu mb4 f4 lh-title">{projects.cta.heading}</h3>
+        <h3 className="ttu mb4 f4 lh-title">{portfolio.cta.heading}</h3>
         <div className="measure-mh center lh-copy f-1 mb4 mb5-l">
-          <p>{projects.cta.content}</p>
+          <p>{portfolio.cta.content}</p>
         </div>
         <p>
           <Link
-            to={projects.cta.button.link}
+            to={portfolio.cta.button.link}
             className="dib link f-1 pv1 ph4 ba b--transparent br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
           >
-            {projects.cta.button.label}
+            {portfolio.cta.button.label}
           </Link>
         </p>
       </div>
