@@ -4,6 +4,27 @@
   "sub-heading": "We have consulted clients across all major domains!",
   "portfolio": [
     {
+      "heading": "Ever-greening Enterprise Tech",
+      "client": "GRASSHOPPER",
+      "services": "PRODUCT DEVELOPMENT & RE-ARCHITECTURE",
+      "summary": "A re-build solution for the VoIP SaaS leader",
+      "details": "Grasshopper is a US based 13+ years old company providing cloud based telephony services to startups. They wanted to enter international markets and expand. But their decade old system was not scaling. So they wanted to re-architect and rebuild their core system. MicroService Architecture. API based system. Adhersion."
+    },
+    {
+      "heading": "The Non-profit MVP story",
+      "client": "GRASSHOPPER",
+"services": "PRODUCT DE SIGN    AND DEVELOPMENT",
+      "summary": "A US client’s MVP built by a 3 person team and launched in 6 months resulted in $1M+ funding",
+      "details": "Grasshopper is a US based 13+ years old company providing cloud based telephony services to startups. They wanted to enter international markets and expand. But their decade old system was not scaling. So they wanted to re-architect and rebuild their core system. MicroService Architecture. API based system. Adhersion."
+    },
+    {
+      "heading": "The Non-profit MVP story",
+      "client": "GRASSHOPPER",
+      "services": "PRODUCT DESIGN AND DEVELOPMENT",
+      "summary": "A US client’s MVP built by a 3 person team and launched in 6 months resulted in $1M+ funding",
+      "details": "Grasshopper is a US based 13+ years old company providing cloud based telephony services to startups. They wanted to enter international markets and expand. But their decade old system was not scaling. So they wanted to re-architect and rebuild their core system. MicroService Architecture. API based system. Adhersion."
+    },
+    {
       "heading": "The Non-profit MVP story",
       "client": "GRASSHOPPER",
       "services": "PRODUCT DESIGN AND DEVELOPMENT",

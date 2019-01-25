@@ -128,15 +128,14 @@ const IndexPage = () => (
           </ul>
         </div>
         <div className="flex-l justify-between mh-gray tracked-mh">
-          <Process title='MVP' content='We form tech partnerships with our clients to validate ideas. We
-              help build MVPs from scratch, complete with end-to end product
-              design, development, deployment and scaling.' />
-          <Process title='Re-Architecture' content='Growing fast but the tech lacks? Product needs bracing for rapid
-              user influx? We rebuild products and help design to sustain long term
-              growth.' />
-          <Process title='Establishment and Stability' content='That’s not all though, we provide agile process
-              consulting, onsite coaching and technical training relevant to
-              your team’s needs.' />
+          <Process title='MVP' content="Tech partnerships that help clients validate core ideas. MVPs built from scratch,
+              complete with end-to end product design, development, deployment and scaling" />
+          <Process title='Re-Architecture' content='Tech not keeping up with business? Products needs bracing for rapid
+              user influx. We rebuild products and help scale design to sustain long term
+              growth' />
+          <Process title='Establishment and Stability' content='Agile process
+              consulting, on-site coaching & technical training relevant to
+              your team’s needs. Magic sauce that helps successful product stay on top' />
         </div>
       </div>
     </section>

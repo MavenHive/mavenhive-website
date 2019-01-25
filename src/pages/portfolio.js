@@ -93,6 +93,18 @@ export default () => (
       </div>
     </section>
 
+      <section className="mw-mavenhive center ph3 mb5 tc">
+          <p className="mw8 center f3 lh-mh ph6-l mv0">
+              {portfolio.showcase.heading}
+          </p>
+          <div className="mb3">
+              <img src={portfolio.showcase.logo} alt="" />
+          </div>
+          <div>
+              <Video VideoIcon={VideoIcon} url={portfolio.showcase.url} />
+          </div>
+      </section>
+
     <section className="mw-mavenhive center ph3 mb5">
       <h2 className="f3 brand mb4">Our Projects</h2>
       {portfolio.portfolio.map((project, i) => (
@@ -107,17 +119,7 @@ export default () => (
       ))}
     </section>
 
-    <section className="mw-mavenhive center ph3 mb5 tc">
-      <p className="mw8 center f3 lh-mh ph6-l mv0">
-        {portfolio.showcase.heading}
-      </p>
-      <div className="mb3">
-        <img src={portfolio.showcase.logo} alt="" />
-      </div>
-      <div>
-        <Video VideoIcon={VideoIcon} url={portfolio.showcase.url} />
-      </div>
-    </section>
+
 
     <section className="pv4-ns bg-navy white tc">
       <div className="mw8 center pa3 ph5-l">
