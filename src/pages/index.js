@@ -3,17 +3,14 @@ import Link from 'gatsby-link'
 import marked from 'marked'
 import Carousel from 'react-slick'
 import Services from '../components/Services'
-
 import Illustration from '../images/image_illustration.svg'
 import IconMVP from '../icons/icon_mvp.svg'
 import IconRearchitect from '../icons/icon_rearchitect.svg'
 import IconEstablishment from '../icons/icon_establishment.svg'
 import IconStart from '../icons/icon_start.svg'
 import IconArrow from '../icons/icon_arrow.png'
-
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
 import page from '../content/home.json'
 
 const carouselSettings = {
@@ -49,7 +46,7 @@ const Arrow = () => (
     height="21"
     src={IconArrow}
     alt=""
-    style={{ marginTop: '-11px' }}
+    style={{marginTop: '-11px'}}
   />
 )
 
@@ -77,7 +74,7 @@ const Process = ({title, content}) => (
 const IndexPage = () => (
   <div>
     <section className="mw-mavenhive center pa3 pa4-l mt3-l flex-l items-center justify-between tc tl-l">
-      <img className="order-1 w-60 w-auto-ns" src={Illustration} alt="" />
+      <img className="order-1 w-60 w-auto-ns" src={Illustration} alt=""/>
       <div>
         <h1 className="f2 normal">{page.heading}</h1>
         <p className="measure measure-wide-l center lh-copy f4 mb4 mh2 mb5-l">
@@ -88,7 +85,7 @@ const IndexPage = () => (
             to="/portfolio"
             className="dib link f-1 pv1 ph4 ba b--brand br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
           >
-              {page['hero-cta']}<i icon={IconStart}/>
+            {page['hero-cta']}<i icon={IconStart}/>
           </Link>
         </p>
       </div>
@@ -117,28 +114,56 @@ const IndexPage = () => (
                 zIndex: '0',
               }}
             >
-              <Arrow />
-              <Arrow />
-              <Arrow />
+              <Arrow/>
+              <Arrow/>
+              <Arrow/>
             </li>
-            <Step icon={IconMVP} label='MVP' />
-            <Step icon={IconRearchitect} label='Re-Architecture' />
-            <Step icon={IconEstablishment} label='Establishment' />
-            <Step icon={IconStart} label='Stability' />
+            <Step icon={IconMVP} label='MVP'/>
+            <Step icon={IconRearchitect} label='Re-Architecture'/>
+            <Step icon={IconEstablishment} label='Establishment'/>
+            <Step icon={IconStart} label='Stability'/>
           </ul>
         </div>
         <div className="flex-l justify-between mh-gray tracked-mh">
           <Process title='MVP' content="Tech partnerships that help clients validate core ideas. MVPs built from scratch,
-              complete with end-to end product design, development, deployment and scaling" />
+              complete with end-to end product design, development, deployment and scaling"/>
           <Process title='Re-Architecture' content='Tech not keeping up with business? Products needs bracing for rapid
               user influx. We rebuild products and help scale design to sustain long term
-              growth' />
+              growth'/>
           <Process title='Establishment and Stability' content='Agile process
               consulting, on-site coaching & technical training relevant to
-              your team’s needs. Magic sauce that helps successful product stay on top' />
+              your team’s needs. Magic sauce that helps successful product stay on top'/>
         </div>
       </div>
     </section>
+
+    <div className="mw-mavenhive center">
+      <section className="mt4 mb5 pa3 ph4-l">
+        <div className="tc tracked-mh">
+          <Carousel {...carouselSettings}>
+            {page.testimonials.map((testimonial, i) => (
+              <div
+                className="dib mw6 ph4 ws-normal v-top"
+                key={`testimonial-${i}`}
+              >
+                <section>
+                  <div
+                    className="h2 content-box pa3 center contain bg-center"
+                    style={{backgroundImage: `url(${testimonial.logo})`}}
+                    alt=""
+                  />
+                  <div style={{lineHeight: 0.01 + "em"}}>
+                    <h4 className="f5 lh-title">{testimonial.name}</h4>
+                    <h5>{testimonial.position}</h5>
+                  </div>
+                  <p className="lh-copy">{testimonial.content}</p>
+                </section>
+              </div>
+            ))}
+          </Carousel>
+        </div>
+      </section>
+    </div>
 
     <section className="mw-mavenhive center pa3 pv4-ns tc">
       <div className="dn db-l flex-l justify-center mb4">
@@ -146,7 +171,7 @@ const IndexPage = () => (
         <p className="f-2 pb3 brand mh2 b">Expertise to help you scale.</p>
         <p className="f-2 pb3 brand mh2 b">Training to help you grow.</p>
       </div>
-      <Services />
+      <Services/>
       <p className="">
         <Link
           to="/services"
@@ -184,33 +209,12 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <div className="mw-mavenhive center">
-      <section className="mt4 mb5 pa3 ph4-l">
-        <div className="tc tracked-mh">
-          <Carousel {...carouselSettings}>
-            {page.testimonials.map((testimonial, i) => (
-              <div
-                className="dib mw6 ph4 ws-normal v-top"
-                key={`testimonial-${i}`}
-              >
-                <section>
-                  <h4 className="f5 lh-title">{testimonial.position}</h4>
-                  <h5 className="f5 normal">{testimonial.name}</h5>
-                  <p className="lh-copy">{testimonial.content}</p>
-                </section>
-              </div>
-            ))}
-          </Carousel>
-        </div>
-      </section>
-    </div>
-
     <section className="pv4-ns bg-mh-purple white tc">
       <div className="mw8 center pa3 ph5-l">
         <h3 className="ttu mb4 f4 lh-title">{page.cta.heading}</h3>
         <div
           className="lh-copy f-1 mb4 mb5-l tracked-mh mh-mid-gray"
-          dangerouslySetInnerHTML={{ __html: marked(page.cta.content) }}
+          dangerouslySetInnerHTML={{__html: marked(page.cta.content)}}
         />
         <p>
           <Link
