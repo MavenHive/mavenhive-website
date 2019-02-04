@@ -8,35 +8,35 @@
       "client": "GRASSHOPPER",
       "services": "PRODUCT DEVELOPMENT & RE-ARCHITECTURE",
       "summary": "A re-build solution for the VoIP SaaS leader",
-      "details": "Grasshopper is a US based 13+ years old company providing cloud based telephony services to startups. They wanted to enter international markets and expand. But their decade old system was not scaling. So they wanted to re-architect and rebuild their core system. MicroService Architecture. API based system. Adhersion."
+      "details": "We helped US based telephony leader Grasshopper to re-architect and scale their solution. We helped the business achieve it's goals of expanding to European markets and upgrading it's tech stack to a modern distributed framework on the cloud. Post their aqquisition by Citrix we helped integrate the product with Citrix' services."
     },
     {
-      "heading": "The Non-profit MVP story",
-      "client": "GRASSHOPPER",
-"services": "PRODUCT DE SIGN    AND DEVELOPMENT",
-      "summary": "A US client’s MVP built by a 3 person team and launched in 6 months resulted in $1M+ funding",
-      "details": "Grasshopper is a US based 13+ years old company providing cloud based telephony services to startups. They wanted to enter international markets and expand. But their decade old system was not scaling. So they wanted to re-architect and rebuild their core system. MicroService Architecture. API based system. Adhersion."
+      "heading": "The Non-profit MVP Story",
+      "client": "ARC OF THE UNITED STATES",
+"services": "PRODUCT DISCOVERY & MVP IMPLEMENTATION",
+      "summary": "MVP built by a 3 person team and launched in 6 months resulted in $1M+ funding",
+      "details": "We helped design their core products around I/DD(Intellectual or Development Disability) care and ensured the MVP catered to special UI/UX constraints and was fully automated to help the client to remain hands off. The core product includes the ability to find share and review technology for I/DD as well as for caregivers to plan care for their patients in advance."
     },
     {
-      "heading": "The Non-profit MVP story",
-      "client": "GRASSHOPPER",
-      "services": "PRODUCT DESIGN AND DEVELOPMENT",
-      "summary": "A US client’s MVP built by a 3 person team and launched in 6 months resulted in $1M+ funding",
-      "details": "Grasshopper is a US based 13+ years old company providing cloud based telephony services to startups. They wanted to enter international markets and expand. But their decade old system was not scaling. So they wanted to re-architect and rebuild their core system. MicroService Architecture. API based system. Adhersion."
+      "heading": "Assisting The World's Largest Network Of Social Entrepreneurs",
+      "client": "ASHOKA",
+      "services": "PLATFORM REWRITE & LOCALIZATION",
+      "summary": "Helped the 30+ year old global NGO to minimize maintenance around it's collaboration platform",
+      "details": "Ashoka has the world's largest network of social entrepreneurs. We helped modernise their core collaboration platform by rewriting it in Rails. Challenges faced included required solving some unique languages/localization issues  specific to the remote regions in which the users (Ashoka fellows) were using the platform from. We used Heroku and kept the deployment/maintenance cycle as automated as possible to reduce maintenance from their end."
     },
     {
-      "heading": "The Non-profit MVP story",
-      "client": "GRASSHOPPER",
-      "services": "PRODUCT DESIGN AND DEVELOPMENT",
-      "summary": "A US client’s MVP built by a 3 person team and launched in 6 months resulted in $1M+ funding",
-      "details": "Grasshopper is a US based 13+ years old company providing cloud based telephony services to startups. They wanted to enter international markets and expand. But their decade old system was not scaling. So they wanted to re-architect and rebuild their core system. MicroService Architecture. API based system. Adhersion."
+      "heading": "The Enablement Story",
+      "client": "FLIPKART",
+      "services": "TRAINING & DELIVERY FACILITATION",
+      "summary": "Helped accelerate a young team as they reworked core services",
+      "details": "Flipkart was rebuilding their supply chain in 2012 and we helped mentor their young teams by coaching around Agile processes, Ruby & Rails and JRuby. We worked colocated and embedded with their teams and helped around delivery and performance benchmarking of some of their core backend services."
     },
     {
       "heading": "Training for Grads",
       "client": "THOUGHTWORKS",
       "services": "TRAINING",
       "summary": "Some catchy text to define MavenHive teams work there.",
-      "details": "Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work. Some more text explaning our work."
+      "details": "We ran bootcamps for more than 100 fresh grads covering a range of skills, making them project-ready. We have been the lead trainers on all of their graduate induction program for the last 2-3 years. The training ranges from OO programming to clean coding practices, to Agile (XP) practices and is done in a fully hands on workshop format using a socratic style of teaching which is unique to ThoughtWorks."
     }
   ],
   "showcase": {
