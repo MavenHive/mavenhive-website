@@ -2,22 +2,11 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
 import ReactModal from 'react-modal'
-
 import Illustration from '../images/image_portfolio.svg'
 import VideoIcon from '../icons/icon_play.svg'
-
 import portfolio from '../content/portfolio.json'
-
-const Project = ({ heading, client, services, summary, details }) => (
-  <div className="pv2 mw8">
-    <h3 className="f3 mv3 mh-gray">{heading}</h3>
-    <p className="mh-light-gray ttu b f6 mv3 tracked">
-      {client} - {services}
-    </p>
-    <p className="lh-copy mv2">{summary}</p>
-    <p className="f6 lh-copy mv2">{details}</p>
-  </div>
-)
+import FlipCard from "../components/FlipCard";
+import Grid from '@material-ui/core/Grid/Grid';
 
 class Video extends Component {
   constructor(props) {
@@ -42,7 +31,7 @@ class Video extends Component {
   }
 
   render() {
-    const { url, VideoIcon } = this.props
+    const {url, VideoIcon} = this.props
     return (
       <a
         href={url}
@@ -51,7 +40,7 @@ class Video extends Component {
           this.handleOpenModal()
         }}
       >
-        <img src={VideoIcon} alt="" width="90" height="90" />
+        <img src={VideoIcon} alt="" width="90" height="90"/>
         <ReactModal
           isOpen={this.state.showModal}
           onRequestClose={this.handleCloseModal}
@@ -82,9 +71,9 @@ class Video extends Component {
 
 export default () => (
   <div>
-    <Helmet title={`${portfolio.title} | MavenHive`} />
+    <Helmet title={`${portfolio.title} | MavenHive`}/>
     <section className="mw-mavenhive center ph3 mt5-l pt3 flex-l items-center justify-between">
-      <img className="dn db-l self-end order-1" src={Illustration} alt="" />
+      <img className="dn db-l self-end order-1" src={Illustration} alt=""/>
       <div className="mb6">
         <h1 className="f2 normal measure-narrow">{portfolio.heading}</h1>
         <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
@@ -93,33 +82,36 @@ export default () => (
       </div>
     </section>
 
-      <section className="mw-mavenhive center ph3 mb5 tc">
-          <p className="mw8 center f3 lh-mh ph6-l mv0">
-              {portfolio.showcase.heading}
-          </p>
-          <div className="mb3">
-              <img src={portfolio.showcase.logo} alt="" />
-          </div>
-          <div>
-              <Video VideoIcon={VideoIcon} url={portfolio.showcase.url} />
-          </div>
-      </section>
-
-    <section className="mw-mavenhive center ph3 mb5">
-      <h2 className="f3 brand mb4">Our Projects</h2>
-      {portfolio.portfolio.map((project, i) => (
-        <Project
-          heading={project.heading}
-          client={project.client}
-          services={project.services}
-          summary={project.summary}
-          details={project.details}
-          key={`project-${i}`}
-        />
-      ))}
+    <section className="mw-mavenhive center ph3 mb5 tc">
+      <p className="mw8 center f3 lh-mh ph6-l mv0">
+        {portfolio.showcase.heading}
+      </p>
+      <div className="mb3">
+        <img src={portfolio.showcase.logo} alt=""/>
+      </div>
+      <div>
+        <Video VideoIcon={VideoIcon} url={portfolio.showcase.url}/>
+      </div>
     </section>
 
-
+    <section className="mw-mavenhive center">
+      <h2 className="f3 brand mb4">Our Projects</h2>
+      <Grid container spacing={40} direction="row" justify="center">
+        {
+          portfolio.portfolio.map((project, i) => (
+            <FlipCard
+              heading={project.heading}
+              client={project.client}
+              services={project.services}
+              summary={project.summary}
+              details={project.details}
+              logo={project.logo}
+              key={`project-${i}`}
+            />
+          ))
+        }
+      </Grid>
+    </section>
 
     <section className="pv4-ns bg-navy white tc">
       <div className="mw8 center pa3 ph5-l">
