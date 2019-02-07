@@ -35,9 +35,38 @@
       "heading": "Training for Grads",
       "client": "THOUGHTWORKS",
       "services": "TRAINING",
-      "summary": "Some catchy text to define MavenHive teams work there.",
+      "summary": "Enabled innovation & original thought via a socratic approach to mentoring",
       "details": "We ran bootcamps for more than 100 fresh grads covering a range of skills, making them project-ready. We have been the lead trainers on all of their graduate induction program for the last 2-3 years. The training ranges from OO programming to clean coding practices, to Agile (XP) practices and is done in a fully hands on workshop format using a socratic style of teaching which is unique to ThoughtWorks."
+    },
+    {
+      "heading": "The Unicorn Story",
+      "client": "GOJEK",
+      "services": "RE-ENGINEERING & SCALING FACILITATION",
+      "summary": "Covered the gaps & helped delivery during critical scaling phase",
+      "details": "GoJek engaged MavenHive to help them with their critical re-engineering projects while they were aggressively building their own team in Bangalore. Our consultants lead many of their core product teams in collaboration with their CTO, VPs and Tech Leads to quickly rebuild their core products with latest tech stacks with quality and scalability as primary goals along with fast turnaround time. The platform scaled ot handle millions of users and billions of API calls."
+    },
+    {
+      "heading": "Enabling Expansion",
+      "client": "SCRIPBOX",
+      "services": "PRODUCT ENGINEERING",
+      "summary": "Helped build critical parts of core product for an upcoming expansion and enabled them to go mobile",
+      "details": "We helped the team rewrite/refactor parts of their monolithic legacy app in production, built by their previous vendor, into a more service based backend. This allowed the front end to be rewritten with ReactJS/JS to be responsive. This was later enhanced to work with their mobile frontend. During this we also helped them hire and train/coach a new inhouse team to continue work on this application."
+    },
+    {
+      "heading": "Agile Process Training",
+      "client": "HOUSING",
+      "services": "PROCESS TRAINING & DEVELOPMENT BEST PRACTICES",
+      "summary": "A 2 month engagement with a 100+ engineering team",
+      "details": "We consulted Housing in 2015 on Agile processes and development best practices for their engineering team of 100+. This was an on-site, 2 month engagement at Mumbai with senior trainers from MavenHive. Within the very short duration we helped a new and very rapid growing young team to learn the practices and discipline required."
+    },
+    {
+      "heading": "Helping Scale A Proven MVP ",
+      "client": "ZINC LEARNING LABS",
+      "services": "TRAINING",
+      "summary": "Helped scale their product to 500K active users",
+      "details": "Zinc Learning Labs is a supplemental online literacy program that uses gaming elements and curated high-interest text to help improve reading and comprehension abilities of students. We helped the team scale the application to about half a million users, established dev practices and coding guidelines, and built critical pieces to integrate with popular curriculum enabling their expansion into bigger markets."
     }
+
   ],
   "showcase": {
     "heading": "“Watch the GrassHopper team share how MavenHive helped them build and launch the international version of their core telephony product”",
