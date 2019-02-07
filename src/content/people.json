@@ -1,7 +1,6 @@
 {
   "title": "People",
-  "heading":
-    "“We deliver far more for our clients than what would be thought possible”",
+  "heading": "“We deliver far more for our clients than what would be thought possible”",
   "cover": "/img/image_people.svg",
   "team": [
     {
@@ -9,8 +8,7 @@
         "avatar": "/img/bhavin_h.jpg",
         "name": "Bhavin Chandulal Javia",
         "role": "Founder & Director",
-        "blurb":
-          "As a programming enthusiast, he founded a firm meant to put the fun back into application development. Now spends 70 hours a week doing taxes, approving expense reports, and other administrative stuff. We thought it best to give him a wide berth.",
+        "blurb": "As a programming enthusiast, he founded a firm meant to put the fun back into application development. Now spends 70 hours a week doing taxes, approving expense reports, and other administrative stuff. We thought it best to give him a wide berth.",
         "twitter": "https://twitter.com/bhavinjavia",
         "linkedin": "https://www.linkedin.com/in/bhavinjavia/"
       }
@@ -20,8 +18,7 @@
         "avatar": "/img/screen shot 2018-05-24 at 10.26.58 am.png",
         "name": "Jayaraman Anandha Krishnan",
         "role": "Co-Founder & Director",
-        "blurb":
-          "We asked him to tell us a bit about himself. After three-and-a-half hours, we knew everything about why we shouldn't buy multiple houses (even though he buys a new one every other month), the state of Bangalore's schooling system, and something about scuba diving that cannot be mentioned here. Of course, we still didn't get to him telling us anything about himself, so his blurb is still WIP.",
+        "blurb": "We asked him to tell us a bit about himself. After three-and-a-half hours, we knew everything about why we shouldn't buy multiple houses (even though he buys a new one every other month), the state of Bangalore's schooling system, and something about scuba diving that cannot be mentioned here. Of course, we still didn't get to him telling us anything about himself, so his blurb is still WIP.",
         "twitter": "https://twitter.com/anandhak",
         "linkedin": "https://www.linkedin.com/in/anandhakrishnanj/"
       }
@@ -61,8 +58,7 @@
         "avatar": "/img/screen shot 2018-05-24 at 10.21.11 am.png",
         "name": "Sneha Koti",
         "role": "Senior Associate",
-        "blurb":
-          "MavenHive used to be an idyllic commune of trusting mavens working in harmony. And then she joined us. We now have a generally distrustful atmosphere replete with hot-dogging and vote fudging. Will post a blurb as soon as our official PR person can find his laptop, which he had forgotten to chain to his desk."
+        "blurb": "MavenHive used to be an idyllic commune of trusting mavens working in harmony. And then she joined us. We now have a generally distrustful atmosphere replete with hot-dogging and vote fudging. Will post a blurb as soon as our official PR person can find his laptop, which he had forgotten to chain to his desk."
       }
     },
     {
@@ -177,21 +173,11 @@
         "blurb": "Some text some text",
         "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
       }
-    },
-    {
-      "member": {
-        "avatar": "/img/jaya_h.jpg",
-        "name": "Jayalaxmi Dinni",
-        "role": "Senior Designer",
-        "blurb": "Some text some text",
-        "linkedin": "https://www.linkedin.com/in/jayaa/"
-      }
     }
   ],
   "cta": {
     "heading": "We are always Hiring!!",
-    "content":
-      "We have a saying at MavenHive, “We are always Hiring!”<br />That’s not because we are in need of more warm bodies to bill to clients ! But, because it is so difficult to find the right people to work with that you have to constantly be on the lookout for the next perfect fit.",
+    "content": "We have a saying at MavenHive, “We are always Hiring!”<br />That’s not because we are in need of more warm bodies to bill to clients ! But, because it is so difficult to find the right people to work with that you have to constantly be on the lookout for the next perfect fit.",
     "button": {
       "label": "Join our Team",
       "link": "/careers"

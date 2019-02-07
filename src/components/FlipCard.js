@@ -10,7 +10,7 @@ const Logo = ({logo}) => (
     <img
       className="mv2"
       src={logo}
-      style={{width: '100px', marginLeft: '20%', marginTop: '15%'}}
+      style={{height:'50px', width: '100px', marginLeft: '20%', marginTop: '15%'}}
       alt=""
       key={`client`}
     />
@@ -35,12 +35,12 @@ class FlipCard extends Component {
     return (
       <Grid item md={3} style={{margin: '2%'}}>
         <ReactCardFlip isFlipped={this.state.isFlipped} key={this.props.key}>
-          <Paper style={{height: 400}} key="front" elevation={2}>
+          <Paper style={{height: 500}} key="front" elevation={2}>
             <Logo logo={this.props.logo}/>
-            <Typography style={{textAlign: 'center', padding: '10%'}}>
+            <Typography style={{textAlign: 'center', padding: '20%'}}>
               <h2>{this.props.heading}</h2>
               <p className="mh-light-gray ttu b f6 mv3 tracked">
-                {this.props.client} <br/> {this.props.services}
+                <br/> {this.props.services}
               </p>
               <br/>
               <h3>{this.props.summary}</h3>
@@ -50,7 +50,7 @@ class FlipCard extends Component {
             </Typography>
           </Paper>
 
-          <Paper style={{height: 400}} key="back" elevation={7}>
+          <Paper style={{height: 500}} key="back" elevation={7}>
             <Logo logo={this.props.logo}/>
             <Typography>
               <h4 style={{textAlign: 'justify', padding: '20%', fontWeight: 200}}>{this.props.details}</h4>
