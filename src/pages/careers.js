@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
-import Helmet from 'react-helmet'
-import ReactModal from 'react-modal'
-import Layout from '../layouts'
-import videoImage from '../images/image_pitchvideo.png'
-import hiringIcon from '../icons/line.svg'
+import React, { Component } from "react"
+import Helmet from "react-helmet"
+import Modal from "react-modal"
+import Layout from "../layouts"
+import videoImage from "../images/image_pitchvideo.png"
+import hiringIcon from "../icons/line.svg"
 
-import page from '../content/careers.json'
+import page from "../content/careers.json"
 
 class Careers extends Component {
   constructor() {
     super()
     this.state = {
-      showModal: false,
+      showModal: false
     }
     this.handleOpenModal = this.handleOpenModal.bind(this)
     this.handleCloseModal = this.handleCloseModal.bind(this)
@@ -19,13 +19,13 @@ class Careers extends Component {
 
   handleOpenModal() {
     this.setState({
-      showModal: true,
+      showModal: true
     })
   }
 
   handleCloseModal() {
     this.setState({
-      showModal: false,
+      showModal: false
     })
   }
 
@@ -43,7 +43,7 @@ class Careers extends Component {
                   href="https://blog.mavenhive.in/"
                   style={{
                     backgroundImage: `url(${hiringIcon})`,
-                    whiteSpace: 'nowrap',
+                    whiteSpace: "nowrap"
                   }}
                 >
                   hiring process”
@@ -57,7 +57,7 @@ class Careers extends Component {
                   this.handleOpenModal()
                 }}
               >
-                <img src={videoImage} />
+                <img src={videoImage} alt="" />
               </a>
             </div>
           </div>
@@ -84,6 +84,7 @@ class Careers extends Component {
                       className="f5 f4-ns link mh-blue underline-hover"
                       href={job.link}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Learn more and Apply…
                     </a>
@@ -97,7 +98,7 @@ class Careers extends Component {
               <p className="tc lh-mh f-1 mw8 center mb4 ph3">
                 If you dont see above openings fit for you but resonate with our
                 culture and want to join us , we would love to hear from you.
-                Send email to{' '}
+                Send email to{" "}
                 <a
                   className="link mh-blue underline-hover"
                   href="mailto:careers@mavenhive.com"
@@ -110,10 +111,11 @@ class Careers extends Component {
                 className="w-100 vh-50"
                 frameBorder="0"
                 allowFullScreen
+                title="map"
               />
             </div>
           </div>
-          <ReactModal
+          <Modal
             isOpen={this.state.showModal}
             onRequestClose={this.handleCloseModal}
             shouldCloseOnEsc={true}
@@ -128,6 +130,7 @@ class Careers extends Component {
               src="https://www.youtube.com/embed/PBdHucJeqpQ?autoplay=1"
               frameBorder="0"
               allowFullScreen
+              title="MavenHive recruitment pitch video"
             />
             <button
               className="f3 w2 h2 absolute right--1 top--1 br-100 bg-brand white bw0 pointer"
@@ -135,7 +138,7 @@ class Careers extends Component {
             >
               &times;
             </button>
-          </ReactModal>
+          </Modal>
         </div>
       </Layout>
     )

@@ -1,10 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from "react"
+import Helmet from "react-helmet"
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
-import './mavenhive.css'
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import "./mavenhive.css"
 
 const TemplateWrapper = ({ children }) => (
   <div className="flex flex-column min-vh-100">
@@ -12,10 +11,10 @@ const TemplateWrapper = ({ children }) => (
       title="MavenHive - Trusted companion for your product journey"
       meta={[
         {
-          name: 'description',
+          name: "description",
           content:
-            "We combine our software and product craftsmanship with our client's disruptive ideas to achieve business goals with high ROI",
-        },
+            "We combine our software and product craftsmanship with our client's disruptive ideas to achieve business goals with high ROI"
+        }
       ]}
     >
       <link
@@ -32,9 +31,5 @@ const TemplateWrapper = ({ children }) => (
     <Footer />
   </div>
 )
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
 
 export default TemplateWrapper

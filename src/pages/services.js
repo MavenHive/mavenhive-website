@@ -1,26 +1,18 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
-import marked from 'marked'
-import Layout from '../layouts'
-import Services from '../components/Services'
-import page from '../content/services.json'
+import React from "react"
+import { Link } from "gatsby"
+import Helmet from "react-helmet"
+import marked from "marked"
+import Layout from "../layouts"
+import Services from "../components/Services"
+import page from "../content/services.json"
 
-const frontmatter = {
-  cta: {
-    title: 'title',
-    description: 'description',
-    label: 'label',
-    path: '/services',
-  },
-}
 export default () => (
   <Layout>
     <Helmet title={`${page.title} | MavenHive`} />
     <section className="mw-mavenhive center ph3 mt5-l pt3">
       <h1 className="f2 normal">{page.heading}</h1>
       <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
-        {page['sub-heading']}
+        {page["sub-heading"]}
       </p>
     </section>
 

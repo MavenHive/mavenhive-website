@@ -1,19 +1,20 @@
 {
   "name": "mavenhive-website",
-  "description":
-    "MavenHive website built using gatsbyJS utilizing the Netlify/NetlifyCMS platform and TachyonsCSS",
+  "description": "MavenHive website built using gatsbyJS utilizing the Netlify/NetlifyCMS platform and TachyonsCSS",
   "version": "1.0.0",
   "author": "Praveen <apnerve@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.118",
     "gatsby-plugin-netlify-cms": "^3.0.12",
     "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-sitemap": "^2.0.5",
     "gatsby-source-filesystem": "^2.0.20",
     "get-youtube-id": "^1.0.1",
     "lodash.capitalize": "^4.2.1",
     "lodash.startcase": "^4.4.0",
     "lodash.upperfirst": "^4.3.1",
     "marked": "^0.6.0",
+    "netlify-cms": "^2.4.1",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
     "react-helmet": "^5.2.0",
@@ -21,7 +22,10 @@
     "react-slick": "^0.23.2",
     "slick-carousel": "^1.8.1"
   },
-  "keywords": ["gatsby", "mavenhive"],
+  "keywords": [
+    "gatsby",
+    "mavenhive"
+  ],
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

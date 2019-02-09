@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import ReactModal from 'react-modal'
+import React, { Component, Fragment } from "react"
+import Modal from "react-modal"
 
 export default class Video extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      showModal: false,
+      showModal: false
     }
     this.handleOpenModal = this.handleOpenModal.bind(this)
     this.handleCloseModal = this.handleCloseModal.bind(this)
@@ -13,29 +13,29 @@ export default class Video extends Component {
 
   handleOpenModal() {
     this.setState({
-      showModal: true,
+      showModal: true
     })
   }
 
   handleCloseModal() {
     this.setState({
-      showModal: false,
+      showModal: false
     })
   }
 
   render() {
     const { url, children } = this.props
     return (
-      <a
-        href={url}
-        onClick={e => {
-          e.preventDefault()
-          this.handleOpenModal()
-        }}
-        className="link black"
-      >
-        {children}
-        <ReactModal
+      <Fragment>
+        <div
+          onClick={e => {
+            e.preventDefault()
+            this.handleOpenModal()
+          }}
+        >
+          {children}
+        </div>
+        <Modal
           isOpen={this.state.showModal}
           onRequestClose={this.handleCloseModal}
           shouldCloseOnEsc={true}
@@ -50,6 +50,7 @@ export default class Video extends Component {
             src={`${url}?autoplay=1`}
             frameBorder="0"
             allowFullScreen
+            title="video"
           />
           <button
             className="f3 w2 h2 absolute right--1 top--1 br-100 bg-brand white bw0 pointer"
@@ -57,8 +58,8 @@ export default class Video extends Component {
           >
             &times;
           </button>
-        </ReactModal>
-      </a>
+        </Modal>
+      </Fragment>
     )
   }
 }

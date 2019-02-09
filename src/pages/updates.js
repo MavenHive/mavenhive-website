@@ -1,14 +1,14 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import updates from '../content/updates.json'
-import Layout from '../layouts'
-import { Talk, Blog, Event } from '../components/Updates'
+import React from "react"
+import Helmet from "react-helmet"
+import updates from "../content/updates.json"
+import Layout from "../layouts"
+import { Talk, Blog, Event } from "../components/Updates"
 
 const getComponent = function(type) {
   const components = {
     talk: Talk,
     blog: Blog,
-    event: Event,
+    event: Event
   }
   return components[type]
 }

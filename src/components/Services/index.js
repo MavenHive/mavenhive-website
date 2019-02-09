@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import IconTechnology from '../../icons/icon_technology.svg'
-import IconGrowth from '../../icons/icon_growth.svg'
-import IconInnovation from '../../icons/icon_innovation.svg'
+import React, { Component } from "react"
+import IconTechnology from "../../icons/icon_technology.svg"
+import IconGrowth from "../../icons/icon_growth.svg"
+import IconInnovation from "../../icons/icon_innovation.svg"
 
 class Services extends Component {
   render() {
@@ -12,9 +12,9 @@ class Services extends Component {
             Expertise to help you scale.
           </p>
           <div
-              className="w3 h3 content-box pa2 center contain bg-center"
-              style={{ backgroundImage: `url(${IconInnovation})` }}
-              alt=""
+            className="w3 h3 content-box pa2 center contain bg-center"
+            style={{ backgroundImage: `url(${IconInnovation})` }}
+            alt=""
           />
           <h3 className="f-1 brand ttu">Innovation</h3>
           <ul className="list center mw-100-l pa0 f5 lh-copy mh-gray tracked-mh">
@@ -59,7 +59,6 @@ class Services extends Component {
             <li className="mv2">Onsite Coaching</li>
           </ul>
         </div>
-
       </div>
     )
   }

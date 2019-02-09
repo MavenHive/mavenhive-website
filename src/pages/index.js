@@ -1,27 +1,27 @@
-import React from 'react'
-import Layout from '../layouts'
-import { Link } from 'gatsby'
-import marked from 'marked'
-import Carousel from 'react-slick'
-import Services from '../components/Services'
+import React from "react"
+import Layout from "../layouts"
+import { Link } from "gatsby"
+import marked from "marked"
+import Carousel from "react-slick"
+import Services from "../components/Services"
 
-import Illustration from '../images/image_illustration.svg'
-import IconMVP from '../icons/icon_mvp.svg'
-import IconRearchitect from '../icons/icon_rearchitect.svg'
-import IconEstablishment from '../icons/icon_establishment.svg'
-import IconStart from '../icons/icon_start.svg'
-import IconArrow from '../icons/icon_arrow.png'
+import Illustration from "../images/image_illustration.svg"
+import IconMVP from "../icons/icon_mvp.svg"
+import IconRearchitect from "../icons/icon_rearchitect.svg"
+import IconEstablishment from "../icons/icon_establishment.svg"
+import IconStart from "../icons/icon_start.svg"
+import IconArrow from "../icons/icon_arrow.png"
 
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
-import page from '../content/home.json'
+import page from "../content/home.json"
 
 const carouselSettings = {
   infinite: false,
   dots: true,
   arrows: true,
-  dotsClass: 'slick-dots bottom--2',
+  dotsClass: "slick-dots bottom--2",
   slidesToShow: 3,
   slidesToScroll: 3,
   responsive: [
@@ -30,18 +30,18 @@ const carouselSettings = {
       settings: {
         arrows: false,
         slidesToShow: 2,
-        slidesToScroll: 2,
-      },
+        slidesToScroll: 2
+      }
     },
     {
       breakpoint: 640,
       settings: {
         arrows: false,
         slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
+        slidesToScroll: 1
+      }
+    }
+  ]
 }
 
 const Arrow = () => (
@@ -50,7 +50,7 @@ const Arrow = () => (
     height="21"
     src={IconArrow}
     alt=""
-    style={{ marginTop: '-11px' }}
+    style={{ marginTop: "-11px" }}
   />
 )
 
@@ -81,14 +81,14 @@ const IndexPage = () => (
       <div>
         <h1 className="f2 normal">{page.heading}</h1>
         <p className="measure measure-wide-l center ml0-l lh-copy f4 mb4 mh2 mb5-l">
-          {page['sub-heading']}
+          {page["sub-heading"]}
         </p>
         <p>
           <Link
             to="/portfolio"
             className="dib link f-1 pv1 ph4 ba b--brand br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
           >
-            {page['hero-cta']}
+            {page["hero-cta"]}
             <i icon={IconStart} />
           </Link>
         </p>
@@ -103,19 +103,19 @@ const IndexPage = () => (
           <ul
             className="relative list pa0 ma0 flex justify-between items-end w-100 h-100 mb4 mh-gray tracked-mh f5"
             style={{
-              width: '840px',
-              height: '120px',
-              marginLeft: 'auto',
-              marginRight: 'auto',
+              width: "840px",
+              height: "120px",
+              marginLeft: "auto",
+              marginRight: "auto"
             }}
           >
             <li
               className="absolute bt bw1 flex justify-around gray"
               style={{
-                top: 'calc(50% - 0.5rem)',
-                right: '2rem',
-                left: '2rem',
-                zIndex: '0',
+                top: "calc(50% - 0.5rem)",
+                right: "2rem",
+                left: "2rem",
+                zIndex: "0"
               }}
             >
               <Arrow />

@@ -1,9 +1,6 @@
-import React from 'react'
+import React from "react"
 
-import TwitterIcon from '../../icons/twitter-profile.svg'
-import LinkedinIcon from '../../icons/linkedin-profile.svg'
-
-export default ({ name, role, avatar, blurb, twitter, linkedin }) => (
+export default ({ name, role, avatar }) => (
   <div className="w-100">
     <div
       className="aspect-ratio aspect-ratio--1x1 cover overflow-hidden"
@@ -13,7 +10,7 @@ export default ({ name, role, avatar, blurb, twitter, linkedin }) => (
         <img
           className="w-100 o-0"
           src={encodeURIComponent(avatar)}
-          alt={`picture of ${name}`}
+          alt={name}
         />
       </div>
     </div>

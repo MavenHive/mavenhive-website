@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import Helmet from 'react-helmet'
-import ReactModal from 'react-modal'
-import Layout from '../layouts'
-import Illustration from '../images/image_portfolio.svg'
-import VideoIcon from '../icons/icon_play.svg'
+import React, { Component, Fragment } from "react"
+import { Link } from "gatsby"
+import Helmet from "react-helmet"
+import Modal from "react-modal"
+import Layout from "../layouts"
+import Illustration from "../images/image_portfolio.svg"
+import VideoIcon from "../icons/icon_play.svg"
 
-import portfolio from '../content/portfolio.json'
+import portfolio from "../content/portfolio.json"
 
 const Project = ({ heading, client, services, summary, details }) => (
   <div className="pv2 mw8">
@@ -23,7 +23,7 @@ class Video extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      showModal: false,
+      showModal: false
     }
     this.handleOpenModal = this.handleOpenModal.bind(this)
     this.handleCloseModal = this.handleCloseModal.bind(this)
@@ -31,28 +31,30 @@ class Video extends Component {
 
   handleOpenModal() {
     this.setState({
-      showModal: true,
+      showModal: true
     })
   }
 
   handleCloseModal() {
     this.setState({
-      showModal: false,
+      showModal: false
     })
   }
 
   render() {
     const { url, VideoIcon } = this.props
     return (
-      <a
-        href={url}
-        onClick={e => {
-          e.preventDefault()
-          this.handleOpenModal()
-        }}
-      >
-        <img src={VideoIcon} alt="" width="90" height="90" />
-        <ReactModal
+      <Fragment>
+        <a
+          href={url}
+          onClick={e => {
+            e.preventDefault()
+            this.handleOpenModal()
+          }}
+        >
+          <img src={VideoIcon} alt="" width="90" height="90" />
+        </a>
+        <Modal
           isOpen={this.state.showModal}
           onRequestClose={this.handleCloseModal}
           shouldCloseOnEsc={true}
@@ -67,6 +69,7 @@ class Video extends Component {
             src={`${url}?autoplay=1`}
             frameBorder="0"
             allowFullScreen
+            title="grasshopper testimonial"
           />
           <button
             className="f3 w2 h2 absolute right--1 top--1 br-100 bg-brand white bw0 pointer"
@@ -74,8 +77,8 @@ class Video extends Component {
           >
             &times;
           </button>
-        </ReactModal>
-      </a>
+        </Modal>
+      </Fragment>
     )
   }
 }
@@ -88,7 +91,7 @@ export default () => (
       <div className="mb6">
         <h1 className="f2 normal measure-narrow">{portfolio.heading}</h1>
         <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
-          {portfolio['sub-heading']}
+          {portfolio["sub-heading"]}
         </p>
       </div>
     </section>

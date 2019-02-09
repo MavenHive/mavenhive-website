@@ -1,8 +1,8 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Layout from '../layouts'
-import FormBackground from '../images/image_lauchpad.png'
-import page from '../content/contact.json'
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../layouts"
+import FormBackground from "../images/image_lauchpad.png"
+import page from "../content/contact.json"
 
 export default props => (
   <Layout>
@@ -10,7 +10,7 @@ export default props => (
     <div
       className="cover mv3 relative bg-center h5 pv5 content-box"
       style={{
-        backgroundImage: `url(${page.cover})`,
+        backgroundImage: `url(${page.cover})`
       }}
     >
       <div className="mw-mavenhive center ph3">
@@ -20,7 +20,7 @@ export default props => (
     <div
       className="mw-mavenhive bg-form center ph3 mv4 bg-right bg-white"
       style={{
-        backgroundImage: `url(${FormBackground})`,
+        backgroundImage: `url(${FormBackground})`
       }}
     >
       <h2 className="f3 normal mt0 mb4 pb3">{page.formHeading}</h2>
