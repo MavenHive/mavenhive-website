@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "MavenHive"
+    title: "MavenHive",
+    siteUrl: `https://mavenhive.com`
   },
   plugins: [
     "gatsby-plugin-react-helmet",

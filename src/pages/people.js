@@ -102,7 +102,6 @@ export default () => {
     person: null,
     showDetail: false
   })
-  console.table(state)
   return (
     <Layout>
       <Helmet title={`${people.title} | MavenHive`} />
