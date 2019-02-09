@@ -7,8 +7,8 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Projects"
-        name: "projects"
+      - label: "Portfolio"
+        name: "portfolio"
         file: "src/content/portfolio.json"
         fields:
           - { label: Title, name: title, widget: string }
