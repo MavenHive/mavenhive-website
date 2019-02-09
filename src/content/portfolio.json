@@ -8,12 +8,12 @@
       "client": "GRASSHOPPER",
       "services": "PRODUCT DEVELOPMENT & RE-ARCHITECTURE",
       "summary": "A re-build solution for the VoIP SaaS leader",
-      "details": "We helped US based telephony leader Grasshopper to re-architect and scale their solution. We helped the business achieve it's goals of expanding to European markets and upgrading it's tech stack to a modern distributed framework on the cloud. Post their aqquisition by Citrix we helped integrate the product with Citrix' services."
+      "details": "We helped US based telephony leader Grasshopper to re-architect and scale their solution. We helped the business achieve its goals of expanding to European markets and upgrading it's tech stack to a modern distributed framework on the cloud. Post their aqquisition by Citrix we helped integrate the product with Citrix' services."
     },
     {
       "heading": "The Non-profit MVP Story",
       "client": "ARC OF THE UNITED STATES",
-"services": "PRODUCT DISCOVERY & MVP IMPLEMENTATION",
+      "services": "PRODUCT DISCOVERY & MVP IMPLEMENTATION",
       "summary": "MVP built by a 3 person team and launched in 6 months resulted in $1M+ funding",
       "details": "We helped design their core products around I/DD(Intellectual or Development Disability) care and ensured the MVP catered to special UI/UX constraints and was fully automated to help the client to remain hands off. The core product includes the ability to find share and review technology for I/DD as well as for caregivers to plan care for their patients in advance."
     },
@@ -66,7 +66,6 @@
       "summary": "Helped scale their product to 500K active users",
       "details": "Zinc Learning Labs is a supplemental online literacy program that uses gaming elements and curated high-interest text to help improve reading and comprehension abilities of students. We helped the team scale the application to about half a million users, established dev practices and coding guidelines, and built critical pieces to integrate with popular curriculum enabling their expansion into bigger markets."
     }
-
   ],
   "showcase": {
     "heading": "“Watch the GrassHopper team share how MavenHive helped them build and launch the international version of their core telephony product”",
