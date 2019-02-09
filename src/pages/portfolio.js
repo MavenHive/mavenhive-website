@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import ReactModal from 'react-modal'
-
+import Layout from '../layouts'
 import Illustration from '../images/image_portfolio.svg'
 import VideoIcon from '../icons/icon_play.svg'
 
@@ -81,7 +81,7 @@ class Video extends Component {
 }
 
 export default () => (
-  <div>
+  <Layout>
     <Helmet title={`${portfolio.title} | MavenHive`} />
     <section className="mw-mavenhive center ph3 mt5-l pt3 flex-l items-center justify-between">
       <img className="dn db-l self-end order-1" src={Illustration} alt="" />
@@ -93,17 +93,17 @@ export default () => (
       </div>
     </section>
 
-      <section className="mw-mavenhive center ph3 mb5 tc">
-          <p className="mw8 center f3 lh-mh ph6-l mv0">
-              {portfolio.showcase.heading}
-          </p>
-          <div className="mb3">
-              <img src={portfolio.showcase.logo} alt="" />
-          </div>
-          <div>
-              <Video VideoIcon={VideoIcon} url={portfolio.showcase.url} />
-          </div>
-      </section>
+    <section className="mw-mavenhive center ph3 mb5 tc">
+      <p className="mw8 center f3 lh-mh ph6-l mv0">
+        {portfolio.showcase.heading}
+      </p>
+      <div className="mb3">
+        <img src={portfolio.showcase.logo} alt="" />
+      </div>
+      <div>
+        <Video VideoIcon={VideoIcon} url={portfolio.showcase.url} />
+      </div>
+    </section>
 
     <section className="mw-mavenhive center ph3 mb5">
       <h2 className="f3 brand mb4">Our Projects</h2>
@@ -118,8 +118,6 @@ export default () => (
         />
       ))}
     </section>
-
-
 
     <section className="pv4-ns bg-navy white tc">
       <div className="mw8 center pa3 ph5-l">
@@ -137,5 +135,5 @@ export default () => (
         </p>
       </div>
     </section>
-  </div>
+  </Layout>
 )

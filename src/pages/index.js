@@ -1,5 +1,6 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Layout from '../layouts'
+import { Link } from 'gatsby'
 import marked from 'marked'
 import Carousel from 'react-slick'
 import Services from '../components/Services'
@@ -53,7 +54,7 @@ const Arrow = () => (
   />
 )
 
-const Step = ({icon, label}) => (
+const Step = ({ icon, label }) => (
   <li className="relative">
     <img
       className="db center mb2 pb1"
@@ -61,26 +62,25 @@ const Step = ({icon, label}) => (
       width="75"
       height="75"
       alt=""
-    />{label}
+    />
+    {label}
   </li>
 )
 
-const Process = ({title, content}) => (
+const Process = ({ title, content }) => (
   <div className="mv4 w-third-l ph3-l">
     <h3 className="f5">{title}</h3>
-    <p className="lh-mh-1 ph4-l">
-      {content}
-    </p>
+    <p className="lh-mh-1 ph4-l">{content}</p>
   </div>
 )
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <section className="mw-mavenhive center pa3 pa4-l mt3-l flex-l items-center justify-between tc tl-l">
       <img className="order-1 w-60 w-auto-ns" src={Illustration} alt="" />
       <div>
         <h1 className="f2 normal">{page.heading}</h1>
-        <p className="measure measure-wide-l center lh-copy f4 mb4 mh2 mb5-l">
+        <p className="measure measure-wide-l center ml0-l lh-copy f4 mb4 mh2 mb5-l">
           {page['sub-heading']}
         </p>
         <p>
@@ -88,7 +88,8 @@ const IndexPage = () => (
             to="/portfolio"
             className="dib link f-1 pv1 ph4 ba b--brand br2 fw5 tc w-100 w-auto-ns white bg-brand hover-bg-dark-red bg-animate"
           >
-              {page['hero-cta']}<i icon={IconStart}/>
+            {page['hero-cta']}
+            <i icon={IconStart} />
           </Link>
         </p>
       </div>
@@ -121,21 +122,30 @@ const IndexPage = () => (
               <Arrow />
               <Arrow />
             </li>
-            <Step icon={IconMVP} label='MVP' />
-            <Step icon={IconRearchitect} label='Re-Architecture' />
-            <Step icon={IconEstablishment} label='Establishment' />
-            <Step icon={IconStart} label='Stability' />
+            <Step icon={IconMVP} label="MVP" />
+            <Step icon={IconRearchitect} label="Re-Architecture" />
+            <Step icon={IconEstablishment} label="Establishment" />
+            <Step icon={IconStart} label="Stability" />
           </ul>
         </div>
         <div className="flex-l justify-between mh-gray tracked-mh">
-          <Process title='MVP' content="Tech partnerships that help clients validate core ideas. MVPs built from scratch,
-              complete with end-to end product design, development, deployment and scaling" />
-          <Process title='Re-Architecture' content='Tech not keeping up with business? Products needs bracing for rapid
+          <Process
+            title="MVP"
+            content="Tech partnerships that help clients validate core ideas. MVPs built from scratch,
+              complete with end-to end product design, development, deployment and scaling"
+          />
+          <Process
+            title="Re-Architecture"
+            content="Tech not keeping up with business? Products needs bracing for rapid
               user influx. We rebuild products and help scale design to sustain long term
-              growth' />
-          <Process title='Establishment and Stability' content='Agile process
+              growth"
+          />
+          <Process
+            title="Establishment and Stability"
+            content="Agile process
               consulting, on-site coaching & technical training relevant to
-              your team’s needs. Magic sauce that helps successful product stay on top' />
+              your team’s needs. Magic sauce that helps successful product stay on top"
+          />
         </div>
       </div>
     </section>
@@ -222,7 +232,7 @@ const IndexPage = () => (
         </p>
       </div>
     </section>
-  </div>
+  </Layout>
 )
 
 export default IndexPage

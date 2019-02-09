@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 
 import Logo from '../../images/MavenHive-logo_red.svg'
 import Menu from '../../icons/icon-menu.svg'

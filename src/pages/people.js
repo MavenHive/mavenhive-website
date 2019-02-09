@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import ReactModal from 'react-modal'
 import marked from 'marked'
-
+import Layout from '../layouts'
 import Member from '../components/Member'
 
 import VideoImage from '../images/image_teamvideo.png'
@@ -92,7 +92,7 @@ const Feature = ({ icon, title, description }) => (
 )
 
 export default () => (
-  <div className="">
+  <Layout>
     <Helmet title={`${people.title} | MavenHive`} />
     <div
       className="bg-people cover bg-center relative h5 pb5 content-box"
@@ -189,5 +189,5 @@ export default () => (
         </p>
       </div>
     </section>
-  </div>
+  </Layout>
 )
