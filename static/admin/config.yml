@@ -14,8 +14,8 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Page Heading, name: heading, widget: string }
           - { label: Sub Heading, name: sub-heading, widget: text }
-          - label: "Projects"
-            name: "projects"
+          - label: "Portfolio"
+            name: "portfolio"
             widget: "list"
             fields:
               - { label: Heading, name: heading, widget: string }
