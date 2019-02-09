@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'MavenHive',
+    title: "MavenHive",
+    siteUrl: `https://mavenhive.com`
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -11,6 +12,7 @@ module.exports = {
         name: "markdown-pages"
       }
     },
-    'gatsby-plugin-netlify-cms'
-  ],
-};
+    "gatsby-plugin-netlify-cms",
+    "gatsby-plugin-sitemap"
+  ]
+}

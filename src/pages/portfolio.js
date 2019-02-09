@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-import ReactModal from 'react-modal'
+import React, { Component, Fragment } from "react"
+import { Link } from "gatsby"
+import Helmet from "react-helmet"
+import Modal from "react-modal"
+import Layout from "../layouts"
+import Illustration from "../images/image_portfolio.svg"
+import VideoIcon from "../icons/icon_play.svg"
 
-import Illustration from '../images/image_portfolio.svg'
-import VideoIcon from '../icons/icon_play.svg'
-
-import portfolio from '../content/portfolio.json'
+import portfolio from "../content/portfolio.json"
 
 const Project = ({ heading, client, services, summary, details }) => (
   <div className="pv2 mw8">
@@ -23,7 +23,7 @@ class Video extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      showModal: false,
+      showModal: false
     }
     this.handleOpenModal = this.handleOpenModal.bind(this)
     this.handleCloseModal = this.handleCloseModal.bind(this)
@@ -31,28 +31,30 @@ class Video extends Component {
 
   handleOpenModal() {
     this.setState({
-      showModal: true,
+      showModal: true
     })
   }
 
   handleCloseModal() {
     this.setState({
-      showModal: false,
+      showModal: false
     })
   }
 
   render() {
     const { url, VideoIcon } = this.props
     return (
-      <a
-        href={url}
-        onClick={e => {
-          e.preventDefault()
-          this.handleOpenModal()
-        }}
-      >
-        <img src={VideoIcon} alt="" width="90" height="90" />
-        <ReactModal
+      <Fragment>
+        <a
+          href={url}
+          onClick={e => {
+            e.preventDefault()
+            this.handleOpenModal()
+          }}
+        >
+          <img src={VideoIcon} alt="" width="90" height="90" />
+        </a>
+        <Modal
           isOpen={this.state.showModal}
           onRequestClose={this.handleCloseModal}
           shouldCloseOnEsc={true}
@@ -67,6 +69,7 @@ class Video extends Component {
             src={`${url}?autoplay=1`}
             frameBorder="0"
             allowFullScreen
+            title="grasshopper testimonial"
           />
           <button
             className="f3 w2 h2 absolute right--1 top--1 br-100 bg-brand white bw0 pointer"
@@ -74,36 +77,36 @@ class Video extends Component {
           >
             &times;
           </button>
-        </ReactModal>
-      </a>
+        </Modal>
+      </Fragment>
     )
   }
 }
 
 export default () => (
-  <div>
+  <Layout>
     <Helmet title={`${portfolio.title} | MavenHive`} />
     <section className="mw-mavenhive center ph3 mt5-l pt3 flex-l items-center justify-between">
       <img className="dn db-l self-end order-1" src={Illustration} alt="" />
       <div className="mb6">
         <h1 className="f2 normal measure-narrow">{portfolio.heading}</h1>
         <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
-          {portfolio['sub-heading']}
+          {portfolio["sub-heading"]}
         </p>
       </div>
     </section>
 
-      <section className="mw-mavenhive center ph3 mb5 tc">
-          <p className="mw8 center f3 lh-mh ph6-l mv0">
-              {portfolio.showcase.heading}
-          </p>
-          <div className="mb3">
-              <img src={portfolio.showcase.logo} alt="" />
-          </div>
-          <div>
-              <Video VideoIcon={VideoIcon} url={portfolio.showcase.url} />
-          </div>
-      </section>
+    <section className="mw-mavenhive center ph3 mb5 tc">
+      <p className="mw8 center f3 lh-mh ph6-l mv0">
+        {portfolio.showcase.heading}
+      </p>
+      <div className="mb3">
+        <img src={portfolio.showcase.logo} alt="" />
+      </div>
+      <div>
+        <Video VideoIcon={VideoIcon} url={portfolio.showcase.url} />
+      </div>
+    </section>
 
     <section className="mw-mavenhive center ph3 mb5">
       <h2 className="f3 brand mb4">Our Projects</h2>
@@ -118,8 +121,6 @@ export default () => (
         />
       ))}
     </section>
-
-
 
     <section className="pv4-ns bg-navy white tc">
       <div className="mw8 center pa3 ph5-l">
@@ -137,5 +138,5 @@ export default () => (
         </p>
       </div>
     </section>
-  </div>
+  </Layout>
 )

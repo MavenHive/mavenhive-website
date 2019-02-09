@@ -1,33 +1,29 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from "react"
+import Helmet from "react-helmet"
+import Layout from "../layouts"
+import FormBackground from "../images/image_lauchpad.png"
+import page from "../content/contact.json"
 
-import FormBackground from '../images/image_lauchpad.png'
-import page from '../content/contact.json'
-
-export default (props) => (
-  <div>
+export default props => (
+  <Layout>
     <Helmet title={`${page.title} | MavenHive`} />
     <div
       className="cover mv3 relative bg-center h5 pv5 content-box"
       style={{
-        backgroundImage: `url(${page.cover})`,
+        backgroundImage: `url(${page.cover})`
       }}
     >
       <div className="mw-mavenhive center ph3">
-        <h1 className="f2 normal measure-mh-narrow lh-mh-1">
-          {page.heading}
-        </h1>
+        <h1 className="f2 normal measure-mh-narrow lh-mh-1">{page.heading}</h1>
       </div>
     </div>
     <div
       className="mw-mavenhive bg-form center ph3 mv4 bg-right bg-white"
       style={{
-        backgroundImage: `url(${FormBackground})`,
+        backgroundImage: `url(${FormBackground})`
       }}
     >
-      <h2 className="f3 normal mt0 mb4 pb3">
-        {page.formHeading}
-      </h2>
+      <h2 className="f3 normal mt0 mb4 pb3">{page.formHeading}</h2>
       <form
         className="mw6 tracked-mh"
         method="POST"
@@ -95,5 +91,5 @@ export default (props) => (
         </button>
       </form>
     </div>
-  </div>
+  </Layout>
 )

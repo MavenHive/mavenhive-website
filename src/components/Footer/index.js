@@ -1,12 +1,12 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from "react"
+import { Link } from "gatsby"
 
-import Logo from '../../images/MavenHive-logo_black.svg'
-import FacebookIcon from '../../icons/facebook.svg'
-import TwitterIcon from '../../icons/twitter.svg'
-import LinkedinIcon from '../../icons/linkedin.svg'
-import GithubIcon from '../../icons/github.svg'
-import YoutubeIcon from '../../icons/youtube.svg'
+import Logo from "../../images/MavenHive-logo_black.svg"
+import FacebookIcon from "../../icons/facebook.svg"
+import TwitterIcon from "../../icons/twitter.svg"
+import LinkedinIcon from "../../icons/linkedin.svg"
+import GithubIcon from "../../icons/github.svg"
+import YoutubeIcon from "../../icons/youtube.svg"
 
 const Footer = () => {
   // Can manage footer links here
@@ -30,6 +30,7 @@ const Footer = () => {
               target="_blank"
               className="dib pa2 link silver hover-dark-gray underline-hover"
               href="https://blog.mavenhive.in/"
+              rel="noopener noreferrer"
             >
               Blog
             </a>
@@ -57,6 +58,7 @@ const Footer = () => {
               className="dib link"
               href="https://www.facebook.com/mavenhive"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 className="w2"
@@ -70,6 +72,7 @@ const Footer = () => {
               className="dib link"
               href="https://twitter.com/Mavenhive"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 className="w2"
@@ -83,6 +86,7 @@ const Footer = () => {
               className="dib link"
               href="https://www.linkedin.com/company/mavenhive-technologies-pvt-ltd/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 className="w2"
@@ -96,6 +100,7 @@ const Footer = () => {
               className="dib link"
               href="https://github.com/mavenhive"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 className="w2"
@@ -109,6 +114,7 @@ const Footer = () => {
               className="dib link"
               href="https://www.youtube.com/channel/UCqdjB9e5zXnMA6CgVt-pp8Q/featured"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 className="w2"

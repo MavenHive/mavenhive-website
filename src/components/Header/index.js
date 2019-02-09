@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import Link from 'gatsby-link'
+import React, { Component } from "react"
+import { Link } from "gatsby"
 
-import Logo from '../../images/MavenHive-logo_red.svg'
-import Menu from '../../icons/icon-menu.svg'
+import Logo from "../../images/MavenHive-logo_red.svg"
+import Menu from "../../icons/icon-menu.svg"
 
 class HeaderLinks extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      showMenu: false,
+      showMenu: false
     }
     this.showMenu = this.showMenu.bind(this)
     this.hideMenu = this.hideMenu.bind(this)
@@ -16,28 +16,28 @@ class HeaderLinks extends Component {
 
   showMenu() {
     this.setState({
-      showMenu: true,
+      showMenu: true
     })
   }
 
   hideMenu(e) {
     if (
       this.state.showMenu &&
-      (e.target.id !== 'menu-button' &&
-        e.target.parentNode.id !== 'menu-button')
+      (e.target.id !== "menu-button" &&
+        e.target.parentNode.id !== "menu-button")
     ) {
       this.setState({
-        showMenu: false,
+        showMenu: false
       })
     }
   }
 
   componentDidMount() {
-    window.document.addEventListener('click', this.hideMenu, false)
+    window.document.addEventListener("click", this.hideMenu, false)
   }
 
   componentWillUnmount() {
-    window.document.removeEventListener('click', this.hideMenu, false)
+    window.document.removeEventListener("click", this.hideMenu, false)
   }
 
   render() {
@@ -53,7 +53,7 @@ class HeaderLinks extends Component {
         </button>
         <div
           className={`${
-            this.state.showMenu ? 'db' : 'dn'
+            this.state.showMenu ? "db" : "dn"
           } dn-l absolute relative-l top--1 top-0-l right-0 pa3 ba b--moon-gray bw0-l br2 z-1 bg-white tr tl-l`}
         >
           <button className="f3 bw0 bg-white pa0 ma0 lh-solid mid-gray">

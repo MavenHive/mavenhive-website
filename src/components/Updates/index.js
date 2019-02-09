@@ -1,35 +1,37 @@
-import React from 'react'
+import React, { Fragment } from "react"
 
-import startcase from 'lodash.startcase'
-import upperfirst from 'lodash.upperfirst'
-import getYoutubeId from 'get-youtube-id'
-import Video from '../Video'
+import startcase from "lodash.startcase"
+import upperfirst from "lodash.upperfirst"
+import getYoutubeId from "get-youtube-id"
+import Video from "../Video"
 
 const Update = ({ type, thumbnail, title, content, url, author }) => {
-  // const
   return (
-    <a
-      className={`db link black dim mv3 pv3 ${thumbnail ? 'flex-ns' : ''}`}
-      target="_blank"
-      href={url}
-    >
-      {thumbnail && (
-        <img
-          className="mr3 bg-light-gray"
-          src={thumbnail}
-          alt=""
-          width="160"
-          height="90"
-        />
-      )}
-      <div>
-        <h3 className="mt0 mb2 f4">
-          {startcase(type)} | {upperfirst(title)}
-        </h3>
-        <p className="f6">{content}</p>
-        <p className="ma0 f6 mh-light-gray b">{startcase(author)}</p>
-      </div>
-    </a>
+    <Fragment>
+      <a
+        className={`db link black dim mv3 pv3 ${thumbnail ? "flex-ns" : ""}`}
+        target="_blank"
+        href={url}
+        rel="noopener noreferrer"
+      >
+        {thumbnail && (
+          <img
+            className="mr3 bg-light-gray"
+            src={thumbnail}
+            alt=""
+            width="160"
+            height="90"
+          />
+        )}
+        <div>
+          <h3 className="mt0 mb2 f4">
+            {startcase(type)} | {upperfirst(title)}
+          </h3>
+          <p className="f6">{content}</p>
+          <p className="ma0 f6 mh-light-gray b">{startcase(author)}</p>
+        </div>
+      </a>
+    </Fragment>
   )
 }
 
