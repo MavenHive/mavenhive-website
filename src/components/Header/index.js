@@ -45,7 +45,7 @@ class HeaderLinks extends Component {
     return (
       <div className="dt relative">
         <button
-          className="dtc bw0 bg-transparent pa0 dn-l v-top w2 h2"
+          className="dtc bw0 bg-transparent pa0 dn-l v-top w2 h2 pointer"
           id="menu-button"
           onClick={this.showMenu}
         >
@@ -54,12 +54,12 @@ class HeaderLinks extends Component {
         <div
           className={`${
             this.state.showMenu ? "db" : "dn"
-          } dn-l absolute relative-l top--1 top-0-l right-0 pa3 ba b--moon-gray bw0-l br2 z-1 bg-white tr tl-l`}
+          } absolute top--1 right--1 mt1 mr2 pa2 ba b--moon-gray br2 shadow-4 z-1 bg-white tr w4`}
         >
-          <button className="f3 bw0 bg-white pa0 ma0 lh-solid mid-gray">
+          <button className="f2 bw0 bg-white w2 pa0 lh-solid mid-gray pointer">
             &times;
           </button>
-          <ul className="list ma0 pt3-l f5 tracked-mh">{children}</ul>
+          <ul className="list ma0 pa0 pt3-l f5 tracked-mh">{children}</ul>
         </div>
         <ul className="dn db-l list ma0 pa0 pt3 f5 tracked-mh">{children}</ul>
       </div>
