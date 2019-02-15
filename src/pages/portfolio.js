@@ -87,10 +87,10 @@ export default () => (
   <Layout>
     <Helmet title={`${portfolio.title} | MavenHive`} />
     <section className="mw-mavenhive center ph3 mt5-l pt3 flex-l items-center justify-between">
-      <img className="dn db-l self-end order-1" src={Illustration} alt="" />
+      <img className="dn db-l order-1" src={Illustration} alt="" />
       <div className="mb6">
         <h1 className="f2 normal measure-narrow">{portfolio.heading}</h1>
-        <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mb5-l mh-gray">
+        <p className="measure-mh lh-mh-1 f5 tracked-mh mb4 mv5-l mh-gray">
           {portfolio["sub-heading"]}
         </p>
       </div>
