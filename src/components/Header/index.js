@@ -88,6 +88,7 @@ const Header = () => (
       <HeaderLinks>
         <HeaderLink to="/services" label="Services" />
         <HeaderLink to="/portfolio" label="Portfolio" />
+        <HeaderLink to="/alumni" label="Alumni" />
         <HeaderLink to="/people" label="People" />
         <HeaderLink to="/careers" label="Join us" />
       </HeaderLinks>

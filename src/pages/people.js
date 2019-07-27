@@ -41,7 +41,7 @@ class Video extends Component {
   }
 
   render() {
-    const { url, VideoIcon } = this.props
+    const { url, VideoIcon } = this.propsz
     return (
       <Fragment>
         <a

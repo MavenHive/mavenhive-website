@@ -48,6 +48,9 @@ h1 {
 .measure-mh-narrow {
   max-width: 16em;
 }
+.measure-mh-alum {
+  max-width: 17em;
+}
 .mw-mavenhive {
   max-width: 1280px;
 }
