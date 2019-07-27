@@ -1,14 +1,24 @@
 {
   "title": "Alumni",
-  "heading": "Alumni",
+  "heading": "We keep telling everybody they should move on. Some do. But not us.",
+  "cover": "/img/image_alumni_cover.png",
   "alumni": [
     {
+    "member": {
+      "avatar": "/img/harshitha_h.jpg",
+      "name": "Harshitha Rao",
+      "role": "Associate",
+      "blurb": "some text some text",
+      "linkedin": "https://www.linkedin.com/in/harshitha-rao-a4451236/"
+    }
+  },
+    {
       "member": {
-        "avatar": "/img/jake_h.jpg",
-        "name": "Jake test",
-        "role": "Role test",
-        "blurb": "some blurb to be provided here",
-        "linkedin": "https://www.linkedin.com/in/anandhakrishnanj"
+        "avatar": "/img/abhishek_s_h.jpg",
+        "name": "Abhishek Sangwan",
+        "role": "Associate",
+        "blurb": "some text some text",
+        "linkedin": "https://www.linkedin.com/in/thestrongenough/"
       }
     }
   ]
