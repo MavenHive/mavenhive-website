@@ -14,6 +14,16 @@
   },
     {
       "member": {
+        "avatar": "/img/screen shot 2018-05-24 at 10.23.14 am.png",
+        "name": "Chetan Kothari",
+        "role": "Senior Associate",
+        "blurb": "Likes to code. and many more ...",
+        "twitter": "https://twitter.com/chetan_kothari",
+        "linkedin": "https://www.linkedin.com/in/kotharichetan/"
+      }
+    },
+    {
+      "member": {
         "avatar": "/img/abhishek_s_h.jpg",
         "name": "Abhishek Sangwan",
         "role": "Associate",
