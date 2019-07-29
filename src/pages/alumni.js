@@ -37,9 +37,9 @@ export default () => {
           id="team"
           className="relative center"
           style={{
-            display: "grid",
-            gridTemplateColumns: `repeat(auto-fill, minmax(${gridWidth}, 1fr))`,
-            gridGap: gridGap
+            display: "flex",
+            flexFlow: "row wrap",
+            justifyContent: "center"
           }}
         >
           {alumni.alumni.map((member, i) => {
@@ -47,7 +47,7 @@ export default () => {
             return person ? (
               <a
                 key={`person-${i}`}
-                className="glow o-60 pointer"
+                className="glow o-60 pointer w-alumni-card"
                 name={person.name
                   .toLowerCase()
                   .split(" ")

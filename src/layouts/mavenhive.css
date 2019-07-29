@@ -94,6 +94,34 @@ h1 {
 .img-member {
   flex: 0 0 8rem;
 }
+.w-alumni-card {
+  padding: 5px;
+}
+@media only screen and (min-width : 320px) {
+  .w-alumni-card {
+    flex-basis: 50%;
+  }
+}
+@media only screen and (min-width : 375px) {
+  .w-alumni-card {
+    flex-basis: 33%;
+  }
+}
+@media only screen and (min-width : 480px) {
+  .w-alumni-card {
+    flex-basis: 25%;
+  }
+}
+@media only screen and (min-width : 576px) {
+  .w-alumni-card {
+    flex-basis: 20%;
+  }
+}
+@media only screen and (min-width : 768px) {
+  .w-alumni-card {
+    flex-basis: 14%;
+  }
+}
 
 .hiring-link {
   background: no-repeat center bottom;
