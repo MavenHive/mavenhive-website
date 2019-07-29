@@ -25,16 +25,6 @@
     },
     {
       "member": {
-        "avatar": "/img/screen shot 2018-05-24 at 10.23.14 am.png",
-        "name": "Chetan Kothari",
-        "role": "Senior Associate",
-        "blurb": "Likes to code. and many more ...",
-        "twitter": "https://twitter.com/chetan_kothari",
-        "linkedin": "https://www.linkedin.com/in/kotharichetan/"
-      }
-    },
-    {
-      "member": {
         "avatar": "/img/0.jpeg",
         "name": "Monika",
         "role": "Associate",
@@ -152,6 +142,51 @@
         "avatar": "/img/sachin_s_hover.jpg",
         "name": "Sachin Sudheendra ",
         "role": "Consultant ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/mohit_babbar.jpeg",
+        "name": "Mohit Babbar ",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/reyaz_ahmed.jpeg",
+        "name": "Reyaz Ahmed",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/sweta_tiwari.jpeg",
+        "name": "Sweta Tiwari",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/shubham_agarwal.jpg",
+        "name": "Shubham Agarwal",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/abhishek_katiyar.jpeg",
+        "name": "Abhishek Katiyar",
+        "role": "Associate ",
         "blurb": "Some text some text",
         "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
       }
