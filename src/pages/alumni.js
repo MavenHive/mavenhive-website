@@ -7,6 +7,9 @@ import TwitterIcon from "../icons/twitter-profile.svg";
 import LinkedinIcon from "../icons/linkedin-profile.svg";
 
 import alumni from "../content/alumni";
+import people from "../content/people";
+import marked from "marked";
+import {Link} from "gatsby";
 
 const gridGap = "1rem";
 const gridWidth = "160px";
@@ -123,6 +126,23 @@ export default () => {
           )}
         </div>
       </div>
+      <section className="pv4-ns bg-brand white tc">
+        <div className="mw-mavenhive center pa3 ph5-l cta">
+          <h3 className="mb3 f4 lh-title">{people.cta.heading}</h3>
+          <div
+            className="lh-copy f-1 mb4 pb2 ph5-l"
+            dangerouslySetInnerHTML={{ __html: marked(people.cta.content) }}
+          />
+          <p>
+            <Link
+              to={people.cta.button.link}
+              className="dib link f-1 pv1 ph4 br2 fw5 tc w-100 w-auto-ns white ba bg-brand hover-bg-dark-red bg-animate"
+            >
+              {people.cta.button.label}
+            </Link>
+          </p>
+        </div>
+      </section>
     </Layout>
   )
 }
