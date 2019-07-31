@@ -1,6 +1,6 @@
 {
   "title": "Alumni",
-  "heading": "We keep telling everybody they should move on. Some do. But not us.",
+  "heading": "Our alumni - our brand ambassadors - who help us hire great talent, give us regular feedback, miss us a lot and visit us often. Basically they didn't leave. They just stopped working with us.",
   "cover": "/img/image_alumni_cover.png",
   "alumni": [
     {
@@ -31,5 +31,9 @@
         "linkedin": "https://www.linkedin.com/in/thestrongenough/"
       }
     }
-  ]
+  ],
+  "cta": {
+    "heading": "Train people well enough so they can leave, treat them well enough so they don't want to.",
+    "content": "Hunting for the rest of our alumni since most of them have fled the country."
+  }
 }
