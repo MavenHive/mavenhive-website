@@ -7,7 +7,6 @@ import TwitterIcon from "../icons/twitter-profile.svg";
 import LinkedinIcon from "../icons/linkedin-profile.svg";
 
 import alumni from "../content/alumni";
-import people from "../content/people";
 import marked from "marked";
 import {Link} from "gatsby";
 
@@ -24,18 +23,17 @@ export default () => {
     <Layout>
       <Helmet title={`${alumni.title} | MavenHive`} />
       <div
-        className="bg-people cover bg-center relative h5 pb5 content-box"
+        className="bg-people cover bg-center relative h-alumni pb5 content-box"
         style={{
           backgroundImage: `url(${alumni.cover})`
         }}
       >
         <div className="mw-mavenhive center ph3 mv5 pt3 h5">
-          <h1 className="f1 normal measure-mh-narrow">{alumni.heading}</h1>
+          <h1 className="f2 normal alumni-mh-narrow">{alumni.heading}</h1>
         </div>
       </div>
 
       <div className="mw-mavenhive center mv3 pa3">
-        <h2 className="f3 ttu tc mh-gray normal mb4 tracked">They left us for better salary...</h2>
         <div
           id="team"
           className="relative center"
@@ -128,19 +126,11 @@ export default () => {
       </div>
       <section className="pv4-ns bg-brand white tc">
         <div className="mw-mavenhive center pa3 ph5-l cta">
-          <h3 className="mb3 f4 lh-title">{people.cta.heading}</h3>
+          <h3 className="mb3 f4 lh-title">{alumni.cta.heading}</h3>
           <div
             className="lh-copy f-1 mb4 pb2 ph5-l"
-            dangerouslySetInnerHTML={{ __html: marked(people.cta.content) }}
+            dangerouslySetInnerHTML={{ __html: marked(alumni.cta.content) }}
           />
-          <p>
-            <Link
-              to={people.cta.button.link}
-              className="dib link f-1 pv1 ph4 br2 fw5 tc w-100 w-auto-ns white ba bg-brand hover-bg-dark-red bg-animate"
-            >
-              {people.cta.button.label}
-            </Link>
-          </p>
         </div>
       </section>
     </Layout>

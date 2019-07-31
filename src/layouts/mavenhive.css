@@ -48,6 +48,29 @@ h1 {
 .measure-mh-narrow {
   max-width: 16em;
 }
+.alumni-mh-narrow {
+  max-width: 20em;
+}
+@media only screen and (min-width : 320px) {
+  .h-alumni {
+    height: 35rem;
+  }
+}
+@media only screen and (min-width : 375px) {
+  .h-alumni {
+    height: 32rem;
+  }
+}
+@media only screen and (min-width : 480px) {
+  .h-alumni {
+    height: 24rem;
+  }
+}
+@media only screen and (min-width : 576px) {
+  .h-alumni {
+    height: 20rem;
+  }
+}
 .mw-mavenhive {
   max-width: 1280px;
 }
@@ -174,6 +197,6 @@ body .slick-dots li button:before {
   }
   to {
     opacity: 1;
-    transform: translate3d(0,0,0,);
+    transform: translate3d(0,0,0);
   }
 }
