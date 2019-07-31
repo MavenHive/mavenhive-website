@@ -70,6 +70,7 @@ export default () => {
                   name={person.name}
                   role={person.role}
                   avatar={person.avatar}
+                  isAlumni
                 />
               </a>
             ) : null
