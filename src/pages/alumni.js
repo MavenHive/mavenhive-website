@@ -8,10 +8,6 @@ import LinkedinIcon from "../icons/linkedin-profile.svg";
 
 import alumni from "../content/alumni";
 import marked from "marked";
-import {Link} from "gatsby";
-
-const gridGap = "1rem";
-const gridWidth = "160px";
 
 export default () => {
   const [state, setState] = useState({
