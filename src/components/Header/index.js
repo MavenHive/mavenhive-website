@@ -89,7 +89,6 @@ const Header = () => (
         <HeaderLink to="/services" label="Services" />
         <HeaderLink to="/portfolio" label="Portfolio" />
         <HeaderLink to="/people" label="People" />
-        <HeaderLink to="/alumni" label="Alumni" />
         <HeaderLink to="/careers" label="Join us" />
       </HeaderLinks>
     </div>
