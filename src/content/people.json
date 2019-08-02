@@ -25,19 +25,9 @@
     },
     {
       "member": {
-        "avatar": "/img/screen shot 2018-05-24 at 10.23.14 am.png",
-        "name": "Chetan Kothari",
-        "role": "Senior Associate",
-        "blurb": "Likes to code. and many more ...",
-        "twitter": "https://twitter.com/chetan_kothari",
-        "linkedin": "https://www.linkedin.com/in/kotharichetan/"
-      }
-    },
-    {
-      "member": {
         "avatar": "/img/0.jpeg",
         "name": "Monika",
-        "role": "Associate",
+        "role": "Senior Associate ",
         "blurb": "some text some text",
         "twitter": "https://twitter.com/MonikaMhanthapa",
         "linkedin": "https://www.linkedin.com/in/monika-m-a9a8b932/"
@@ -112,7 +102,7 @@
       "member": {
         "avatar": "/img/1.jpeg",
         "name": "Shivakumar H G",
-        "role": "Associate",
+        "role": "Senior Associate ",
         "blurb": "some text some text",
         "twitter": "https://twitter.com/Shivhg",
         "linkedin": "https://www.linkedin.com/in/shivhg/"
@@ -122,7 +112,7 @@
       "member": {
         "avatar": "/img/raju_h.jpg",
         "name": "Raju G T",
-        "role": "Associate ",
+        "role": "Senior Associate ",
         "blurb": "some text some text",
         "twitter": "https://twitter.com/_rajuGT",
         "linkedin": "https://www.linkedin.com/in/rajugt/"
@@ -132,7 +122,7 @@
       "member": {
         "avatar": "/img/anoop_h.jpg",
         "name": "Anoop Narang",
-        "role": "Associate",
+        "role": "Senior Associate ",
         "blurb": "some text some text",
         "linkedin": "https://www.linkedin.com/in/anoop-narang-b029837b/"
       }
@@ -141,7 +131,7 @@
       "member": {
         "avatar": "/img/vijit_h.jpg",
         "name": "Vijith M V",
-        "role": "Associate ",
+        "role": "Senior Associate ",
         "blurb": "some text some text",
         "twitter": "https://twitter.com/vijithmv1",
         "linkedin": "https://www.linkedin.com/in/vijith-mv-64661bb0/"
@@ -154,6 +144,51 @@
         "role": "Consultant ",
         "blurb": "Some text some text",
         "linkedin": "https://www.linkedin.com/in/sachin-sudheendra-7b9398a1/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/mohit_babbar.jpeg",
+        "name": "Mohit Babbar ",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/mohit-babbar-969058143/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/reyaz_ahmed.jpeg",
+        "name": "Reyaz Ahmed",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/reyaz-ahmad-a18109171/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/sweta_tiwari.jpeg",
+        "name": "Sweta Tiwari",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/shubham_agarwal.jpg",
+        "name": "Shubham Agarwal",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/"
+      }
+    },
+    {
+      "member": {
+        "avatar": "/img/abhishek_katiyar.jpeg",
+        "name": "Abhishek Katiyar",
+        "role": "Associate ",
+        "blurb": "Some text some text",
+        "linkedin": "https://www.linkedin.com/in/abhishek-katiyar-6b2069128/"
       }
     }
   ],

@@ -1,6 +1,6 @@
 import React from "react"
 
-export default ({ name, role, avatar }) => (
+export default ({ name, role, avatar, isAlumni }) => (
   <div className="w-100">
     <div
       className="aspect-ratio aspect-ratio--1x1 cover overflow-hidden"
@@ -16,7 +16,7 @@ export default ({ name, role, avatar }) => (
     </div>
     <div className="">
       <h2 className="f6 mb1">{name}</h2>
-      <p className="lh-copy f6 mv0">{role}</p>
+      {isAlumni ? null : <p className="lh-copy f6 mv0">{role}</p>}
     </div>
   </div>
 )
